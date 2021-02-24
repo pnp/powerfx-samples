@@ -1,5 +1,6 @@
-# Custom Function Samples
+# Power Apps Custom Function Samples
 
+> TODO: Update the text here
 
 This repository contains community samples that demonstrate different usage patterns for the SharePoint Framework client-side web parts.
 
@@ -76,4 +77,3 @@ Please have a look on our [Contribution Guidance](./.github/CONTRIBUTING.md) bef
 This repository has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 > Sharing is caring!
-
