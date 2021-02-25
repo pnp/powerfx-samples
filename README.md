@@ -1,7 +1,5 @@
 # Power Apps Custom Function Samples
 
-> TODO: Update the text here
-
 This repository contains community samples that demonstrate different usage patterns for user-defined custom functions in Power Apps.
 
 > We do welcome community contributions to the samples folder in this repository for demonstrating different user-defined custom functions. Notice that if you use 3rd party libraries, please make sure that library license allows distributions of it as part of your sample.
