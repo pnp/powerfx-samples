@@ -1,0 +1,185 @@
+[
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
+    
+    "name": "pnp-powerapps-customfunctions-samples-regex-functions-iscurrency",
+    "version": "1.0.0.0",
+    "source": "pnp",
+    "title": "IsCurrency", 
+    "shortDescription": "Regex to validate currency format (US)",
+    "longDescription": 
+      [
+      ],
+    "products": [
+      "Power Apps", "Power Platform"
+    ],
+    "categories": [
+     
+    ],
+    "metadata": [
+  
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "assets/regexutilsfunc.PNG",
+        "alt": "Alt text for the image"
+      },
+      {
+        "type": "video",
+        "order": 101,
+        "url": "",
+        "alt": "Alt text for the video"
+      },
+      {
+        "type": "slideshow",
+        "order": 102,
+        "alt": "Alt text for the image",
+        "slides": [           
+        ]
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "GSiVed",
+        "company": "https://www.artisconsulting.com/",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/45240054?s=88&v=4"
+      }
+    ],
+    "references": [
+      {
+        "name": "Enhanced Component Properties",
+        "description": "Blog post announcing the enhanced component custom properties for Power Apps",
+        "url": "https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/"
+      },     
+      {
+        "name": "Power Apps Formula Reference",
+        "description": "Formula reference guide for Power Apps",
+        "url": "https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference"
+      }
+    ] 
+},
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
+    
+    "name": "pnp-powerapps-customfunctions-samples-regex-functions-ispercent",
+    "version": "1.0.0.0",
+    "source": "pnp",
+    "title": "IsPercent", 
+    "shortDescription": "Regex to validate percent format",
+    "longDescription": 
+      [
+      ],
+    "products": [
+      "Power Apps", "Power Platform"
+    ],
+    "categories": [
+     
+    ],
+    "metadata": [
+  
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "assets/regexutilsfunc.PNG",
+        "alt": "Alt text for the image"
+      },
+      {
+        "type": "video",
+        "order": 101,
+        "url": "",
+        "alt": "Alt text for the video"
+      },
+      {
+        "type": "slideshow",
+        "order": 102,
+        "alt": "Alt text for the image",
+        "slides": [           
+        ]
+      }
+    ],
+    "authors": [
+        {
+          "gitHubAccount": "GSiVed",
+          "company": "https://www.artisconsulting.com/",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/45240054?s=88&v=4"
+        }
+      ],
+    "references": [
+        {
+          "name": "Enhanced Component Properties",
+          "description": "Blog post announcing the enhanced component custom properties for Power Apps",
+          "url": "https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/"
+        },     
+        {
+          "name": "Power Apps Formula Reference",
+          "description": "Formula reference guide for Power Apps",
+          "url": "https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference"
+        }
+      ] 
+},
+{
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
+    
+    "name": "pnp-powerapps-customfunctions-samples-regex-functions-istime",
+    "version": "1.0.0.0",
+    "source": "pnp",
+    "title": "IsTime", 
+    "shortDescription": "Regex to validate time format [hh:mm:ss]/[hr:min:sec]/[mm:ss]/[m:s]/[ss]/[s]",
+    "longDescription": 
+      [
+      ],
+    "products": [
+      "Power Apps", "Power Platform"
+    ],
+    "categories": [
+     
+    ],
+    "metadata": [
+  
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "assets/regexutilsfunc.PNG",
+        "alt": "Alt text for the image"
+      },
+      {
+        "type": "video",
+        "order": 101,
+        "url": "",
+        "alt": "Alt text for the video"
+      },
+      {
+        "type": "slideshow",
+        "order": 102,
+        "alt": "Alt text for the image",
+        "slides": [           
+        ]
+      }
+    ],
+    "authors": [
+        {
+          "gitHubAccount": "GSiVed",
+          "company": "https://www.artisconsulting.com/",
+          "pictureUrl": "https://avatars.githubusercontent.com/u/45240054?s=88&v=4"
+        }
+      ],
+    "references": [
+        {
+          "name": "Enhanced Component Properties",
+          "description": "Blog post announcing the enhanced component custom properties for Power Apps",
+          "url": "https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/"
+        },     
+        {
+          "name": "Power Apps Formula Reference",
+          "description": "Formula reference guide for Power Apps",
+          "url": "https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference"
+        }
+      ] 
+}
+]
