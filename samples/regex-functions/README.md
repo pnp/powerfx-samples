@@ -21,14 +21,14 @@ Version|Date|Comments
 
 
 ## Disclaimer
-**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
---
+*THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON_INFRINGEMENT.*
+
+---
 ## Minimal Path to Awesome
 
 * Clone the repository to a local drive
 * Pack the source files back into .msapp file:
   * [Power Apps Tooling Usage](https://github.com/microsoft/PowerApps-Language-Tooling)
-)
 * Use the .msapp file using File > Open > Browse in Power Apps Studio.
 
 ## RegexUtils Features
