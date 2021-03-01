@@ -1,0 +1,69 @@
+{
+  "ComponentIndexes": {
+    "RegexUtils": 1,
+    "UDFRegexUtils": 3
+  },
+  "ControlUniqueIds": {
+    "App": 1,
+    "Currency": 6,
+    "CurrencyInputHdr": 5,
+    "CurrencyValidator": 7,
+    "Percent": 9,
+    "PercentInputHdr": 8,
+    "PercentValidator": 10,
+    "RegexUtils": 3,
+    "Screen1": 4,
+    "Time": 12,
+    "TimeInputHdr": 11,
+    "TimeValidator": 13,
+    "UDFRegexUtils": 14
+  },
+  "HeaderLastSavedDateTimeUTC": "03/01/2021 04:29:56",
+  "LocalResourceRootPaths": {},
+  "OldLogoFileName": "yju4snzw.jpg",
+  "OrderComponentMetadata": {
+    "79723e172bf3415391a3e296355fbe4d": 0
+  },
+  "OrderComponentTemplate": {
+    "79723e172bf3415391a3e296355fbe4d": 0
+  },
+  "OrderDataSource": {
+    "CustomGallerySample": 0
+  },
+  "OrderGroupControls": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "label": 0,
+    "text": 1,
+    "toggleSwitch": 2
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "Currency": 1,
+    "CurrencyInputHdr": 0,
+    "CurrencyValidator": 2,
+    "Percent": 4,
+    "PercentInputHdr": 3,
+    "PercentValidator": 5,
+    "RegexUtils": 0,
+    "Screen1": 0,
+    "Time": 7,
+    "TimeInputHdr": 6,
+    "TimeValidator": 8,
+    "UDFRegexUtils": 9
+  },
+  "TemplateVersions": {
+    "79723e172bf3415391a3e296355fbe4d": "637501697969940444"
+  },
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1113203,
+    "ControlCount": {
+      "79723e172bf3415391a3e296355fbe4d": 2,
+      "label": 3,
+      "screen": 1,
+      "text": 3,
+      "toggleSwitch": 3
+    },
+    "DeserializationLoadTime": 1.7243928
+  }
+}

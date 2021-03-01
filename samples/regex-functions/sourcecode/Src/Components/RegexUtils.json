@@ -1,0 +1,110 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentManifest": {
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "RegexUtils",
+    "TemplateGuid": "79723e172bf3415391a3e296355fbe4d"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "IsCurrency",
+      "Hidden": true,
+      "Name": "IsCurrency",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsCurrency_CurrencyTxt",
+            "Name": "IsCurrency_CurrencyTxt",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "CurrencyTxt"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.300\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.300\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsPercent",
+      "Hidden": true,
+      "Name": "IsPercent",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsPercent_PercentTxt",
+            "Name": "IsPercent_PercentTxt",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "PercentTxt"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.300\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.300\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsTime",
+      "Hidden": true,
+      "Name": "IsTime",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsTime_TimeTxt",
+            "Name": "IsTime_TimeTxt",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "TimeTxt"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.300\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.300\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "LastModifiedTimestamp": "637501697839586960",
+  "Name": "79723e172bf3415391a3e296355fbe4d",
+  "OverridableProperties": {},
+  "Version": "637497386660048041"
+}
