@@ -7,9 +7,10 @@ Functions that performs regex match on currency, percent & time formats
 
 The following image shows the custom function (component) properties and a sample implementation of RegexUtils when added to Power App:
 
-![screenshot of the sample](./regexutilsfunc.PNG)
+<img src="./regexutilsfunc.PNG" width="30%" height="50%">
 
-![screenshot of the sample](./regexiscurrencyfunc.PNG)
+<img src="./regexiscurrencyfunc.PNG" width="60%" height="50%">
+
 </br></br>
 
 
