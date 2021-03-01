@@ -7,9 +7,9 @@ Functions that performs regex match on currency, percent & time formats
 
 The following image shows the custom function (component) properties and a sample implementation of RegexUtils when added to Power App:
 
-<img src="./regexutilsfunc.PNG" width="30%" height="50%">
+<img src="assets/regexutilsfunc.PNG" width="30%" height="50%">
 
-<img src="./regexiscurrencyfunc.PNG" width="60%" height="50%">
+<img src="assets/regexiscurrencyfunc.PNG" width="60%" height="50%">
 
 </br></br>
 
@@ -33,6 +33,11 @@ Version|Date|Comments
 ---
 ## Minimal Path to Awesome
 
+* Go to the solution folder and download the .MSAPP file
+* Use the .msapp file using File > Open > Browse in Power Apps Studio.
+  
+## Using the Soure Code
+  You can also use the Power Apps Source Code tool to unpack the code using these steps:
 * Clone the repository to a local drive
 * Pack the source files back into .msapp file:
   * [Power Apps Tooling Usage](https://github.com/microsoft/PowerApps-Language-Tooling)
