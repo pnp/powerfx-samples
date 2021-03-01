@@ -4,6 +4,12 @@
 ## Summary
 Functions that performs regex match on currency, percent & time formats
 * [RegexUtils](https://github.com/GSiVed/customfunctions-samples/tree/main/samples/regex-functions#Regex-Utils)
+
+The following image shows the custom function (component) properties and a sample implementation of RegexUtils when added to Power App:
+
+![screenshot of the sample](./regexutilsfunc.png)
+
+![screenshot of the sample](./regexiscurrencyfunc.png)
 </br></br>
 
 
