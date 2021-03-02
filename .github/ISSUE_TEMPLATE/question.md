@@ -1,7 +1,7 @@
 ---
 name: "❓ Question"
 about: Ask a question about one of our Power Fx samples
-title: ''
+title: '[Function Name]: [Question Title]'
 labels: type:question
 assignees: ''
 
