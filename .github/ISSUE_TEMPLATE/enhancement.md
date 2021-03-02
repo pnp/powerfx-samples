@@ -1,8 +1,8 @@
 ---
 name: "\U0001F4A1 Suggestion"
 about: Suggest an enhancement to make one of our Power Fx samples even better
-title: '[Function Name]: [Suggestion Title]'
-labels: type:enhancement
+title: "[Function Name]: [Suggestion Title]"
+labels: enhancement
 assignees: ''
 
 ---

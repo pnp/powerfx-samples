@@ -2,7 +2,7 @@
 name: "\U0001F9EA Sample request"
 about: Request a new sample from the community
 title: ''
-labels: type:sample-request
+labels: sample request
 assignees: ''
 
 ---
