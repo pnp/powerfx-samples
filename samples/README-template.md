@@ -84,6 +84,8 @@ This sample illustrates the following Power Fx concepts:
 
 > Document each function below by repeating each the next section for each function
 
+> Make sure to use [Power Fx known data types](https://github.com/microsoft/Power-Fx/blob/main/docs/data-types.md) when describing data types
+
 > BEGIN: REPEAT HERE
 
 ### [Function Name Goes Here]
@@ -94,6 +96,17 @@ This sample illustrates the following Power Fx concepts:
 
 > Description of the function syntax
 
+```excel
+MyCustomFunction(MyParameterName
+```
+
+
+Parameter | Required | Type
+---|---|---
+MyParameterName | Yes | Text
+
+
+
 #### Output
 
 > What data type will this function return? Please use [Power Fx known data types](https://github.com/microsoft/Power-Fx/blob/main/docs/data-types.md)
@@ -103,7 +116,7 @@ This sample illustrates the following Power Fx concepts:
 Provide at least one example when using the function
 
 ```excel
-MyCustomFunction(CurrencyTxt)
+MyCustomFunction(MyParameterName)
 ```
 
 
