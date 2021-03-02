@@ -13,6 +13,7 @@ Please use following logic on submitting your questions or issues to right locat
 ## Additional resources
 
 * [What is Microsoft Power Fx](https://powerapps.microsoft.com/en-us/blog/what-is-microsoft-power-fx/)
+* [Microsoft Power Fx Overview](https://docs.microsoft.com/en-us/power-platform/power-fx/overview)
 * [Microsoft Power Fx](https://github.com/microsoft/Power-Fx)
 * [Enhanced Component Properties](https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/)
 * [Power Apps Formula Reference](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference)
