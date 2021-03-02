@@ -1,13 +1,13 @@
 ---
 name: "❓ Question"
-about: Ask a question about one of our web part samples
+about: Ask a question about one of our Power Fx samples
 title: ''
 labels: type:question
 assignees: ''
 
 ---
 
-Thank you for asking a question! Use the sections below to submit a question ONLY if it's related to samples in this repo. If you have an issue or question about the SharePoint Framework or its documentation, please submit it at https://aka.ms/spdev-issues
+Thank you for asking a question! Use the sections below to submit a question ONLY if it's related to samples in this repo. 
 
 - Questions that do not follow the below template will automatically be closed
 - All questions are welcome - let us know what's on your mind!
@@ -15,11 +15,11 @@ Thank you for asking a question! Use the sections below to submit a question ONL
 - Include sufficient details and context.
 - If you have multiple questions please submit them separately so we can track resolution.
 - Screenshots are always helpful (just paste any images right here in the question)
-- If you're trying to start a conversation on a topic, consider using [Discussions](https://github.com/pnp/sp-dev-fx-webparts/discussions). We want to close every issue as quickly as possible, but discussions are intended for longer conversations.
+- If you're trying to start a conversation on a topic, consider using [Discussions](https://github.com/pnp/powerfx-samples/discussions). We want to close every issue as quickly as possible, but discussions are intended for longer conversations.
 
 DELETE EVERYTHING ABOVE AFTER READING - THANKS!
 
-## Sample (which sample are you talking about)
+## Sample (which sample function are you talking about)
 
 > Questions without a sample name will be rejected automatically 
 >
@@ -40,5 +40,3 @@ DELETE EVERYTHING ABOVE AFTER READING - THANKS!
 > The more details, the better
 >
 > _(DELETE THIS PARAGRAPH AFTER READING)_
-
-
