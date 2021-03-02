@@ -19,17 +19,17 @@ Please use following logic on submitting your questions or issues to right locat
 
 ## Using the samples
 
-To start using these projects, you'll need to download the .MSAPP file for the sample you want to use. 
+To start using these projects, you'll need to download the `.msapp` file for the sample you want to use. 
 
-Go to make.powerapps.com
+Go to **make.powerapps.com**
 
-Click the "Canvas app from blank" option under "Make your own app"
+Select the **Canvas app from blank** option under **Make your own app**
 
-Put in a name, and click "Create"
+Provide a **Name**, and select **Create**
 
-Select the "File" tab then "Open"
+Select the **File** tab, then **Open**
 
-Click the "Browse" option and navigate to the .MSAPP file you just downloaded
+Use the **Browse** option and navigate to the `.msapp` file you just downloaded
 
 
 ## Authors
@@ -43,5 +43,9 @@ Please have a look on our [Contribution Guidance](./.github/CONTRIBUTING.md) bef
 
 ## Code of Conduct
 This repository has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+
+## Disclaimer
+
+**THESE SAMPLES ARE PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
 
 > Sharing is caring!
