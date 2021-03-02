@@ -1,17 +1,18 @@
-# Power Apps Custom Function Samples
+# Power Fx Samples
 
-This repository contains community samples that demonstrate different usage patterns for user-defined custom functions in Power Apps.
+This repository contains community samples that demonstrate different usage patterns for the Power Fx low-code programming language.
 
-> We do welcome community contributions to the samples folder in this repository for demonstrating different user-defined custom functions. Notice that if you use 3rd party libraries, please make sure that library license allows distributions of it as part of your sample.
+> We do welcome community contributions to the samples folder in this repository for demonstrating different Power Fx functions. Notice that if you use 3rd party libraries, please make sure that library license allows distributions of it as part of your sample.
 
 ## Have issues or questions?
 
 Please use following logic on submitting your questions or issues to right location to ensure that they are noticed and addressed as soon as possible.
 
-* You have issue on specific sample - use [issue list in this repository](https://github.com/yourekittenme/powerapps-custom-functions/issues).
+* You have issue on specific sample - use [issue list in this repository](https://github.com/pnp/powerfx-samples/issues).
 
 ## Additional resources
 
+* [Microsoft Power Fx](https://github.com/microsoft/Power-Fx)
 * [Enhanced Component Properties](https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/)
 * [Power Apps Formula Reference](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference)
 
