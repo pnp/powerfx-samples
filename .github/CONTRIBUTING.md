@@ -20,7 +20,7 @@ If you have questions about how to use Power Fx or any of the provided samples, 
 
 ## Typos, Issues, Bugs and contributions
 
-Whenever you are submitting any changes to the Power Platform sample repositories, please follow these recommendations.
+Whenever you submit any changes to the Power Fx sample repositories, please follow these recommendations.
 
 * Always fork the repository to your own account before making your modifications
 * Do not combine multiple changes to one pull request. For example, submit any samples and documentation updates using separate PRs
@@ -30,7 +30,7 @@ Whenever you are submitting any changes to the Power Platform sample repositorie
 
 ## Sample Naming and Structure Guidelines
 
-When you are submitting a new sample, please follow these guidelines:
+When you submit a new sample, please follow these guidelines:
 
 * Each sample must be placed in a folder under the `samples` folder
 * Your sample folder must include the following content:
@@ -77,7 +77,7 @@ When you are submitting a new sample, please follow these guidelines:
 
 * To help people make sense of your sample, make sure to always include at least one screenshot of your solution in action. We know it's a little harder to do with Power Fx, but people are more likely to click on a sample if they can preview it before installing it.
 * Please provide a high-quality screenshot
-* If possible, use a resolution of 1920x1080
+* If possible, use a resolution of **1920x1080**
 * You can add as many screen shots as you'd like to help users understand your sample without having to download it and install it.
 * You can include animated images (such as `.gif` files), but you must provide at least one static `.png` file
 
