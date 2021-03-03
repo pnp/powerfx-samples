@@ -34,9 +34,11 @@ When you submit a new sample, please follow these guidelines:
 
 * Each sample must be placed in a folder under the `samples` folder
 * Your sample folder must include the following content:
-    - A `sourcecode` containing the unpacked solution 
+    - A `sourcecode` containing the unpacked solution
     - An `assets` folder, containing screenshots
     - A `README.md` file
+* You must only submit samples for which you have the rights to share. Make sure that you asked for permission from your employer and/or clients before committing the code to an open-source repository, because once you submit a pull request, the information is public and _cannot be removed_.
+
 
 ### Sample Folder
 
@@ -186,3 +188,5 @@ You can find Microsoft CLA from the following address - https://cla.microsoft.co
 Thank you for your contribution.
 
 > Sharing is caring.
+
+<img src="https://telemetry.sharepointpnp.com/powerfx-samples/.github/CONTRIBUTING.md" />
