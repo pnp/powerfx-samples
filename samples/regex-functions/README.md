@@ -42,10 +42,10 @@ Version|Date|Comments
 
 ## Using the Source Code
 
-  You can also use the [Power Apps Source Code tool](https://github.com/microsoft/PowerApps-Language-Tooling) to the code using these steps:
+  You can also use the [Power Apps Source Code tool](https://github.com/microsoft/PowerApps-Language-Tooling) to pack the code for importing into your environment using these steps:
 
-* Clone the repository to a local drive
-* Pack the source files back into `.msapp` file:
+* Clone the repository to a local drive 
+* Pack the source code files in the [sourcecode](https://github.com/pnp/powerfx-samples/tree/main/samples/regex-functions/sourcecode) folder back into `.msapp` file:
   * [Power Apps Tooling Usage](https://github.com/microsoft/PowerApps-Language-Tooling)
 * Use the `.msapp` file using **File** > **Open** > **Browse** in Power Apps Studio.
 
