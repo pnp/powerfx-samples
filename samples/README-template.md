@@ -1,7 +1,6 @@
 # Title of the sample
 
-> This is how you want the sample to appear in the samples browser.
-> When naming your sample, try to give it a friendly name that describes what it does. Avoid using terms like `PowerFx` -- because that's what all the samples in this repo is all about.
+> When naming your sample, try to give it a friendly name that describes what it does. Avoid using terms like `PowerFx` -- because that's what all the samples in this repo are all about.
 > GOOD 👍:
 >     Financial Functions
 > BAD 👎:
@@ -30,14 +29,14 @@ Short summary on functionality and used technologies.
 
 ## Prerequisites
 
-> Any special pre-requisites? Include anything that needs to be done for this sample to work.
+> Any special pre-requisites? Include anything that needs to be done for this sample to work (anything in addition to importing the `.msapp`).
 > DELETE THIS PARAGRAPH BEFORE SUBMITTING
 
 ## Solution
 
 Solution|Author(s)
 --------|---------
-folder name | Author details ([@yourtwitterhandle](https://twitter.com/yourtwitterhandle))
+folder name | Author Name ([@yourtwitterhandle](https://twitter.com/yourtwitterhandle)), Company
 
 ## Version history
 
@@ -90,14 +89,16 @@ This sample illustrates the following Power Fx concepts:
 
 ### [Function Name Goes Here]
 
-> Description of the function
+> The function name will appear in the sample browser
+
+> Short description of the function. This description will appear in the sample browser
 
 #### Syntax
 
 > Description of the function syntax
 
 ```excel
-MyCustomFunction(MyParameterName
+MyCustomFunction(MyParameterName)
 ```
 
 
@@ -118,7 +119,6 @@ Provide at least one example when using the function
 ```excel
 MyCustomFunction(MyParameterName)
 ```
-
 
 > END: REPEAT HERE
 

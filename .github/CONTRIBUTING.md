@@ -1,7 +1,5 @@
 # Contribution Guidance
 
-> TODO: Update text here 
-
 If you'd like to contribute to this repository, please read the following guidelines. Contributors are more than welcome to share their learnings with others in this centralized location.
 
 ## Code of Conduct
@@ -32,20 +30,60 @@ Whenever you are submitting any changes to the Power Platform sample repositorie
 
 ## Sample Naming and Structure Guidelines
 
-When you are submitting a new sample, it has to follow up below guidelines
+When you are submitting a new sample, please follow these guidelines:
+
+* Each sample must be placed in a folder under the `samples` folder
+* Your sample folder must include the following content:
+    - A `sourcecode` containing the unpacked solution 
+    - An `assets` folder, containing screenshots
+    - A `README.md` file
+
+### Sample Folder
+
+* When submitting a new sample solution, please name the sample solution folder accordingly
+* Do not use words such as `sample`, `powerfx` or `function` in the folder or sample name - this is the repository for Power Fx sample functions
+* Do not use period/dot in the folder name of the provided sample
+
+### Source Code
+
+* For security reasons, we do not accept pull requests containing `.msapp` files. We only accept source code files for applications. We will review the source code and will pack the `.msapp` only from reviewed code.
+* You can extract source code files using [these instructions](https://powerapps.microsoft.com/en-us/blog/source-code-files-for-canvas-apps/).
+* Make sure to place the root of your solution's source code in the `sourcecode` folder (i.e.: your `sourcecode` folder should include a `CanvasManifest.json`, `Src` folder, `pkgs` folder, etc.)
+
+### README.md
 
 * You will need to have a `README.md` file for your contribution, which is based on [the provided template](../samples/README-template.md) under the `samples` folder. Please copy this template to your project and update it accordingly. Your `README.md` must be named exactly `README.md` -- with capital letters -- as this is the information we use to make your sample public.
-  * You will need to have a screenshot picture of your sample in action in the `README.md` file ("pics or it didn't happen"). The preview image must be located in the `/assets/` folder in the root of your solution.
+* You will need to have a screenshot picture of your sample in action in the `README.md` file ("pics or it didn't happen"). The preview image must be located in the `assets` folder in the root of your sample folder.
 * The `README` template contains a specific tracking image at the bottom of the file with an `img` tag, where the `src` attribute points to `https://telemetry.sharepointpnp.com/powerfx-samples/samples/readme-template`. This is a transparent image which is used to track viewership of individual samples in GitHub.
   * Update the image `src` attribute according with the repository name and folder information.
 * If you find an existing sample which is similar to yours, please extend the existing one rather than submitting a new similar sample
   * When you update existing samples, please update also `README.md` file accordingly with information on provided changes and with your author details
-* When submitting a new sample solution, please name the sample solution folder accordingly
-  * Do not use words such as `sample`, `powerfx` or `function` in the folder or sample name - this is the repository for Power Fx sample functions
-  * If your solution is demonstrating functions, make sure to document each function in the `README.md`
-* Do not use period/dot in the folder name of the provided sample
+* Make sure to document each function in the `README.md`
+* Make sure to use [Power Fx known data types](https://github.com/microsoft/Power-Fx/blob/main/docs/data-types.md) when describing data types
+* If you include your social media information under **Authors** in the **Solution** section, we'll use this information to promote your contribution on social media, blog posts, and community calls.
+    * Try to use the following syntax:
+    ```md
+    folder name | Author Name ([@yourtwitterhandle](https://twitter.com/yourtwitterhandle))
+    ```
+* If you include your company name after your name, we'll try to include your company name in blog posts and community calls.
+    * Try to use the following syntax:
+    ```md
+    folder name | Author Name ([@yourtwitterhandle](https://twitter.com/yourtwitterhandle)), Company Name
+    ```
+* For multiple authors, please provide one line per author
+* If you prefer to not use social media or disclose your name, we'll still accept your sample, but we'll assume that you don't want us to promote your contribution on social media.
+
+### Assets
+
+* To help people make sense of your sample, make sure to always include at least one screenshot of your solution in action. We know it's a little harder to do with Power Fx, but people are more likely to click on a sample if they can preview it before installing it.
+* Please provide a high-quality screenshot
+* If possible, use a resolution of 1920x1080
+* You can add as many screen shots as you'd like to help users understand your sample without having to download it and install it.
+* You can include animated images (such as `.gif` files), but you must provide at least one static `.png` file
 
 ## Submitting Pull Requests
+
+> If you aren't familiar with how to contribute to open-source repositories using GitHub, or if you find the instructions on this page confusing, [sign up](https://forms.office.com/Pages/ResponsePage.aspx?id=KtIy2vgLW0SOgZbwvQuRaXDXyCl9DkBHq4A2OG7uLpdUREZVRDVYUUJLT1VNRDM4SjhGMlpUNzBORy4u) for one of our [Sharing is Caring](https://pnp.github.io/sharing-is-caring/#pnp-sic-events) events. It's completely free, and we'll guide you through the process.
 
 Here's a high-level process for submitting new samples or updates to existing ones.
 

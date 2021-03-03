@@ -5,6 +5,8 @@
 | New sample?     | no - yes?                               |
 | Related issues? | fixes #X, partially #Y, mentioned in #Z |
 
+> If you aren't familiar with how to contribute to open-source repositories using GitHub, or if you find the instructions on this page confusing, [sign up](https://forms.office.com/Pages/ResponsePage.aspx?id=KtIy2vgLW0SOgZbwvQuRaXDXyCl9DkBHq4A2OG7uLpdUREZVRDVYUUJLT1VNRDM4SjhGMlpUNzBORy4u) for one of our [Sharing is Caring](https://pnp.github.io/sharing-is-caring/#pnp-sic-events) events. It's completely free, and we'll guide you through the process.
+
 ## What's in this Pull Request?
 
 > Please describe the changes in this PR. Sample description or details around bugs which are being fixed.
@@ -23,5 +25,3 @@
 >
 > *Remember that this repository is maintained by community members who volunteer their time to help. Be courteous and patient.*
 > _(DELETE THIS SECTION AFTER READING)_
-
-
