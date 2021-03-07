@@ -1,4 +1,42 @@
 GeoUtils As CanvasComponent:
+    ConvertUnit(Length As Number, Unit As String, DecimalPoint As Number):
+        Length:
+            Default: =100
+        Unit:
+            Default: ="Text"
+        DecimalPoint:
+            Default: =100
+        ThisProperty:
+            Default: |-
+                =With(Switch(Unit,
+                "cm",{reference:Length/100},
+                "m",{reference:Length},
+                "km",{reference:Length*1000},
+                "inch",{reference:0.0254*Length},
+                "feet",{reference:0.3048*Length},
+                "yard",{reference:0.9144*Length},
+                "mile",{reference:1609.34*Length}
+                ),
+                If(IsBlank(DecimalPoint),
+                {
+                    cm:reference*100,
+                    m:reference,
+                    km:reference/1000,
+                    inch:reference/0.0254,
+                    feet:reference/0.3048,
+                    yard:reference/0.9144,
+                    mile:reference/1609.34},
+                {
+                    cm:Round(reference*100,DecimalPoint),
+                    m:Round(reference,DecimalPoint),
+                    km:Round(reference/1000,DecimalPoint),
+                    inch:Round(reference/0.0254,DecimalPoint),
+                    feet:Round(reference/0.3048,DecimalPoint),
+                    yard:Round(reference/0.9144,DecimalPoint),
+                    mile:Round(reference/1609.34,DecimalPoint)
+                }
+                )
+                )
     TwoPoints(Lat1 As Number, Lng1 As Number, Lat2 As Number, Lng2 As Number):
         Lat1:
             Default: =100
@@ -39,48 +77,10 @@ GeoUtils As CanvasComponent:
                         )
                     )
                 )
-    ConvertUnit(Length As Number, Unit As String, DecimalPoint As Number):
-        Length:
-            Default: =100
-        Unit:
-            Default: ="Text"
-        DecimalPoint:
-            Default: =100
-        ThisProperty:
-            Default: |-
-                =With(Switch(Unit,
-                "cm",{reference:Length/100},
-                "m",{reference:Length},
-                "km",{reference:Length*1000},
-                "inch",{reference:0.0254*Length},
-                "feet",{reference:0.3048*Length},
-                "yard",{reference:0.9144*Length},
-                "mile",{reference:1609.34*Length}
-                ),
-                If(IsBlank(DecimalPoint),
-                {
-                    cm:reference*100,
-                    m:reference,
-                    km:reference/1000,
-                    inch:reference/0.0254,
-                    feet:reference/0.3048,
-                    yard:reference/0.9144,
-                    mile:reference/1609.34},
-                {
-                    cm:Round(reference*100,DecimalPoint),
-                    m:Round(reference,DecimalPoint),
-                    km:Round(reference/1000,DecimalPoint),
-                    inch:Round(reference/0.0254,DecimalPoint),
-                    feet:Round(reference/0.3048,DecimalPoint),
-                    yard:Round(reference/0.9144,DecimalPoint),
-                    mile:Round(reference/1609.34,DecimalPoint)
-                }
-                )
-                )
-    ZIndex: =1
-    Y: =0
-    X: =0
-    Width: =100
-    Height: =100
     Fill: =RGBA(0, 0, 0, 0)
+    Height: =100
+    Width: =100
+    X: =0
+    Y: =0
+    ZIndex: =1
 

@@ -1,4 +1,4 @@
-# Geolocation utility
+# Geolocation Utilities
 
 ## Summary
 
@@ -10,8 +10,6 @@ This function calculate distance and compass heading between two locations.
 
 * Power Apps Canvas app
 
-
-
 ## Prerequisites
 
 None
@@ -20,7 +18,7 @@ None
 
 Solution|Author(s)
 --------|---------
-geolocation-utils | Hiroaki Nagao ([@mofumofu_dance](https://twitter.com/mofumofu_dance))
+geolocation-utils | [Hiroaki Nagao](https://github.com/mofumofu-dance) ([@mofumofu_dance](https://twitter.com/mofumofu_dance))
 
 ## Version history
 
@@ -36,7 +34,7 @@ Version|Date|Comments
 
 ## Minimal Path to Awesome
 
-* [Download](solution\YOURAPPNAME.msapp) the `.msapp` from the `solution` folder
+* [Download](solution\GeoLocation-Utils.msapp) the `.msapp` from the `solution` folder
 * Use the `.msapp` file using **File** > **Open** > **Browse** within Power Apps Studio.
 
 
@@ -89,7 +87,7 @@ Lng2 | Yes | Number
 ```excel
 { distance: 13245.12445, heading: 99.234 }
 ```
-> END: REPEAT HERE
+
 ### ConvertUnit
 
 Perform unit conversion for length.
@@ -99,7 +97,6 @@ Perform unit conversion for length.
 ```excel
 ConvertUnit(Length, Unit, DecimalPoint)
 ```
-
 
 Parameter | Required | Type
 ---|---|---
@@ -119,3 +116,4 @@ DecimalPoint | No | Number
 ```excel
 {cm: 315040975.26, feet: 10335990, inch: 124031880.02, km: 3150.41, m: 3150409.75, mile: 1957.58, yard: 3445330}
 ```
+<img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/geolocation-utils" />
