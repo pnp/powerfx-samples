@@ -1,0 +1,165 @@
+Screen1 As screen:
+
+    UDFRegexUtils As RegexUtils:
+        Height: =25
+        IsCurrency: |-
+            =//Regex to match [US] currency format
+            If(
+                IsMatch(
+                    CurrencyTxt,
+                    "^\$(\d{1,3}(\,\d{3})*|(\d+))(\.\d{2})?$"
+                ),
+                true,
+                false
+            )
+        IsPercent: |-
+            =//Regex to match percent format
+            If(
+                IsMatch(
+                    PercentTxt,
+                    "(\d+(\.\d+)?%)"
+                ),
+                true,
+                false
+            )
+        IsTime: |-
+            =//Regex to match time format [hh:mm:ss]/[h:m:s]/[mm:ss]/[m:s]/[ss]/[s]
+            If(
+                IsMatch(
+                    TimeTxt,
+                    "^(?:(?:([01]?\d|2[0-3]):)?([0-5]?\d):)?([0-5]?\d)$"
+                ),
+                true,
+                false
+            )
+        Width: =87
+        X: =24
+        Y: =716
+
+    Currency As text:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =1
+        Default: ="$1,000"
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="Currency"
+        RadiusBottomLeft: =1
+        RadiusBottomRight: =1
+        RadiusTopLeft: =1
+        RadiusTopRight: =1
+        Width: =144
+        X: =68
+        Y: =75
+        ZIndex: =3
+
+    CurrencyValidator As toggleSwitch:
+        Default: =UDFRegexUtils.IsCurrency(Currency.Text)
+        FalseFill: =RGBA(255, 0, 0, 1)
+        FalseText: ="Invalid"
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =34
+        TrueFill: =RGBA(141, 198, 63, 1)
+        TrueText: ="Valid"
+        Width: =132
+        X: =249
+        Y: =75
+        ZIndex: =4
+
+    Time As text:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =1
+        Default: |-
+            ="10:59:59"
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="Currency"
+        RadiusBottomLeft: =1
+        RadiusBottomRight: =1
+        RadiusTopLeft: =1
+        RadiusTopRight: =1
+        Width: =144
+        X: =75
+        Y: =289
+        ZIndex: =5
+
+    TimeValidator As toggleSwitch:
+        Default: =UDFRegexUtils.IsTime(Time.Text)
+        FalseFill: =RGBA(255, 0, 0, 1)
+        FalseText: ="Invalid"
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =34
+        TrueFill: =RGBA(141, 198, 63, 1)
+        TrueText: ="Valid"
+        Width: =132
+        X: =256
+        Y: =289
+        ZIndex: =6
+
+    CurrencyInputHdr As label:
+        Color: =RGBA(130, 141, 158, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Size: =11
+        Text: ="Currency format Input Validation"
+        Width: =293
+        X: =66
+        Y: =40
+        ZIndex: =7
+
+    TimeInputHdr As label:
+        Color: =RGBA(130, 141, 158, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =22
+        Size: =11
+        Text: ="Time format Input Validation"
+        Width: =293
+        X: =73
+        Y: =264
+        ZIndex: =9
+
+    Percent As text:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =1
+        Default: ="100%"
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="Currency"
+        RadiusBottomLeft: =1
+        RadiusBottomRight: =1
+        RadiusTopLeft: =1
+        RadiusTopRight: =1
+        Width: =144
+        X: =68
+        Y: =178
+        ZIndex: =10
+
+    PercentValidator As toggleSwitch:
+        Default: =UDFRegexUtils.IsPercent(Percent.Text)
+        FalseFill: =RGBA(255, 0, 0, 1)
+        FalseText: ="Invalid"
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =34
+        TrueFill: =RGBA(141, 198, 63, 1)
+        TrueText: ="Valid"
+        Width: =132
+        X: =249
+        Y: =182
+        ZIndex: =11
+
+    PercentInputHdr As label:
+        Color: =RGBA(130, 141, 158, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =22
+        Size: =11
+        Text: ="Percent format Input Validation"
+        Width: =293
+        X: =66
+        Y: =153
+        ZIndex: =12
+
