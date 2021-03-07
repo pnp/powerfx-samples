@@ -1,0 +1,86 @@
+GeoUtils As CanvasComponent:
+    TwoPoints(Lat1 As Number, Lng1 As Number, Lat2 As Number, Lng2 As Number):
+        Lat1:
+            Default: =100
+        Lng1:
+            Default: =100
+        Lat2:
+            Default: =100
+        Lng2:
+            Default: =100
+        ThisProperty:
+            Default: |
+                =With(
+                    {
+                        rLat1: Radians(Lat1),
+                        rLat2: Radians(Lat2),
+                        rLong1: Radians(Lng1),
+                        rLong2: Radians(Lng2),
+                        Rx: 6378137.000,//Equatorial radius in unit of meter
+                        Ry: 6356752.314 //Polar radius in unit of meter 
+                    },
+                    With(
+                        {
+                            Dx: rLong2 - rLong1, //Difference of two longitudes
+                            Dy: rLat2 - rLat1, //Difference of two latitudes
+                            P: (rLat2 + rLat1) / 2, //Average of latitudes
+                            E: Sqrt(1 - Ry ^ 2/(Rx ^ 2)), //Eccentricity
+                            Deg: Atan2(
+                                Cos(rLat1) * Sin(rLat2) - Sin(rLat1) * Cos(rLat2)*Cos(rLong2 - rLong1),
+                                Sin(rLong2 - rLong1) * Cos(rLat2)
+                            ) * 180 / Pi()
+                        },
+                        With(
+                            {
+                                M: Rx * (1 - E^2) / (1 - (E * Sin(P))^2) ^ 1.5,
+                                N: Rx / Sqrt(1 - (E * Sin(P))^2)
+                            },
+                            {distance:Sqrt((Dy * M) ^ 2 + (Dx * N * Cos(P)) ^ 2),heading:Mod(Deg + 360,360)}
+                        )
+                    )
+                )
+    ConvertUnit(Length As Number, Unit As String, DecimalPoint As Number):
+        Length:
+            Default: =100
+        Unit:
+            Default: ="Text"
+        DecimalPoint:
+            Default: =100
+        ThisProperty:
+            Default: |-
+                =With(Switch(Unit,
+                "cm",{reference:Length/100},
+                "m",{reference:Length},
+                "km",{reference:Length*1000},
+                "inch",{reference:0.0254*Length},
+                "feet",{reference:0.3048*Length},
+                "yard",{reference:0.9144*Length},
+                "mile",{reference:1609.34*Length}
+                ),
+                If(IsBlank(DecimalPoint),
+                {
+                    cm:reference*100,
+                    m:reference,
+                    km:reference/1000,
+                    inch:reference/0.0254,
+                    feet:reference/0.3048,
+                    yard:reference/0.9144,
+                    mile:reference/1609.34},
+                {
+                    cm:Round(reference*100,DecimalPoint),
+                    m:Round(reference,DecimalPoint),
+                    km:Round(reference/1000,DecimalPoint),
+                    inch:Round(reference/0.0254,DecimalPoint),
+                    feet:Round(reference/0.3048,DecimalPoint),
+                    yard:Round(reference/0.9144,DecimalPoint),
+                    mile:Round(reference/1609.34,DecimalPoint)
+                }
+                )
+                )
+    ZIndex: =1
+    Y: =0
+    X: =0
+    Width: =100
+    Height: =100
+    Fill: =RGBA(0, 0, 0, 0)
+

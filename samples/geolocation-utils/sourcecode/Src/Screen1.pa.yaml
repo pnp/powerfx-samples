@@ -1,0 +1,158 @@
+Screen1 As screen:
+
+    GeoUtils_1 As GeoUtils:
+        TwoPoints: |
+            =With(
+                {
+                    rLat1: Radians(Lat1),
+                    rLat2: Radians(Lat2),
+                    rLong1: Radians(Lng1),
+                    rLong2: Radians(Lng2),
+                    Rx: 6378137.000,//Equatorial radius in unit of meter
+                    Ry: 6356752.314 //Polar radius in unit of meter 
+                },
+                With(
+                    {
+                        Dx: rLong2 - rLong1, //Difference of two longitudes
+                        Dy: rLat2 - rLat1, //Difference of two latitudes
+                        P: (rLat2 + rLat1) / 2, //Average of latitudes
+                        E: Sqrt(1 - Ry ^ 2/(Rx ^ 2)), //Eccentricity
+                        Deg: Atan2(
+                            Cos(rLat1) * Sin(rLat2) - Sin(rLat1) * Cos(rLat2)*Cos(rLong2 - rLong1),
+                            Sin(rLong2 - rLong1) * Cos(rLat2)
+                        ) * 180 / Pi()
+                    },
+                    With(
+                        {
+                            M: Rx * (1 - E^2) / (1 - (E * Sin(P))^2) ^ 1.5,
+                            N: Rx / Sqrt(1 - (E * Sin(P))^2)
+                        },
+                        {distance:Sqrt((Dy * M) ^ 2 + (Dx * N * Cos(P)) ^ 2),heading:Mod(Deg + 360,360)}
+                    )
+                )
+            )
+        ConvertUnit: |-
+            =With(Switch(Unit,
+            "cm",{reference:Length/100},
+            "m",{reference:Length},
+            "km",{reference:Length*1000},
+            "inch",{reference:0.0254*Length},
+            "feet",{reference:0.3048*Length},
+            "yard",{reference:0.9144*Length},
+            "mile",{reference:1609.34*Length}
+            ),
+            If(IsBlank(DecimalPoint),
+            {
+                cm:reference*100,
+                m:reference,
+                km:reference/1000,
+                inch:reference/0.0254,
+                feet:reference/0.3048,
+                yard:reference/0.9144,
+                mile:reference/1609.34},
+            {
+                cm:Round(reference*100,DecimalPoint),
+                m:Round(reference,DecimalPoint),
+                km:Round(reference/1000,DecimalPoint),
+                inch:Round(reference/0.0254,DecimalPoint),
+                feet:Round(reference/0.3048,DecimalPoint),
+                yard:Round(reference/0.9144,DecimalPoint),
+                mile:Round(reference/1609.34,DecimalPoint)
+            }
+            )
+            )
+        Y: =668
+        X: =1266
+
+    lblLat1 As label:
+        Text: ="Latitude"
+        ZIndex: =1
+        Y: =40
+        X: =41
+
+    lblLng1 As label:
+        Text: |-
+            ="Longitude
+            "
+        X: =383
+        Y: =40
+        ZIndex: =2
+
+    lblLat2 As label:
+        Text: ="Latitude"
+        X: =41
+        Y: =160
+        ZIndex: =3
+
+    lblLng2 As label:
+        Text: |-
+            ="Longitude
+            "
+        X: =383
+        Y: =160
+        ZIndex: =4
+
+    txtLat1 As text:
+        Default: =47.764551328320756
+        ZIndex: =5
+        Width: =244
+        Y: =80
+        X: =41
+        Format: =TextFormat.Number
+
+    txtLng1 As text:
+        Default: =-122.04818732974762
+        ZIndex: =6
+        Width: =244
+        Y: =80
+        X: =383
+        Format: =TextFormat.Number
+
+    txtLat2 As text:
+        Default: =36.83392063330042
+        ZIndex: =7
+        Width: =244
+        Y: =200
+        X: =41
+        Format: =TextFormat.Number
+
+    txtLng2 As text:
+        Default: =-86.79486387712788
+        ZIndex: =8
+        Width: =244
+        Y: =200
+        X: =383
+        Format: =TextFormat.Number
+
+    Image1 As image:
+        Image: =seattle_nashville
+        Y: =460
+        Width: =552
+        Height: =308
+        ZIndex: =9
+
+    Label2 As label:
+        Text: =GeoUtils_1.TwoPoints(txtLat1.Text,txtLng1.Text,txtLat2.Text,txtLng2.Text).distance&" (m)"
+        X: =605
+        Y: =460
+        Width: =399
+        Height: =60
+        ZIndex: =10
+        Size: =21
+
+    Icon1 As icon.ArrowUp:
+        Icon: =Icon.ArrowUp
+        X: =70
+        Y: =480
+        ZIndex: =12
+        Rotation: =GeoUtils_1.TwoPoints(txtLat1.Text,txtLng1.Text,txtLat2.Text,txtLng2.Text).heading
+
+    Label2_1 As label:
+        Text: =GeoUtils_1.ConvertUnit(GeoUtils_1.TwoPoints(txtLat1.Text,txtLng1.Text,txtLat2.Text,txtLng2.Text).distance,"m",2).mile&" (miles)"
+        X: =605
+        Y: =531
+        Width: =399
+        Height: =60
+        ZIndex: =13
+        Size: =21
+
