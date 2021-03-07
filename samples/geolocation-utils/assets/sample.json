@@ -26,7 +26,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "assets/preview.PNG",
+        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/geolocation-utils/assets/preview.png",
         "alt": "Geolocation functions"
       }
     ],
@@ -73,7 +73,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "assets/preview.PNG",
+        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/geolocation-utils/assets/preview.png",
         "alt": "Geolocation functions"
       }
     ],
