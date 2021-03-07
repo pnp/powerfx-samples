@@ -1,0 +1,99 @@
+[
+  {
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
+    "name": "pnp-powerfx--samples-geolocation-utils-twopoints",
+    "version": "1.0.0.0",
+    "source": "pnp",
+    "title": "TwoPoints",
+    "shortDescription": "Calculate distance in unit of meter and compass heading.",
+    "longDescription": [
+      "Calculate distance in unit of meter and compass heading.",
+      "(Heading is the angle measured clockwise with north at 0 degrees, i.e., North: 0, East: 90, South:180, West: 270)"
+    ],
+    "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/geolocation-utils",
+    "products": [
+      "Power Apps",
+      "Power Platform"
+    ],
+    "categories": [],
+    "metadata": [
+      {
+        "key": "POWERAPPS-MANIFEST-VERSION",
+        "value": "0.19"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "assets/preview.PNG",
+        "alt": "Geolocation functions"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "mofumofu-dance",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/59677945?s=460&v=4"
+      }
+    ],
+    "references": [
+      {
+        "name": "Enhanced Component Properties",
+        "description": "Blog post announcing the enhanced component custom properties for Power Apps",
+        "url": "https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/"
+      },
+      {
+        "name": "Power Apps Formula Reference",
+        "description": "Formula reference guide for Power Apps",
+        "url": "https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference"
+      }
+    ]
+  },
+  {
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
+    "name": "pnp-powerfx--samples-geolocation-utils-convertunit",
+    "version": "1.0.0.0",
+    "source": "pnp",
+    "title": "ConvertUnit",
+    "shortDescription": "Perform unit conversion for length.",
+    "longDescription": [],
+    "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/geolocation-utils",
+    "products": [
+      "Power Apps",
+      "Power Platform"
+    ],
+    "categories": [],
+    "metadata": [
+      {
+        "key": "POWERAPPS-MANIFEST-VERSION",
+        "value": "0.19"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "assets/preview.PNG",
+        "alt": "Geolocation functions"
+      }
+    ],
+    "authors": [
+      {
+        "gitHubAccount": "mofumofu-dance",
+        "pictureUrl": "https://avatars.githubusercontent.com/u/59677945?s=460&v=4"
+      }
+    ],
+    "references": [
+      {
+        "name": "Enhanced Component Properties",
+        "description": "Blog post announcing the enhanced component custom properties for Power Apps",
+        "url": "https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/"
+      },
+      {
+        "name": "Power Apps Formula Reference",
+        "description": "Formula reference guide for Power Apps",
+        "url": "https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference"
+      }
+    ]
+  }
+]
