@@ -1,0 +1,1435 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentManifest": {
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "Date Functions",
+    "TemplateGuid": "cf1d2052d1834b2dac2630f084ce61b9"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "EndOfMonth",
+      "Hidden": true,
+      "Name": "EndOfMonth",
+      "PropertyDataTypeKey": "DateTime",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "EndOfMonth_StartDate",
+            "Name": "EndOfMonth_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "date/time value to operate on",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "date/time value to operate on",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "EndOfMonth_AddMonths",
+            "Name": "EndOfMonth_AddMonths",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "number of months to add to the start date",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "AddMonths"
+            },
+            "Tooltip": "number of months to add to the start date",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "find the last day of a month",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "EndOfYear",
+      "Hidden": true,
+      "Name": "EndOfYear",
+      "PropertyDataTypeKey": "DateTime",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "EndOfYear_StartDate",
+            "Name": "EndOfYear_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "date/time value to operate on",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "date/time value to operate on",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "EndOfYear_AddYears",
+            "Name": "EndOfYear_AddYears",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "number of years to add to the start date",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "AddYears"
+            },
+            "Tooltip": "number of years to add to the start date",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "find the last day of a year",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "EndOfWeek",
+      "Hidden": true,
+      "Name": "EndOfWeek",
+      "PropertyDataTypeKey": "DateTime",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "EndOfWeek_StartDate",
+            "Name": "EndOfWeek_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "date/time value to operate on",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "date/time value to operate on",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "EndOfWeek_AddWeeks",
+            "Name": "EndOfWeek_AddWeeks",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "number of weeks to add to the start date",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "AddWeeks"
+            },
+            "Tooltip": "number of weeks to add to the start date",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "EndOfWeek_DayWeekStart",
+            "Name": "EndOfWeek_DayWeekStart",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "starting day of the week as an integer (Sunday=1, Monday=2... Saturday=7)",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "DayWeekStart"
+            },
+            "Tooltip": "starting day of the week as an integer (Sunday=1, Monday=2... Saturday=7)",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "find the last day of a week",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "StartOfMonth",
+      "Hidden": true,
+      "Name": "StartOfMonth",
+      "PropertyDataTypeKey": "DateTime",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "StartOfMonth_StartDate",
+            "Name": "StartOfMonth_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "date/time value to operate on",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "date/time value to operate on",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "StartOfMonth_AddMonths",
+            "Name": "StartOfMonth_AddMonths",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "number of months to add to the start date",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "AddMonths"
+            },
+            "Tooltip": "number of months to add to the start date",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "find the first day of a month",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "StartOfYear",
+      "Hidden": true,
+      "Name": "StartOfYear",
+      "PropertyDataTypeKey": "DateTime",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "StartOfYear_StartDate",
+            "Name": "StartOfYear_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "date/time value to operate on",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "date/time value to operate on",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "StartOfYear_AddYear",
+            "Name": "StartOfYear_AddYear",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "number of years to add to the start date",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "AddYear"
+            },
+            "Tooltip": "number of years to add to the start date",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "find the first day of a year",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "StartOfWeek",
+      "Hidden": true,
+      "Name": "StartOfWeek",
+      "PropertyDataTypeKey": "DateTime",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "StartOfWeek_StartDate",
+            "Name": "StartOfWeek_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "date/time value to operate on",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "date/time value to operate on",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "StartOfWeek_AddWeeks",
+            "Name": "StartOfWeek_AddWeeks",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "number of weeks to add to the start date",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "AddWeeks"
+            },
+            "Tooltip": "number of weeks to add to the start date",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "StartOfWeek_DayWeekStart",
+            "Name": "StartOfWeek_DayWeekStart",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "starting day of the week as an integer (Sunday=1, Monday=2... Saturday=7)",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "DayWeekStart"
+            },
+            "Tooltip": "starting day of the week as an integer (Sunday=1, Monday=2... Saturday=7)",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "find the first day of a week",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "NetWorkDays",
+      "Hidden": true,
+      "Name": "NetWorkDays",
+      "PropertyDataTypeKey": "String",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "NetWorkDays_StartDate",
+            "Name": "NetWorkDays_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "NetWorkDays_EndDate",
+            "Name": "NetWorkDays_EndDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "EndDate",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EndDate"
+            },
+            "Tooltip": "EndDate",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "WeekOfYear",
+      "Hidden": true,
+      "Name": "WeekOfYear",
+      "PropertyDataTypeKey": "Number",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "WeekOfYear_StartDate",
+            "Name": "WeekOfYear_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "WeekOfYear_DayWeekStart",
+            "Name": "WeekOfYear_DayWeekStart",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "DayWeekStart"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "YearFraction",
+      "Hidden": true,
+      "Name": "YearFraction",
+      "PropertyDataTypeKey": "String",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "YearFraction_StartDate",
+            "Name": "YearFraction_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "YearFraction_EndDate",
+            "Name": "YearFraction_EndDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EndDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "YearFraction_Basis",
+            "Name": "YearFraction_Basis",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "Basis"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "EndOfQuarter",
+      "Hidden": true,
+      "Name": "EndOfQuarter",
+      "PropertyDataTypeKey": "String",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "EndOfQuarter_StartDate",
+            "Name": "EndOfQuarter_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "EndOfQuarter_AddQuarters",
+            "Name": "EndOfQuarter_AddQuarters",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "AddQuarters"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "StartOfQuarter",
+      "Hidden": true,
+      "Name": "StartOfQuarter",
+      "PropertyDataTypeKey": "DateTime",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "StartOfQuarter_StartDate",
+            "Name": "StartOfQuarter_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "StartDate",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "StartDate",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "StartOfQuarter_AddQuarters",
+            "Name": "StartOfQuarter_AddQuarters",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "AddQuarters"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "WeekOfMonth",
+      "Hidden": true,
+      "Name": "WeekOfMonth",
+      "PropertyDataTypeKey": "DateTime",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "WeekOfMonth_WeekOfMonth",
+            "Name": "WeekOfMonth_WeekOfMonth",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "WeekOfMonth"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "WeekOfMonth_DayOfWeek",
+            "Name": "WeekOfMonth_DayOfWeek",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "DayOfWeek"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsInCurrentDay",
+      "Hidden": true,
+      "Name": "IsInCurrentDay",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsInCurrentDay_StartDate",
+            "Name": "IsInCurrentDay_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsInCurrentMonth",
+      "Hidden": true,
+      "Name": "IsInCurrentMonth",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsInCurrentMonth_StartDate",
+            "Name": "IsInCurrentMonth_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsInCurrentYear",
+      "Hidden": true,
+      "Name": "IsInCurrentYear",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsInCurrentYear_StartDate",
+            "Name": "IsInCurrentYear_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsInCurrentWeek",
+      "Hidden": true,
+      "Name": "IsInCurrentWeek",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsInCurrentWeek_StartDate",
+            "Name": "IsInCurrentWeek_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInCurrentWeek_DayWeekStart",
+            "Name": "IsInCurrentWeek_DayWeekStart",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "DayWeekStart"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsInCurrentQuarter",
+      "Hidden": true,
+      "Name": "IsInCurrentQuarter",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsInCurrentQuarter_StartDate",
+            "Name": "IsInCurrentQuarter_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsInNextNDays",
+      "Hidden": true,
+      "Name": "IsInNextNDays",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsInNextNDays_EvaluateDate",
+            "Name": "IsInNextNDays_EvaluateDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EvaluateDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInNextNDays_NumberOfDays",
+            "Name": "IsInNextNDays_NumberOfDays",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "NumberOfDays"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInNextNDays_StartDate",
+            "Name": "IsInNextNDays_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsInNextNMonths",
+      "Hidden": true,
+      "Name": "IsInNextNMonths",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsInNextNMonths_EvaluateDate",
+            "Name": "IsInNextNMonths_EvaluateDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EvaluateDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInNextNMonths_NumberOfMonths",
+            "Name": "IsInNextNMonths_NumberOfMonths",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "NumberOfMonths"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInNextNMonths_StartDate",
+            "Name": "IsInNextNMonths_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsInNextNYears",
+      "Hidden": true,
+      "Name": "IsInNextNYears",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsInNextNYears_EvaluateDate",
+            "Name": "IsInNextNYears_EvaluateDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EvaluateDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInNextNYears_NumberOfYears",
+            "Name": "IsInNextNYears_NumberOfYears",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "NumberOfYears"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInNextNYears_StartDate",
+            "Name": "IsInNextNYears_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsInNextNWeeks",
+      "Hidden": true,
+      "Name": "IsInNextNWeeks",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsInNextNWeeks_EvaluateDate",
+            "Name": "IsInNextNWeeks_EvaluateDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EvaluateDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInNextNWeeks_NumberOfWeeks",
+            "Name": "IsInNextNWeeks_NumberOfWeeks",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "NumberOfWeeks"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInNextNWeeks_StartDate",
+            "Name": "IsInNextNWeeks_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsInNextNQuarters",
+      "Hidden": true,
+      "Name": "IsInNextNQuarters",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsInNextNQuarters_EvaluateDate",
+            "Name": "IsInNextNQuarters_EvaluateDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EvaluateDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInNextNQuarters_NumberOfQuarters",
+            "Name": "IsInNextNQuarters_NumberOfQuarters",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "NumberOfQuarters"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInNextNQuarters_StartDate",
+            "Name": "IsInNextNQuarters_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsInPreviousNDays",
+      "Hidden": true,
+      "Name": "IsInPreviousNDays",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsInPreviousNDays_EvaluateDate",
+            "Name": "IsInPreviousNDays_EvaluateDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EvaluateDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInPreviousNDays_NumberOfDays",
+            "Name": "IsInPreviousNDays_NumberOfDays",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "NumberOfDays"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInPreviousNDays_StartDate",
+            "Name": "IsInPreviousNDays_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsInPreviousNMonths",
+      "Hidden": true,
+      "Name": "IsInPreviousNMonths",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsInPreviousNMonths_EvaluateDate",
+            "Name": "IsInPreviousNMonths_EvaluateDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EvaluateDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInPreviousNMonths_NumberOfMonths",
+            "Name": "IsInPreviousNMonths_NumberOfMonths",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "NumberOfMonths"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInPreviousNMonths_StartDate",
+            "Name": "IsInPreviousNMonths_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsInPreviousNYears",
+      "Hidden": true,
+      "Name": "IsInPreviousNYears",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsInPreviousNYears_EvaluateDate",
+            "Name": "IsInPreviousNYears_EvaluateDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EvaluateDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInPreviousNYears_NumberOfYears",
+            "Name": "IsInPreviousNYears_NumberOfYears",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "NumberOfYears"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInPreviousNYears_StartDate",
+            "Name": "IsInPreviousNYears_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsInPreviousNQuarters",
+      "Hidden": true,
+      "Name": "IsInPreviousNQuarters",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsInPreviousNQuarters_EvaluateDate",
+            "Name": "IsInPreviousNQuarters_EvaluateDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EvaluateDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInPreviousNQuarters_NumberOfQuarters",
+            "Name": "IsInPreviousNQuarters_NumberOfQuarters",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "NumberOfQuarters"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInPreviousNQuarters_StartDate",
+            "Name": "IsInPreviousNQuarters_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsInPreviousNWeeks",
+      "Hidden": true,
+      "Name": "IsInPreviousNWeeks",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsInPreviousNWeeks_EvaluateDate",
+            "Name": "IsInPreviousNWeeks_EvaluateDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EvaluateDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInPreviousNWeeks_NumberOfWeeks",
+            "Name": "IsInPreviousNWeeks_NumberOfWeeks",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "NumberOfWeeks"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsInPreviousNWeeks_StartDate",
+            "Name": "IsInPreviousNWeeks_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsLeapYear",
+      "Hidden": true,
+      "Name": "IsLeapYear",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsLeapYear_EvaluateDate",
+            "Name": "IsLeapYear_EvaluateDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EvaluateDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsBetweenDates",
+      "Hidden": true,
+      "Name": "IsBetweenDates",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsBetweenDates_EvaluateDate",
+            "Name": "IsBetweenDates_EvaluateDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EvaluateDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsBetweenDates_StartDate",
+            "Name": "IsBetweenDates_StartDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "IsBetweenDates_EndDate",
+            "Name": "IsBetweenDates_EndDate",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EndDate"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPremiumPcfControl": false,
+  "LastModifiedTimestamp": "637507631906571825",
+  "Name": "cf1d2052d1834b2dac2630f084ce61b9",
+  "OverridableProperties": {},
+  "Version": "637507632749455377"
+}

@@ -1,0 +1,1134 @@
+{
+  "fx_Date": {
+    "ControlPropertyState": [
+      "Fill",
+      "Height",
+      "Width",
+      "X",
+      "Y",
+      "ZIndex",
+      "EndOfMonth_AddMonths",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "DateAdd(Date(Year(StartDate), Month(StartDate)+1, 1), AddMonths, Months)-1",
+        "InvariantPropertyName": "EndOfMonth",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "EndOfMonth_StartDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "DateAdd(Date(Year(StartDate), 12, 31), AddYears, Years)",
+        "InvariantPropertyName": "EndOfYear",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "EndOfYear_AddYears",
+      "EndOfYear_StartDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "StartDate \n+ (7 - Weekday(\n    StartDate,\n    Switch(\n        DayWeekStart,\n        1,StartOfWeek.Sunday,\n        2,StartOfWeek.Monday,\n        3,StartOfWeek.Tuesday,\n        4,StartOfWeek.Wednesday,\n        5,StartOfWeek.Thursday,\n        6,StartOfWeek.Friday,\n        7,StartOfWeek.Saturday)\n    )\n)+(7*AddWeeks)",
+        "InvariantPropertyName": "EndOfWeek",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "EndOfWeek_DayWeekStart",
+      "EndOfWeek_AddWeeks",
+      "EndOfWeek_StartDate",
+      "StartOfMonth",
+      "StartOfMonth_AddMonths",
+      "StartOfMonth_StartDate",
+      "StartOfYear",
+      "StartOfYear_AddYear",
+      "StartOfYear_StartDate",
+      "StartOfWeek_AddWeeks",
+      "StartOfWeek_DayWeekStart",
+      "StartOfWeek",
+      "StartOfWeek_StartDate",
+      "NetWorkDays",
+      "NetWorkDays_EndDate",
+      "NetWorkDays_StartDate",
+      "WeekOfYear_StartDate",
+      "WeekOfYear_DayWeekStart",
+      "WeekOfYear",
+      "YearFraction_EndDate",
+      "YearFraction_Basis",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "DateDiff(StartDate,EndDate,Years)/365",
+        "InvariantPropertyName": "YearFraction",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "YearFraction_StartDate",
+      "IsBetweenDates_EvaluateDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "DateAdd(\r\n    Date(\r\n        Year(StartDate),\r\n        Month(StartDate) + 3-Mod(Month(StartDate)-1,3),\r\n        1\r\n    )-1,\r\n    AddQuarters,\r\n    Quarters\r\n)",
+        "InvariantPropertyName": "EndOfQuarter",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "EndOfQuarter_AddQuarters",
+      "EndOfQuarter_StartDate",
+      "StartOfQuarter_AddQuarters",
+      "StartOfQuarter_StartDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "DateAdd(\r\n   Date(\r\n        Year(StartDate),\r\n        Month(StartDate)\r\n        -If(\r\n            Mod(Month(StartDate)-1,3) = 0,\r\n            0,\r\n            Mod( Month(StartDate)-1, 3)\r\n        ),\r\n        1\r\n    ),\r\n    AddQuarters,\r\n    Quarters\r\n)",
+        "InvariantPropertyName": "StartOfQuarter",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "WeekOfMonth_WeekOfMonth",
+      "WeekOfMonth_DayOfWeek",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "Now()",
+        "InvariantPropertyName": "WeekOfMonth",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "IsBetweenDates_StartDate",
+      "IsBetweenDates_EndDate",
+      "IsInCurrentDay_StartDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "IsInCurrentDay",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "IsInCurrentMonth_StartDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "IsInCurrentMonth",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "IsInCurrentYear_StartDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "IsInCurrentYear",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "IsInCurrentWeek_DayWeekStart",
+      "IsInCurrentWeek_StartDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "StartDate \n- (Weekday(\n    Today(),\n    Switch(\n        DayWeekStart,\n        1,StartOfWeek.Sunday,\n        2,StartOfWeek.Monday,\n        3,StartOfWeek.Tuesday,\n        4,StartOfWeek.Wednesday,\n        5,StartOfWeek.Thursday,\n        6,StartOfWeek.Friday,\n        7,StartOfWeek.Saturday)\n    )-1\n) <= StartDate \nAnd\n(\n    Date(\n        Year(Today()),\n        12,\n        31\n    )\n    + Time(23,59,59)\n) >= StartDate",
+        "InvariantPropertyName": "IsInCurrentWeek",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "IsInCurrentQuarter_StartDate",
+      "IsInCurrentQuarter",
+      "IsInNextNDays",
+      "IsInNextNDays_StartDate",
+      "IsInNextNDays_NumberOfDays",
+      "IsInNextNDays_EvaluateDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "Date(\r\n    Year(StartDate),\r\n    Month(StartDate),\r\n    Day(StartDate)\r\n) <= EvaluateDate\r\nAnd\r\nDateAdd(\r\n    Date(\r\n        Year(StartDate),\r\n        Month(StartDate),\r\n        Day(StartDate)\r\n    )\r\n    +Time(23,59,59),\r\n    AddMonths,\r\n    Months\r\n) >= EvaluateDate",
+        "InvariantPropertyName": "IsInNextNMonths",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "IsInNextNMonths_StartDate",
+      "IsInNextNMonths_NumberOfMonths",
+      "IsInNextNMonths_EvaluateDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "IsInNextNYears",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "IsInNextNYears_StartDate",
+      "IsInNextNYears_NumberOfYears",
+      "IsInNextNYears_EvaluateDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "IsInNextNWeeks",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "IsInNextNWeeks_StartDate",
+      "IsInNextNWeeks_NumberOfWeeks",
+      "IsInNextNWeeks_EvaluateDate",
+      "IsInNextNQuarters_EvaluateDate",
+      "IsInNextNQuarters_NumberOfQuarters",
+      "IsInNextNQuarters_StartDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "IsInNextNQuarters",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "IsInPreviousNDays_EvaluateDate",
+      "IsInPreviousNDays_NumberOfDays",
+      "IsInPreviousNDays_StartDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "IsInPreviousNDays",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "IsInPreviousNMonths_EvaluateDate",
+      "IsInPreviousNMonths_NumberOfMonths",
+      "IsInPreviousNMonths_StartDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "IsInPreviousNMonths",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "IsInPreviousNYears",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "IsInPreviousNYears_StartDate",
+      "IsInPreviousNYears_NumberOfYears",
+      "IsInPreviousNYears_EvaluateDate",
+      "IsInPreviousNQuarters_EvaluateDate",
+      "IsInPreviousNQuarters_NumberOfQuarters",
+      "IsInPreviousNQuarters_StartDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "IsInPreviousNQuarters",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "IsInPreviousNWeeks",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "IsInPreviousNWeeks_StartDate",
+      "IsInPreviousNWeeks_NumberOfWeeks",
+      "IsInPreviousNWeeks_EvaluateDate",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "true",
+        "InvariantPropertyName": "IsLeapYear",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "IsLeapYear_EvaluateDate",
+      "IsBetweenDates"
+    ],
+    "HasDynamicProperties": false,
+    "IsAutoGenerated": false,
+    "IsComponentDefinition": false,
+    "IsDataControl": false,
+    "IsFromScreenLayout": false,
+    "IsGroupControl": false,
+    "IsLocked": false,
+    "LayoutName": "",
+    "Metadata": {
+      "AllowCustomization": true,
+      "Description": ""
+    },
+    "MetaDataIDKey": "",
+    "Name": "fx_Date",
+    "ParentIndex": 1,
+    "PersistMetaDataIDKey": false,
+    "Properties": [
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNWeeks_EvaluateDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNYears_NumberOfYears",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNYears_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNWeeks_NumberOfWeeks",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNWeeks_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNWeeks",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNQuarters_EvaluateDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNQuarters_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNQuarters_NumberOfQuarters",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNQuarters",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNDays",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNDays_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNDays_EvaluateDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNMonths",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNMonths_NumberOfMonths",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNDays_NumberOfDays",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNYears",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNYears_EvaluateDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNMonths_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNMonths_EvaluateDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNYears_NumberOfYears",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNQuarters_EvaluateDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNYears_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNQuarters_NumberOfQuarters",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNWeeks",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNQuarters",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNWeeks_NumberOfWeeks",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNWeeks_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNWeeks_EvaluateDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInPreviousNQuarters_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNYears_EvaluateDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNMonths_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNYears",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNMonths",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNMonths_EvaluateDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNMonths_NumberOfMonths",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNDays_NumberOfDays",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNDays_EvaluateDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNDays_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInCurrentQuarter_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInNextNDays",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInCurrentWeek_DayWeekStart",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInCurrentQuarter",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInCurrentWeek",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInCurrentWeek_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInCurrentMonth_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInCurrentYear",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInCurrentYear_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInCurrentDay_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInCurrentMonth",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsInCurrentDay",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "WeekOfMonth",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "WeekOfMonth_WeekOfMonth",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "WeekOfMonth_DayOfWeek",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "StartOfQuarter_AddQuarters",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "EndOfQuarter_AddQuarters",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "StartOfQuarter",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "StartOfQuarter_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "EndOfQuarter_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "YearFraction_EndDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "YearFraction_Basis",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "EndOfQuarter",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "YearFraction_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "WeekOfYear_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "WeekOfYear_DayWeekStart",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "YearFraction",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "NetWorkDays_EndDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "NetWorkDays_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "NetWorkDays",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "WeekOfYear",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "StartOfWeek_AddWeeks",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "StartOfWeek_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "StartOfWeek",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "StartOfWeek_DayWeekStart",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "StartOfYear_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "StartOfYear",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "StartOfMonth_AddMonths",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "StartOfYear_AddYear",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "StartOfMonth_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "EndOfWeek_AddWeeks",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "EndOfWeek_DayWeekStart",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "StartOfMonth",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "EndOfWeek",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "EndOfYear_AddYears",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "EndOfYear_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "EndOfWeek_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "EndOfYear",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "EndOfMonth",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "EndOfMonth_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "EndOfMonth_AddMonths",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsBetweenDates_EvaluateDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsBetweenDates",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsLeapYear",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsBetweenDates_StartDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsBetweenDates_EndDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "IsLeapYear_EvaluateDate",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Width",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Height",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Fill",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "ZIndex",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Y",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "X",
+        "RuleProviderType": "Unknown"
+      }
+    ],
+    "StyleName": "",
+    "Type": "ControlInfo"
+  },
+  "lbl_TItle": {
+    "ControlPropertyState": [
+      "Live",
+      "Overflow",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "\"Text\"",
+        "InvariantPropertyName": "Text",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "Role",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "RGBA(0, 0, 0, 1)",
+        "InvariantPropertyName": "Color",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "DisabledColor",
+      "PressedColor",
+      "HoverColor",
+      "BorderColor",
+      "DisabledBorderColor",
+      "PressedBorderColor",
+      "HoverBorderColor",
+      "BorderStyle",
+      "FocusedBorderColor",
+      "Fill",
+      "DisabledFill",
+      "PressedFill",
+      "HoverFill",
+      "Font",
+      "FontWeight",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Align",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "VerticalAlign",
+      "X",
+      "Y",
+      "Width",
+      "Height",
+      "DisplayMode",
+      "ZIndex",
+      "LineHeight",
+      "BorderThickness",
+      "FocusedBorderThickness",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "",
+        "InvariantPropertyName": "Size",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "Italic",
+      "Underline",
+      "Strikethrough",
+      "PaddingTop",
+      "PaddingRight",
+      "PaddingBottom",
+      "PaddingLeft"
+    ],
+    "HasDynamicProperties": false,
+    "IsAutoGenerated": false,
+    "IsComponentDefinition": false,
+    "IsDataControl": false,
+    "IsFromScreenLayout": false,
+    "IsGroupControl": false,
+    "IsLocked": false,
+    "LayoutName": "",
+    "MetaDataIDKey": "",
+    "Name": "lbl_TItle",
+    "ParentIndex": 0,
+    "PersistMetaDataIDKey": false,
+    "Properties": [
+      {
+        "Category": "Data",
+        "PropertyName": "Live",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "Role",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "Text",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Align",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PaddingRight",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PaddingTop",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PaddingBottom",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Strikethrough",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Underline",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "ZIndex",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "DisplayMode",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Italic",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "FontWeight",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Height",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Width",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Size",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Y",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Fill",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "FocusedBorderThickness",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "X",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "VerticalAlign",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "BorderThickness",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "DisabledBorderColor",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "HoverFill",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PressedFill",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "FocusedBorderColor",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "HoverBorderColor",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PressedBorderColor",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "HoverColor",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PressedColor",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "PaddingLeft",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Font",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "DisabledFill",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "BorderStyle",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "BorderColor",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "DisabledColor",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Color",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Overflow",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "LineHeight",
+        "RuleProviderType": "Unknown"
+      }
+    ],
+    "StyleName": "defaultLabelStyle",
+    "Type": "ControlInfo"
+  },
+  "Title Screen": {
+    "ControlPropertyState": [
+      "Fill",
+      "ImagePosition",
+      "Height",
+      "Width",
+      "Size",
+      "Orientation",
+      "LoadingSpinner",
+      "LoadingSpinnerColor"
+    ],
+    "IsAutoGenerated": false,
+    "IsComponentDefinition": false,
+    "IsDataControl": false,
+    "IsFromScreenLayout": false,
+    "IsGroupControl": false,
+    "IsLocked": false,
+    "LayoutName": "",
+    "MetaDataIDKey": "",
+    "Name": "Title Screen",
+    "ParentIndex": 0,
+    "PersistMetaDataIDKey": false,
+    "Properties": [
+      {
+        "Category": "Design",
+        "PropertyName": "Width",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Height",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "ImagePosition",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Fill",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "LoadingSpinner",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "LoadingSpinnerColor",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Size",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Orientation",
+        "RuleProviderType": "Unknown"
+      }
+    ],
+    "StyleName": "defaultScreenStyle",
+    "Type": "ControlInfo"
+  }
+}
