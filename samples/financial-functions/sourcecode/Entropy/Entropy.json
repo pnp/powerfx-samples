@@ -1,0 +1,52 @@
+{
+  "ComponentIndexes": {
+    "Financial Functions": 1,
+    "fxFinancial": 2
+  },
+  "ControlUniqueIds": {
+    "App": 1,
+    "Financial Functions": 4,
+    "fxFinancial": 6,
+    "lbl_TItle": 8,
+    "Title Screen": 5
+  },
+  "HeaderLastSavedDateTimeUTC": "03/08/2021 01:19:18",
+  "LocalResourceRootPaths": {
+    "Business-Cat": "https://docserverpaaprodcca.blob.core.windows.net/a231fa89-924e-4ec2-8531-70225d80a3d8-1/resource/Assets0Images00001.jpg?sv=2017-04-17&sr=b&sig=XJJ%2B2UDNQz7JD2eu%2BDhKrK7X9Aet6xZt4%2FXfddAZaSc%3D&spr=https&se=2021-03-09T01%3A33%3A02Z&sp=r"
+  },
+  "OldLogoFileName": "4pho2glu.jpg",
+  "OrderComponentMetadata": {
+    "3655f73fcabb44adac052ea26133a661": 0
+  },
+  "OrderComponentTemplate": {
+    "3655f73fcabb44adac052ea26133a661": 0
+  },
+  "OrderDataSource": {
+    "CustomGallerySample": 0
+  },
+  "OrderGroupControls": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "label": 0
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "Financial Functions": 0,
+    "fxFinancial": 0,
+    "lbl_TItle": 1,
+    "Title Screen": 0
+  },
+  "TemplateVersions": {
+    "3655f73fcabb44adac052ea26133a661": "637507631584033028"
+  },
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1789001,
+    "ControlCount": {
+      "3655f73fcabb44adac052ea26133a661": 2,
+      "cf1d2052d1834b2dac2630f084ce61b9": 2,
+      "label": 2,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 1.1780489
+  }
+}
