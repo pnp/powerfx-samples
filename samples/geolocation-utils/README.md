@@ -10,6 +10,10 @@ This function calculate distance and compass heading between two locations.
 
 * Power Apps Canvas app
 
+## Compatibility
+
+![Power Apps Source File Pack and Unpack Utility 0.19](https://img.shields.io/badge/PSAopa-0.19-green.svg)
+
 ## Prerequisites
 
 None

@@ -12,6 +12,11 @@ functions that are used by accounting & finance
 
 * [Microsoft Power Fx](https://docs.microsoft.com/en-us/power-platform/power-fx/overview)
 
+
+## Compatibility
+
+![Power Apps Source File Pack and Unpack Utility 0.19](https://img.shields.io/badge/PSAopa-0.19-green.svg)
+
 ## Prerequisites
 
 None

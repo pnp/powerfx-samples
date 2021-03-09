@@ -13,6 +13,18 @@ The following image shows the custom function (component) properties and a sampl
 
 ![Currency Functions](assets/regexiscurrencyfunc.PNG)
 
+## Applies to
+
+* Power Apps Canvas app
+
+## Compatibility
+
+![Power Apps Source File Pack and Unpack Utility 0.19](https://img.shields.io/badge/PSAopa-0.19-green.svg)
+
+## Prerequisites
+
+None
+
 
 ## Solution
 
