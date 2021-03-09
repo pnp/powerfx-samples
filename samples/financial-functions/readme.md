@@ -62,14 +62,26 @@ FV(Rate, NPER, PMT [, PV])
 
 Parameter | Description | Required | Type
 ---|---|---|---
-`Rate`|The numeric value indicating the rate per period| Yes | Number
-`NPER`|The numeric value indicating the total number of payments periods in an annuity.| Yes | Number
-`PMT`|The numeric value indicating the amount of the payment made each period| Yes | Number
-`PV`|The numeric value indicating the present value of the payments. If omitted, it will be set the default value as 0| No | Number
+`Rate`|The interest rate per period| Yes | Number
+`NPER`|The total number of payment periods in an annuity| Yes | Number
+`PMT`|The payment made each period; it cannot change over the life of the annuity| Yes | Number
+`PV`|The present value, or the lump-sum amount that a series of future payments is worth right now. If omitted, it is assumed to be 0| No | Number
 
 #### Output
 
 Number
+
+
+#### Example
+
+
+```excel
+FV(0.06, 10,-200, -500)
+```
+
+```excel
+FV(0.12, 12,-1000)
+```
 
 
 ### PV
@@ -84,14 +96,22 @@ PV(Rate, NPER, PMT [, FV])
 
 Parameter | Description | Required | Type
 ---|---|---|---
-`Rate`|The numeric value indicating the rate per period| Yes | Number
-`NPER`|The numeric value indicating the total number of payments periods in an annuity.| Yes | Number
-`PMT`|The numeric value indicating the amount of the payment made each period| Yes | Number
-`FV`|The numeric value indicating the  future value or a cash balance you want to attain after the last payment is made. If omitted, it is assumed to be 0. | No | Number
+`Rate`|The interest rate per period | Yes | Number
+`NPER`|The total number of payment periods in an annuity| Yes | Number
+`PMT`|The payment made each period and cannot change over the life of the annuity| Yes | Number
+`FV`|The future value, or a cash balance you want to attain after the last payment is made. If omitted, it is assumed to be 0 | No | Number
 
 #### Output
 
 Number
+
+
+#### Example
+
+
+```excel
+PV(50000, 0.08,20)
+```
 
 
 ### NPER
@@ -106,16 +126,22 @@ NPER(Rate, PMT, PV [, FV])
 
 Parameter | Description | Required | Type
 ---|---|---|---
-`Rate`|The numeric value indicating the interest rate per period| Yes | Number
-`PMT`|The numeric value indicating the amount of the payment made each period| Yes | Number
-`PV`|The numeric value indicating the present value of the payments. | Yes | Number
-`FV`|The numeric value indicating the value of the loan/investment at the end of the payments. If  omitted, it will be set the default value as 0 | No | Number
+`Rate`|The interest rate per period| Yes | Number
+`PMT`| The payment made each period; it cannot change over the life of the annuity. Typically, pmt contains principal and interest but no other fees or taxes| Yes | Number
+`PV`|The present value, or the lump-sum amount that a series of future payments is worth right now| Yes | Number
+`FV`|The future value, or a cash balance you want to attain after the last payment is made. If omitted, it is assumed to be 0 | No | Number
 
 #### Output
 
 Number
 
 
+#### Example
+
+
+```excel
+NPER(0.12, -100,-1000, 10000)
+```
 
 ### PMT
 
@@ -129,13 +155,24 @@ PV(Rate, NPER, PV [, FV])
 
 Parameter | Description | Required | Type
 ---|---|---|---
-`Rate`|The numeric value indicating the interest rate per period| Yes | Number
-`NPER`|The numeric value indicating the total number of payments for the loan.| Yes | Number
-`PV`|The numeric value indicating the present value of the payments. | Yes | Number
-`FV`|The numeric value indicating the future value or a cash balance to attain after last payment is made. If omitted, it is assumed to be 0 | No | Number
+`Rate`|The interest rate for the loan| Yes | Number
+`NPER`|The interest rate for the loan| Yes | Number
+`PV`|he present value, or the total amount that a series of future payments is worth now; also known as the principal| Yes | Number
+`FV`|The future value, or a cash balance you want to attain after the last payment is made. If omitted, it is assumed to be 0| No | Number
 
 #### Output
 
 Number
+
+#### Example
+
+
+```excel
+PV(0.08, 10, 10000)
+```
+
+```excel
+PV(0.06, 18, 50000)
+```
 
 <img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/financial-functions" />
