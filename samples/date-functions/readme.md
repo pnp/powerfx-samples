@@ -3,6 +3,9 @@
 ## Summary
 
 Functions that perform operations on a date value
+
+![Preview](assets/date-functions-preview.png)
+
 * [EndOfQuarter](#EndOfQuarter)
 * [EndOfMonth](#EndOfMonth)
 * [EndOfWeek](#EndOfWeek)
@@ -639,7 +642,7 @@ Takes a date and returns a week number (1-6) that corresponds to the week of the
 #### Syntax
 
 ```excel
-WeekNumber(StartDate [,DayWeekStart])
+WeekOfMonth(StartDate [,DayWeekStart])
 ```
 
 Parameter | Description | Required | Type
