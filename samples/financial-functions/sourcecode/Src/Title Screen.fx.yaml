@@ -1,0 +1,33 @@
+"'Title Screen' As screen":
+
+    "fxFinancial As 'Financial Functions'":
+        FV: |-
+            =// Power Fx Financial Functions > FV
+            // Contributers: @mattbdevaney (Twitter)
+            -(PMT*(1/Rate)*(Power(1+Rate,NPer)-1)+(PV*Power(1+Rate, NPer)))
+        Height: =142
+        NPER: |-
+            =// Power Fx Financial Functions > FV
+            // Contributers: @mattbdevaney (Twitter)
+            Log((PMT/Rate-FV)/(PMT/Rate+PV))/Log(1+Rate)
+        PMT: |-
+            =// Power Fx Financial Functions > PMT
+            // Contributers: @mattbdevaney (Twitter)
+            -(PV/((1/Rate)*(1-(1/Power(1+Rate, NPer))))+FV/((1/Rate)*(Power(1+Rate,NPer)-1)))
+        PV: |-
+            =// Power Fx Financial Functions > PV
+            // Contributers: @mattbdevaney (Twitter)
+            -(PMT*(1/Rate)*(1-(1/Power(1+Rate,NPer)))+(FV/Power(1+Rate,NPer)))
+        Width: =177
+        X: =1188
+
+    lbl_TItle As label:
+        Align: =Center
+        Color: =RGBA(109, 49, 162, 1)
+        Height: =115
+        Size: =48
+        Text: ="Power Fx Financial Functions Library"
+        Width: =1366
+        Y: =314
+        ZIndex: =3
+

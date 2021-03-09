@@ -1,0 +1,198 @@
+[
+    {
+        "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
+        "name": "pnp-powerfx-samples-financial-functions-fv",
+        "version": "1.0.0.0",
+        "source": "pnp",
+        "title": "Future Value (FV)",
+        "shortDescription": "Future value: a cash balance you want to attain after the last payment is made",
+        "longDescription": [
+            "Future value: a cash balance you want to attain after the last payment is made"
+        ],
+        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/financial-functions",
+        "products": [
+            "Power Apps",
+            "Power Platform"
+        ],
+        "categories": [],
+        "metadata": [
+            {
+                "key": "POWERAPPS-MANIFEST-VERSION",
+                "value": "0.19"
+            }
+        ],
+        "thumbnails": [
+            {
+                "type": "image",
+                "order": 100,
+                "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/financial-functions/assets/preview.png",
+                "alt": "Date functions"
+            }
+        ],
+        "authors": [
+            {
+                "gitHubAccount": "matthewdevaney",
+                "pictureUrl": "https://avatars.githubusercontent.com/u/59677945?s=460&v=4"
+            }
+        ],
+        "references": [
+            {
+                "name": "Enhanced Component Properties",
+                "description": "Blog post announcing the enhanced component custom properties for Power Apps",
+                "url": "https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/"
+            },
+            {
+                "name": "Power Apps Formula Reference",
+                "description": "Formula reference guide for Power Apps",
+                "url": "https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference"
+            }
+        ]
+    },
+    {
+        "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
+        "name": "pnp-powerfx-samples-financial-functions-pv",
+        "version": "1.0.0.0",
+        "source": "pnp",
+        "title": "Present Value (PV)",
+        "shortDescription": "Present value: the total amount that a series of future payments is worth now",
+        "longDescription": [
+            "Present value: the total amount that a series of future payments is worth now"
+        ],
+        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/financial-functions",
+        "products": [
+            "Power Apps",
+            "Power Platform"
+        ],
+        "categories": [],
+        "metadata": [
+            {
+                "key": "POWERAPPS-MANIFEST-VERSION",
+                "value": "0.19"
+            }
+        ],
+        "thumbnails": [
+            {
+                "type": "image",
+                "order": 100,
+                "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/financial-functions/assets/preview.png",
+                "alt": "Date functions"
+            }
+        ],
+        "authors": [
+            {
+                "gitHubAccount": "matthewdevaney",
+                "pictureUrl": "https://avatars.githubusercontent.com/u/59677945?s=460&v=4"
+            }
+        ],
+        "references": [
+            {
+                "name": "Enhanced Component Properties",
+                "description": "Blog post announcing the enhanced component custom properties for Power Apps",
+                "url": "https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/"
+            },
+            {
+                "name": "Power Apps Formula Reference",
+                "description": "Formula reference guide for Power Apps",
+                "url": "https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference"
+            }
+        ]
+    },
+    {
+        "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
+        "name": "pnp-powerfx-samples-financial-functions-nper",
+        "version": "1.0.0.0",
+        "source": "pnp",
+        "title": "NPER",
+        "shortDescription": "The total number of payments for a loan",
+        "longDescription": [
+            "The total number of payments for a loan"
+        ],
+        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/financial-functions",
+        "products": [
+            "Power Apps",
+            "Power Platform"
+        ],
+        "categories": [],
+        "metadata": [
+            {
+                "key": "POWERAPPS-MANIFEST-VERSION",
+                "value": "0.19"
+            }
+        ],
+        "thumbnails": [
+            {
+                "type": "image",
+                "order": 100,
+                "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/financial-functions/assets/preview.png",
+                "alt": "Date functions"
+            }
+        ],
+        "authors": [
+            {
+                "gitHubAccount": "matthewdevaney",
+                "pictureUrl": "https://avatars.githubusercontent.com/u/59677945?s=460&v=4"
+            }
+        ],
+        "references": [
+            {
+                "name": "Enhanced Component Properties",
+                "description": "Blog post announcing the enhanced component custom properties for Power Apps",
+                "url": "https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/"
+            },
+            {
+                "name": "Power Apps Formula Reference",
+                "description": "Formula reference guide for Power Apps",
+                "url": "https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference"
+            }
+        ]
+    },
+    {
+        "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
+        "name": "pnp-powerfx-samples-financial-functions-pmt",
+        "version": "1.0.0.0",
+        "source": "pnp",
+        "title": "PMT",
+        "shortDescription": "The payment made each period over the life of an investment.",
+        "longDescription": [
+            "The payment made each period over the life of an investment."
+        ],
+        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/financial-functions",
+        "products": [
+            "Power Apps",
+            "Power Platform"
+        ],
+        "categories": [],
+        "metadata": [
+            {
+                "key": "POWERAPPS-MANIFEST-VERSION",
+                "value": "0.19"
+            }
+        ],
+        "thumbnails": [
+            {
+                "type": "image",
+                "order": 100,
+                "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/financial-functions/assets/preview.png",
+                "alt": "Date functions"
+            }
+        ],
+        "authors": [
+            {
+                "gitHubAccount": "matthewdevaney",
+                "pictureUrl": "https://avatars.githubusercontent.com/u/59677945?s=460&v=4"
+            }
+        ],
+        "references": [
+            {
+                "name": "Enhanced Component Properties",
+                "description": "Blog post announcing the enhanced component custom properties for Power Apps",
+                "url": "https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/"
+            },
+            {
+                "name": "Power Apps Formula Reference",
+                "description": "Formula reference guide for Power Apps",
+                "url": "https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference"
+            }
+        ]
+    }
+]
