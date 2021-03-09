@@ -102,7 +102,7 @@ MyCustomFunction(MyParameterName)
 ```
 
 
-Parameter | Required | Type
+Parameter | Description | Required | Type
 ---|---|---
 MyParameterName | Yes | Text
 

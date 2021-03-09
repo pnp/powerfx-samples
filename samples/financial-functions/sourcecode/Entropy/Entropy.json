@@ -1,0 +1,51 @@
+{
+  "ComponentIndexes": {
+    "Financial Functions": 1,
+    "fxFinancial": 2
+  },
+  "ControlUniqueIds": {
+    "App": 1,
+    "Financial Functions": 3,
+    "fxFinancial": 5,
+    "lbl_TItle": 6,
+    "Title Screen": 4
+  },
+  "HeaderLastSavedDateTimeUTC": "03/08/2021 14:49:24",
+  "LocalResourceRootPaths": {
+    "Business-Cat": "https://docserverpaaprodcca.blob.core.windows.net/7c77b36c-044d-4122-8a74-f63a5c9055cb-1/resource/Assets0Images00001.jpg?sv=2017-04-17&sr=b&sig=mEBaX8dxX4T5vwcWHJ43%2FW%2BO6kOn2oy7Bz8OsTWnu3s%3D&spr=https&se=2021-03-09T15%3A03%3A25Z&sp=r"
+  },
+  "OldLogoFileName": "gqoisow0.jpg",
+  "OrderComponentMetadata": {
+    "3655f73fcabb44adac052ea26133a661": 0
+  },
+  "OrderComponentTemplate": {
+    "3655f73fcabb44adac052ea26133a661": 0
+  },
+  "OrderDataSource": {
+    "CustomGallerySample": 0
+  },
+  "OrderGroupControls": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "label": 0
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "Financial Functions": 0,
+    "fxFinancial": 0,
+    "lbl_TItle": 1,
+    "Title Screen": 0
+  },
+  "TemplateVersions": {
+    "3655f73fcabb44adac052ea26133a661": "637508117645927369"
+  },
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.0159237,
+    "ControlCount": {
+      "3655f73fcabb44adac052ea26133a661": 2,
+      "label": 1,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 0.5907789
+  }
+}

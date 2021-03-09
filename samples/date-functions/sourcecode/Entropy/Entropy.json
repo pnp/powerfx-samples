@@ -1,0 +1,51 @@
+{
+  "ComponentIndexes": {
+    "Date Functions": 1,
+    "fx_Date": 1
+  },
+  "ControlUniqueIds": {
+    "App": 1,
+    "Date Functions": 3,
+    "fx_Date": 6,
+    "lbl_TItle": 5,
+    "Title Screen": 4
+  },
+  "HeaderLastSavedDateTimeUTC": "03/08/2021 14:40:22",
+  "LocalResourceRootPaths": {
+    "Business-Cat": "https://docserverpaaprodcca.blob.core.windows.net/7c77b36c-044d-4122-8a74-f63a5c9055cb-1/resource/Assets0Images00001.jpg?sv=2017-04-17&sr=b&sig=oH1Osu6QdYNKRsXn11jvWFSaCPyu5eP8jzmraPgA%2BRI%3D&spr=https&se=2021-03-09T14%3A42%3A31Z&sp=r"
+  },
+  "OldLogoFileName": "sm10sthw.jpg",
+  "OrderComponentMetadata": {
+    "cf1d2052d1834b2dac2630f084ce61b9": 0
+  },
+  "OrderComponentTemplate": {
+    "cf1d2052d1834b2dac2630f084ce61b9": 0
+  },
+  "OrderDataSource": {
+    "CustomGallerySample": 0
+  },
+  "OrderGroupControls": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "label": 0
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "Date Functions": 0,
+    "fx_Date": 1,
+    "lbl_TItle": 0,
+    "Title Screen": 0
+  },
+  "TemplateVersions": {
+    "cf1d2052d1834b2dac2630f084ce61b9": "637508112229480135"
+  },
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.1471929,
+    "ControlCount": {
+      "cf1d2052d1834b2dac2630f084ce61b9": 2,
+      "label": 1,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 2.8937636
+  }
+}
