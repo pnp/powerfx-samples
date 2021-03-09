@@ -11,6 +11,14 @@
     "OverridableProperties": {},
     "Version": "1.0"
   },
+  "groupContainer": {
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/groupContainer",
+    "IsComponentTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "groupContainer",
+    "Version": "1.0"
+  },
   "label": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,
