@@ -34,7 +34,7 @@ Version|Date|Comments
 
 ## Minimal Path to Awesome
 
-* [Download](solution\GeoLocation-Utils.msapp) the `.msapp` from the `solution` folder
+* [Download](solution/GeoLocation-Utils.msapp) the `.msapp` from the `solution` folder
 * Use the `.msapp` file using **File** > **Open** > **Browse** within Power Apps Studio.
 
 
@@ -68,14 +68,12 @@ TwoPoints(Lat1, Lng1, Lat2, Lng2)
 ```
 
 
-Parameter | Required | Type
----|---|---
-Lat1 | Yes | Number
-Lng1 | Yes | Number
-Lat2 | Yes | Number
-Lng2 | Yes | Number
-
-
+Parameter | Description|Required | Type
+---|---|---|---
+`Lat1` |The number value representing the latitude of the first point to evaluate| Yes | Number
+`Lng1` |The number value representing the longitude of the first point to evaluate| Yes | Number
+`Lat2` |The number value representing the latitude of the second point to evaluate| Yes | Number
+`Lng2` |The number value representing the longitude of the second point to evaluate| Yes | Number
 
 #### Output
 
@@ -98,13 +96,12 @@ Perform unit conversion for length.
 ConvertUnit(Length, Unit, DecimalPoint)
 ```
 
-Parameter | Required | Type
----|---|---
-Length | Yes | Number
-Unit | Yes | Text (m, cm, km, inch, feet, yard, mile)
-DecimalPoint | No | Number
 
-
+Parameter | Description|Required | Type
+---|---|---|---
+`Length` | The number value representing the length| Yes | Number
+`Unit` |The text value representing the unit. Acceptable values are `m`, `cm`, `km`, `inch`, `feet`, `yard`, `mile`| Yes | Text
+`DecimalPoint` |The number value representing the decimal point precision| No | Number
 
 #### Output
 

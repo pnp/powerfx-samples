@@ -34,7 +34,7 @@ Version|Date|Comments
 ---
 ## Minimal Path to Awesome
 
-* [Download](solution\RegexFunctions.msapp) the `.msapp` from the `solution` folder
+* [Download](solution/RegexFunctions.msapp) the `.msapp` from the `solution` folder
 * Use the `.msapp` file using **File** > **Open** > **Browse** within Power Apps Studio.
 
 > Include any additional steps as needed.
@@ -68,9 +68,9 @@ IsCurrency(CurrencyTxt)
 ```
 
 
-Parameter | Required | Type
----|---|---
-CurrencyTxt | Yes | Text
+Parameter | Description|Required | Type
+---|---|---|---
+`CurrencyTxt` | The text value to evaluate for a currency format|Yes | Text
 
 #### Output
 
@@ -87,9 +87,9 @@ Regex to validate percent format
 IsPercent(PercentTxt)
 ```
 
-Parameter | Required | Type
----|---|---
-PercentTxt | Yes | Text
+Parameter | Description|Required | Type
+---|---|---|---
+`PercentTxt` |The text value to evaluate for a percent format|Yes | Text
 
 
 
@@ -107,11 +107,12 @@ Regex to validate time format [hh:mm:ss]/[hr:min:sec]/[mm:ss]/[m:s]/[ss]/[s]
 IsTime(TimeTxt)
 ```
 
-Parameter | Required | Type
----|---|---
-TimeTxt | Yes | Text
+Parameter | Description|Required | Type
+---|---|---|---
+`TimeTxt` |The text value to evaluate for a time format|Yes | Text
 
 #### Output
+
 * Boolean
 
 <img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/regex-functions" />
