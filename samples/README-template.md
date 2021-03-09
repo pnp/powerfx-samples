@@ -27,6 +27,10 @@ Short summary on functionality and used technologies.
 > Update accordingly as needed.
 > DELETE THIS PARAGRAPH BEFORE SUBMITTING
 
+## Compatibility
+
+![Power Apps Source File Pack and Unpack Utility 0.19](https://img.shields.io/badge/PSAopa-0.19-green.svg)
+
 ## Prerequisites
 
 > Any special pre-requisites? Include anything that needs to be done for this sample to work (anything in addition to importing the `.msapp`).
@@ -103,9 +107,8 @@ MyCustomFunction(MyParameterName)
 
 
 Parameter | Description | Required | Type
----|---|---
-MyParameterName | Yes | Text
-
+---|---|---|--
+MyParameterName |Decription of parameter goes here| Yes | Text
 
 
 #### Output
