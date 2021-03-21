@@ -1,0 +1,92 @@
+ConvertBaseNumber As CanvasComponent:
+    BinaryToDecimal(Binary As Number):
+        Binary:
+            Default: =100
+        ThisProperty:
+            Default: |-
+                =With(
+                    {
+                        tblDecimals: AddColumns(
+                            Sequence(Len(Text(Binary)), 0),
+                            "Decimals",
+                            Power(2, ThisRecord.Value) * Mid(Text(Binary), Len(Text(Binary)) - ThisRecord.Value, 1)
+                        )
+                    },
+                    Sum(tblDecimals, Decimals)
+                )
+    DecimalToBinary(Decimal As Number):
+        Decimal:
+            Default: =100
+        ThisProperty:
+            Default: |
+                =With(
+                    {
+                        tblBinaries: AddColumns(
+                            Sequence(RoundDown(Ln(Decimal) / Ln(2) + 1, 0), 0),
+                            "Binaries",
+                            If(
+                                ThisRecord.Value = 0, Mod(Decimal, 2),
+                                Mod(RoundDown(Decimal / Power(2, ThisRecord.Value), 0), 2)
+                            )
+                        )
+                    },
+                    Concat(Sort(tblBinaries, Value, Descending), Binaries & "")
+                )
+    DecimalToHex(Decimal As Number):
+        Decimal:
+            Default: =100
+        ThisProperty:
+            Default: |
+                =With(
+                    {
+                        tblHexs: AddColumns(
+                            Sequence(RoundDown(Ln(Decimal) / Ln(16) + 1, 0), 0),
+                            "Hexs",
+                            If(
+                                ThisRecord.Value = 0, Mod(Decimal, 16),
+                                Mod(RoundDown((Decimal - Mod(Decimal, 16)) / Power(16, ThisRecord.Value), 0), 16)
+                            )
+                        )
+                    },
+                    Concat(Sort(tblHexs, Value, Descending),
+                        Switch(
+                            Hexs,
+                            10,"a", 11,"b", 12,"c", 13,"d", 14,"e", 15,"f",
+                            Hexs
+                        )
+                    )
+                )
+    HexToDecimal(Hex As String):
+        Hex:
+            Default: ="テキスト"
+        ThisProperty:
+            Default: |-
+                =// https://mofumofupower.hatenablog.com/entry/custom_function_apps
+                With(
+                    {
+                        tblDecimals: AddColumns(
+                            Sequence(Len(Hex), 0),
+                            "Decimals",
+                            With(
+                                {
+                                    HexVal: Mid(Hex, Len(Hex) - ThisRecord.Value, 1)
+                                },
+                                If(
+                                    HexVal in Sequence(10, 0), HexVal,
+                                    LookUp(
+                                        Table({key:"a", val:10}, {key:"b", val:11}, {key:"c", val:12}, {key:"d", val:13}, {key:"e", val:14}, {key:"f", val:15}),
+                                        key = Lower(HexVal)
+                                    ).val
+                                )
+                            )
+                        )
+                    },
+                    Sum(tblDecimals, Decimals  * 16 ^ Value)
+                )
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =1
+    Width: =1
+    X: =0
+    Y: =0
+    ZIndex: =1
+
