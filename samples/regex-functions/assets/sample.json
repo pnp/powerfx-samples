@@ -12,11 +12,15 @@
       "Power Apps",
       "Power Platform"
     ],
-    "categories": [],
+    "categories": [ "POWERFX" ],
     "metadata": [
       {
         "key": "POWERAPPS-MANIFEST-VERSION",
         "value": "0.19"
+      },
+      {
+        "key": "POWERFX-TAGS",
+        "value": "RegEx"
       }
     ],
     "thumbnails": [
@@ -72,11 +76,15 @@
       "Power Apps",
       "Power Platform"
     ],
-    "categories": [],
+    "categories": [ "POWERFX" ],
     "metadata": [
       {
         "key": "POWERAPPS-MANIFEST-VERSION",
         "value": "0.19"
+      },
+      {
+        "key": "POWERFX-TAGS",
+        "value": "RegEx"
       }
     ],
     "thumbnails": [
@@ -132,11 +140,15 @@
       "Power Apps",
       "Power Platform"
     ],
-    "categories": [],
+    "categories": [ "POWERFX" ],
     "metadata": [
       {
         "key": "POWERAPPS-MANIFEST-VERSION",
         "value": "0.19"
+      },
+      {
+        "key": "POWERFX-TAGS",
+        "value": "RegEx"
       }
     ],
     "thumbnails": [

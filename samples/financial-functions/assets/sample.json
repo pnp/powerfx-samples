@@ -14,11 +14,15 @@
             "Power Apps",
             "Power Platform"
         ],
-        "categories": [],
+        "categories": [ "POWERFX" ],
         "metadata": [
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
+            },
+            {
+              "key": "POWERFX-TAGS",
+              "value": "Financial"
             }
         ],
         "thumbnails": [
@@ -26,7 +30,7 @@
                 "type": "image",
                 "order": 100,
                 "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/financial-functions/assets/preview.png",
-                "alt": "Date functions"
+                "alt": "Financial functions"
             }
         ],
         "authors": [
@@ -63,11 +67,15 @@
             "Power Apps",
             "Power Platform"
         ],
-        "categories": [],
+        "categories": [ "POWERFX" ],
         "metadata": [
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
+            },
+            {
+              "key": "POWERFX-TAGS",
+              "value": "Financial"
             }
         ],
         "thumbnails": [
@@ -75,7 +83,7 @@
                 "type": "image",
                 "order": 100,
                 "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/financial-functions/assets/preview.png",
-                "alt": "Date functions"
+                "alt": "Financial functions"
             }
         ],
         "authors": [
@@ -112,11 +120,15 @@
             "Power Apps",
             "Power Platform"
         ],
-        "categories": [],
+        "categories": [ "POWERFX" ],
         "metadata": [
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
+            },
+            {
+              "key": "POWERFX-TAGS",
+              "value": "Financial"
             }
         ],
         "thumbnails": [
@@ -124,7 +136,7 @@
                 "type": "image",
                 "order": 100,
                 "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/financial-functions/assets/preview.png",
-                "alt": "Date functions"
+                "alt": "Financial functions"
             }
         ],
         "authors": [
@@ -161,11 +173,15 @@
             "Power Apps",
             "Power Platform"
         ],
-        "categories": [],
+        "categories": [ "POWERFX" ],
         "metadata": [
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
+            },
+            {
+              "key": "POWERFX-TAGS",
+              "value": "Financial"
             }
         ],
         "thumbnails": [
@@ -173,7 +189,7 @@
                 "type": "image",
                 "order": 100,
                 "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/financial-functions/assets/preview.png",
-                "alt": "Date functions"
+                "alt": "Financial functions"
             }
         ],
         "authors": [
