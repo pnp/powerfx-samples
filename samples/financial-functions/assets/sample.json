@@ -4,25 +4,29 @@
         "name": "pnp-powerfx-samples-financial-functions-fv",
         "version": "1.0.0.0",
         "source": "pnp",
+        "created": "2021-02-08T00:00:00.000Z",
+        "modified": "2021-02-08T00:00:00.000Z",
         "title": "Future Value (FV)",
         "shortDescription": "Future value: a cash balance you want to attain after the last payment is made",
         "longDescription": [
             "Future value: a cash balance you want to attain after the last payment is made"
         ],
-        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/financial-functions",
+        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/financial-functions#fv",
         "products": [
             "Power Apps",
             "Power Platform"
         ],
-        "categories": [ "POWERFX" ],
+        "categories": [
+            "POWERFX"
+        ],
         "metadata": [
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
             },
             {
-              "key": "POWERFX-TAGS",
-              "value": "Financial"
+                "key": "POWERFX-TAGS",
+                "value": "Financial"
             }
         ],
         "thumbnails": [
@@ -36,7 +40,8 @@
         "authors": [
             {
                 "gitHubAccount": "matthewdevaney",
-                "pictureUrl": "https://avatars.githubusercontent.com/u/59677945?s=460&v=4"
+                "name": "Matthew Devaney",
+                "pictureUrl": "https://github.com/matthewdevaney.png"
             }
         ],
         "references": [
@@ -57,25 +62,29 @@
         "name": "pnp-powerfx-samples-financial-functions-pv",
         "version": "1.0.0.0",
         "source": "pnp",
+        "created": "2021-02-08T00:00:00.000Z",
+        "modified": "2021-02-08T00:00:00.000Z",
         "title": "Present Value (PV)",
         "shortDescription": "Present value: the total amount that a series of future payments is worth now",
         "longDescription": [
             "Present value: the total amount that a series of future payments is worth now"
         ],
-        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/financial-functions",
+        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/financial-functions#pv",
         "products": [
             "Power Apps",
             "Power Platform"
         ],
-        "categories": [ "POWERFX" ],
+        "categories": [
+            "POWERFX"
+        ],
         "metadata": [
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
             },
             {
-              "key": "POWERFX-TAGS",
-              "value": "Financial"
+                "key": "POWERFX-TAGS",
+                "value": "Financial"
             }
         ],
         "thumbnails": [
@@ -89,7 +98,8 @@
         "authors": [
             {
                 "gitHubAccount": "matthewdevaney",
-                "pictureUrl": "https://avatars.githubusercontent.com/u/59677945?s=460&v=4"
+                "name": "Matthew Devaney",
+                "pictureUrl": "https://github.com/matthewdevaney.png"
             }
         ],
         "references": [
@@ -110,25 +120,29 @@
         "name": "pnp-powerfx-samples-financial-functions-nper",
         "version": "1.0.0.0",
         "source": "pnp",
+        "created": "2021-02-08T00:00:00.000Z",
+        "modified": "2021-02-08T00:00:00.000Z",
         "title": "NPER",
         "shortDescription": "The total number of payments for a loan",
         "longDescription": [
             "The total number of payments for a loan"
         ],
-        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/financial-functions",
+        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/financial-functions#nper",
         "products": [
             "Power Apps",
             "Power Platform"
         ],
-        "categories": [ "POWERFX" ],
+        "categories": [
+            "POWERFX"
+        ],
         "metadata": [
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
             },
             {
-              "key": "POWERFX-TAGS",
-              "value": "Financial"
+                "key": "POWERFX-TAGS",
+                "value": "Financial"
             }
         ],
         "thumbnails": [
@@ -142,7 +156,8 @@
         "authors": [
             {
                 "gitHubAccount": "matthewdevaney",
-                "pictureUrl": "https://avatars.githubusercontent.com/u/59677945?s=460&v=4"
+                "name": "Matthew Devaney",
+                "pictureUrl": "https://github.com/matthewdevaney.png"
             }
         ],
         "references": [
@@ -163,25 +178,29 @@
         "name": "pnp-powerfx-samples-financial-functions-pmt",
         "version": "1.0.0.0",
         "source": "pnp",
+        "created": "2021-02-08T00:00:00.000Z",
+        "modified": "2021-02-08T00:00:00.000Z",
         "title": "PMT",
         "shortDescription": "The payment made each period over the life of an investment.",
         "longDescription": [
             "The payment made each period over the life of an investment."
         ],
-        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/financial-functions",
+        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/financial-functions#pmt",
         "products": [
             "Power Apps",
             "Power Platform"
         ],
-        "categories": [ "POWERFX" ],
+        "categories": [
+            "POWERFX"
+        ],
         "metadata": [
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
             },
             {
-              "key": "POWERFX-TAGS",
-              "value": "Financial"
+                "key": "POWERFX-TAGS",
+                "value": "Financial"
             }
         ],
         "thumbnails": [
@@ -195,7 +214,8 @@
         "authors": [
             {
                 "gitHubAccount": "matthewdevaney",
-                "pictureUrl": "https://avatars.githubusercontent.com/u/59677945?s=460&v=4"
+                "name": "Matthew Devaney",
+                "pictureUrl": "https://github.com/matthewdevaney.png"
             }
         ],
         "references": [
