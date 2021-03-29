@@ -1,0 +1,121 @@
+{
+  "ComponentIndexes": {
+    "ConvertBaseNumber": 1,
+    "ConvertBaseNumber_1": 1
+  },
+  "ControlUniqueIds": {
+    "App": 1,
+    "BinaryToDecimal": 24,
+    "BinaryToDecimalLabel": 11,
+    "BinaryToDecimalResultLabel": 14,
+    "BinaryToDecimalTextInput": 12,
+    "ConvertBaseNumber": 3,
+    "ConvertBaseNumber_1": 5,
+    "DecimalToBinary": 23,
+    "DecimalToBinaryLabel": 7,
+    "DecimalToBinaryResultLabel": 10,
+    "DecimalToBinaryTextInput": 8,
+    "DecimalToHex": 25,
+    "DecimalToHexLabel": 15,
+    "DecimalToHexResultLabel": 18,
+    "DecimalToHexTextInput": 16,
+    "HexToDecimal": 26,
+    "HexToDecimalLabel": 19,
+    "HexToDecimalResultLabel": 22,
+    "HexToDecimalTextInput": 20,
+    "Icon1": 9,
+    "Icon1_1": 13,
+    "Icon1_2": 17,
+    "Icon1_3": 21,
+    "Screen1": 4,
+    "TitleLabel": 6
+  },
+  "HeaderLastSavedDateTimeUTC": "03/21/2021 13:32:01",
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceRootPaths": {},
+  "OldLogoFileName": "ra1ni1c1.jpg",
+  "OrderComponentMetadata": {
+    "3806a73a26424758af382d68de773830": 0
+  },
+  "OrderComponentTemplate": {
+    "3806a73a26424758af382d68de773830": 0
+  },
+  "OrderDataSource": {
+    "DropDownSample": 1,
+    "ListboxSample": 0
+  },
+  "OrderGroupControls": {
+    "BinaryToDecimal": {
+      "BinaryToDecimalLabel": 0,
+      "BinaryToDecimalResultLabel": 1,
+      "BinaryToDecimalTextInput": 2,
+      "Icon1_1": 3
+    },
+    "DecimalToBinary": {
+      "DecimalToBinaryLabel": 0,
+      "DecimalToBinaryResultLabel": 1,
+      "DecimalToBinaryTextInput": 2,
+      "Icon1": 3
+    },
+    "DecimalToHex": {
+      "DecimalToHexLabel": 0,
+      "DecimalToHexResultLabel": 1,
+      "DecimalToHexTextInput": 2,
+      "Icon1_2": 3
+    },
+    "HexToDecimal": {
+      "HexToDecimalLabel": 0,
+      "HexToDecimalResultLabel": 1,
+      "HexToDecimalTextInput": 2,
+      "Icon1_3": 3
+    }
+  },
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "icon": 2,
+    "label": 0,
+    "text": 1
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "BinaryToDecimal": 8,
+    "BinaryToDecimalLabel": 7,
+    "BinaryToDecimalResultLabel": 11,
+    "BinaryToDecimalTextInput": 9,
+    "ConvertBaseNumber": 0,
+    "ConvertBaseNumber_1": 0,
+    "DecimalToBinary": 3,
+    "DecimalToBinaryLabel": 2,
+    "DecimalToBinaryResultLabel": 6,
+    "DecimalToBinaryTextInput": 4,
+    "DecimalToHex": 13,
+    "DecimalToHexLabel": 12,
+    "DecimalToHexResultLabel": 16,
+    "DecimalToHexTextInput": 14,
+    "HexToDecimal": 18,
+    "HexToDecimalLabel": 17,
+    "HexToDecimalResultLabel": 21,
+    "HexToDecimalTextInput": 19,
+    "Icon1": 5,
+    "Icon1_1": 10,
+    "Icon1_2": 15,
+    "Icon1_3": 20,
+    "Screen1": 0,
+    "TitleLabel": 1
+  },
+  "TemplateVersions": {
+    "3806a73a26424758af382d68de773830": "637519303213901685"
+  },
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.2062448,
+    "ControlCount": {
+      "3806a73a26424758af382d68de773830": 2,
+      "group": 4,
+      "icon": 4,
+      "label": 9,
+      "screen": 1,
+      "text": 4
+    },
+    "DeserializationLoadTime": 1.3705449
+  }
+}

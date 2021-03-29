@@ -1,0 +1,236 @@
+Screen1 As screen:
+
+    ConvertBaseNumber_1 As ConvertBaseNumber:
+        BinaryToDecimal: |-
+            =With(
+                {
+                    tblDecimals: AddColumns(
+                        Sequence(Len(Text(Binary)), 0),
+                        "Decimals",
+                        Power(2, ThisRecord.Value) * Mid(Text(Binary), Len(Text(Binary)) - ThisRecord.Value, 1)
+                    )
+                },
+                Sum(tblDecimals, Decimals)
+            )
+        DecimalToBinary: |
+            =With(
+                {
+                    tblBinaries: AddColumns(
+                        Sequence(RoundDown(Ln(Decimal) / Ln(2) + 1, 0), 0),
+                        "Binaries",
+                        If(
+                            ThisRecord.Value = 0, Mod(Decimal, 2),
+                            Mod(RoundDown(Decimal / Power(2, ThisRecord.Value), 0), 2)
+                        )
+                    )
+                },
+                Concat(Sort(tblBinaries, Value, Descending), Binaries & "")
+            )
+        DecimalToHex: |
+            =With(
+                {
+                    tblHexs: AddColumns(
+                        Sequence(RoundDown(Ln(Decimal) / Ln(16) + 1, 0), 0),
+                        "Hexs",
+                        If(
+                            ThisRecord.Value = 0, Mod(Decimal, 16),
+                            Mod(RoundDown((Decimal - Mod(Decimal, 16)) / Power(16, ThisRecord.Value), 0), 16)
+                        )
+                    )
+                },
+                Concat(Sort(tblHexs, Value, Descending),
+                    Switch(
+                        Hexs,
+                        10,"a", 11,"b", 12,"c", 13,"d", 14,"e", 15,"f",
+                        Hexs
+                    )
+                )
+            )
+        HexToDecimal: |-
+            =// https://mofumofupower.hatenablog.com/entry/custom_function_apps
+            With(
+                {
+                    tblDecimals: AddColumns(
+                        Sequence(Len(Hex), 0),
+                        "Decimals",
+                        With(
+                            {
+                                HexVal: Mid(Hex, Len(Hex) - ThisRecord.Value, 1)
+                            },
+                            If(
+                                HexVal in Sequence(10, 0), HexVal,
+                                LookUp(
+                                    Table({key:"a", val:10}, {key:"b", val:11}, {key:"c", val:12}, {key:"d", val:13}, {key:"e", val:14}, {key:"f", val:15}),
+                                    key = Lower(HexVal)
+                                ).val
+                            )
+                        )
+                    )
+                },
+                Sum(tblDecimals, Decimals  * 16 ^ Value)
+            )
+
+    TitleLabel As label:
+        Align: =Align.Center
+        Font: =Font.Georgia
+        Height: =100
+        Size: =50
+        Text: ="---Convert Base Number Tool---"
+        Width: =Parent.Width
+        ZIndex: =2
+
+    DecimalToBinary As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =7
+
+        DecimalToBinaryLabel As label:
+            Size: =20
+            Text: =">Decimal To Binary"
+            Width: =300
+            X: =200
+            Y: =TitleLabel.Y + TitleLabel.Height + 50
+            ZIndex: =3
+
+        DecimalToBinaryTextInput As text:
+            Default: ="10"
+            Format: =TextFormat.Number
+            Height: =64
+            Size: =20
+            X: =DecimalToBinaryLabel.X + 40
+            Y: =DecimalToBinaryLabel.Y + DecimalToBinaryLabel.Height
+            ZIndex: =4
+
+        Icon1 As icon.ArrowRight:
+            Icon: =Icon.ArrowRight
+            X: =DecimalToBinaryTextInput.X + DecimalToBinaryTextInput.Width + 20
+            Y: =DecimalToBinaryTextInput.Y
+            ZIndex: =5
+
+        DecimalToBinaryResultLabel As label:
+            Height: =64
+            Size: =20
+            Text: =ConvertBaseNumber_1.DecimalToBinary(DecimalToBinaryTextInput.Text)
+            Width: =500
+            X: =Icon1.X + Icon1.Width + 20
+            Y: =DecimalToBinaryTextInput.Y
+            ZIndex: =6
+
+    BinaryToDecimal As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =170
+        ZIndex: =11
+
+        BinaryToDecimalLabel As label:
+            Size: =20
+            Text: =">Binary To Decimal"
+            Width: =300
+            X: =DecimalToBinaryLabel.X
+            Y: =DecimalToBinaryTextInput.Y + DecimalToBinaryTextInput.Height + 50
+            ZIndex: =7
+
+        BinaryToDecimalTextInput As text:
+            Default: ="1010"
+            Format: =TextFormat.Number
+            Height: =64
+            Size: =20
+            X: =BinaryToDecimalLabel.X + 40
+            Y: =BinaryToDecimalLabel.Y + BinaryToDecimalLabel.Height
+            ZIndex: =8
+
+        Icon1_1 As icon.ArrowRight:
+            Icon: =Icon.ArrowRight
+            X: =BinaryToDecimalTextInput.X + BinaryToDecimalTextInput.Width + 20
+            Y: =BinaryToDecimalTextInput.Y
+            ZIndex: =9
+
+        BinaryToDecimalResultLabel As label:
+            Height: =64
+            Size: =20
+            Text: =ConvertBaseNumber_1.BinaryToDecimal(BinaryToDecimalTextInput.Text)
+            Width: =500
+            X: =Icon1_1.X + Icon1_1.Width + 20
+            Y: =BinaryToDecimalTextInput.Y
+            ZIndex: =10
+
+    DecimalToHex As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =170
+        ZIndex: =15
+
+        DecimalToHexLabel As label:
+            Size: =20
+            Text: =">Decimal To Hex"
+            Width: =300
+            X: =DecimalToBinaryLabel.X
+            Y: =BinaryToDecimalTextInput.Y + BinaryToDecimalTextInput.Height + 50
+            ZIndex: =11
+
+        DecimalToHexTextInput As text:
+            Default: ="255"
+            Format: =TextFormat.Number
+            Height: =64
+            Size: =20
+            X: =DecimalToHexLabel.X + 40
+            Y: =DecimalToHexLabel.Y + DecimalToHexLabel.Height
+            ZIndex: =12
+
+        Icon1_2 As icon.ArrowRight:
+            Icon: =Icon.ArrowRight
+            X: =DecimalToHexTextInput.X + DecimalToHexTextInput.Width + 20
+            Y: =DecimalToHexTextInput.Y
+            ZIndex: =13
+
+        DecimalToHexResultLabel As label:
+            Height: =64
+            Size: =20
+            Text: =ConvertBaseNumber_1.DecimalToHex(DecimalToHexTextInput.Text)
+            Width: =500
+            X: =Icon1_2.X + Icon1_2.Width + 20
+            Y: =DecimalToHexTextInput.Y
+            ZIndex: =14
+
+    HexToDecimal As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =324
+        ZIndex: =19
+
+        HexToDecimalLabel As label:
+            Size: =20
+            Text: =">Hex To Decimal"
+            Width: =300
+            X: =DecimalToBinaryLabel.X
+            Y: =DecimalToHexTextInput.Y + DecimalToHexTextInput.Height + 50
+            ZIndex: =15
+
+        HexToDecimalTextInput As text:
+            Default: ="ff"
+            Height: =64
+            Size: =20
+            X: =HexToDecimalLabel.X + 40
+            Y: =HexToDecimalLabel.Y + HexToDecimalLabel.Height
+            ZIndex: =16
+
+        Icon1_3 As icon.ArrowRight:
+            Icon: =Icon.ArrowRight
+            X: =HexToDecimalTextInput.X + HexToDecimalTextInput.Width + 20
+            Y: =HexToDecimalTextInput.Y
+            ZIndex: =17
+
+        HexToDecimalResultLabel As label:
+            Height: =64
+            Size: =20
+            Text: =ConvertBaseNumber_1.HexToDecimal(HexToDecimalTextInput.Text)
+            Width: =500
+            X: =Icon1_3.X + Icon1_3.Width + 20
+            Y: =HexToDecimalTextInput.Y
+            ZIndex: =18
+
