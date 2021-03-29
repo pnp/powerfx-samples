@@ -2,7 +2,7 @@
 
 ## Summary
 
-This function is convert base numbers. 
+This function is convert base numbers.
 
 ![picture of the sample](assets/preview.png)
 
@@ -12,7 +12,7 @@ This function is convert base numbers.
 
 ## Compatibility
 
-![Power Apps Source File Pack and Unpack Utility 0.19](https://img.shields.io/badge/PSAopa-0.19-green.svg)
+![Power Apps Source File Pack and Unpack Utility 0.20](https://img.shields.io/badge/PSAopa-0.20-green.svg)
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ None
 
 Solution|Author(s)
 --------|---------
-convertbasenumber-functions | korune ([@koruneko32767](https://twitter.com/koruneko32767))
+convertbasenumber-functions | [korune](https://github.com/korune) ([@koruneko32767](https://twitter.com/koruneko32767))
 
 ## Version history
 
@@ -38,7 +38,7 @@ Version|Date|Comments
 
 ## Minimal Path to Awesome
 
-* [Download](solution\ConvertBaseNumber-Functions.msapp) the `.msapp` from the `solution` folder
+* [Download](solution\convertbasenumber-functions.msapp) the `.msapp` from the `solution` folder
 * Use the `.msapp` file using **File** > **Open** > **Browse** within Power Apps Studio.
 
 ## Using the Source Code
@@ -179,5 +179,4 @@ Number
 DecimalToBinary(345)
 ```
 
-
-<img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/readme-template" />
+<img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/convertbasenumber-functions" />
