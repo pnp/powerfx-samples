@@ -69,7 +69,7 @@ Version|Date|Comments
 
 ## Minimal Path to Awesome
 
-* [Download](solution/powerfx-date-functions.msapp) the `.msapp` from the `solution` folder
+* [Download](https://github.com/pnp/powerfx-samples/raw/main/samples/date-functions/solution/powerfx-date-functions.msapp) the `.msapp` from the `solution` folder
 * Use the `.msapp` file using **File** > **Open** > **Browse** within Power Apps Studio.
 
 
