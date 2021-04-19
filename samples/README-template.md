@@ -40,7 +40,7 @@ Short summary on functionality and used technologies.
 
 Solution|Author(s)
 --------|---------
-folder name | Author Name ([@yourtwitterhandle](https://twitter.com/yourtwitterhandle)), Company
+folder name | [Author Name](LinkToYourGitHubProfile) ([@yourtwitterhandle](https://twitter.com/yourtwitterhandle)), Company
 
 ## Version history
 
