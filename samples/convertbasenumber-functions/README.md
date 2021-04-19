@@ -38,7 +38,7 @@ Version|Date|Comments
 
 ## Minimal Path to Awesome
 
-* [Download](solution\convertbasenumber-functions.msapp) the `.msapp` from the `solution` folder
+* [Download](solution/convertbasenumber-functions.msapp) the `.msapp` from the `solution` folder
 * Use the `.msapp` file using **File** > **Open** > **Browse** within Power Apps Studio.
 
 ## Using the Source Code
