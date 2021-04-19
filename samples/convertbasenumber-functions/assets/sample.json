@@ -4,6 +4,8 @@
     "name": "pnp-powerfx--samples-convertbasenumber-functions-hextodecimal",
     "version": "1.0.0.0",
     "source": "pnp",
+    "created": "2021-03-14T00:00:00.000Z",
+    "modified": "2021-03-14T00:00:00.000Z",
     "title": "HexToDecimal",
     "shortDescription": "This function is used to convert hex to decimal.",
     "longDescription": [
@@ -13,7 +15,9 @@
       "Power Apps",
       "Power Platform"
     ],
-    "categories": [],
+    "categories": [
+            "POWERFX"
+        ],
     "metadata": [
       {
         "key": "POWERAPPS-MANIFEST-VERSION",
@@ -24,7 +28,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions/assets/preview.png",
+        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/convertbasenumber-functions/assets/preview.png",
         "alt": "Convert Base Number Functions"
       }
     ],
@@ -54,6 +58,8 @@
     "name": "pnp-powerfx--samples-convertbasenumber-functions-decimaltohex",
     "version": "1.0.0.0",
     "source": "pnp",
+    "created": "2021-03-14T00:00:00.000Z",
+    "modified": "2021-03-14T00:00:00.000Z",
     "title": "DecimalToHex",
     "shortDescription": "This function is used to convert decimal to hex.  ",
     "longDescription": [
@@ -63,7 +69,9 @@
       "Power Apps",
       "Power Platform"
     ],
-    "categories": [],
+    "categories": [
+            "POWERFX"
+        ],
     "metadata": [
       {
         "key": "POWERAPPS-MANIFEST-VERSION",
@@ -74,7 +82,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions/assets/preview.png",
+        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/convertbasenumber-functions/assets/preview.png",
         "alt": "Convert Base Number Functions"
       }
     ],
@@ -104,6 +112,8 @@
     "name": "pnp-powerfx--samples-convertbasenumber-functions-binarytodecimal",
     "version": "1.0.0.0",
     "source": "pnp",
+    "created": "2021-03-14T00:00:00.000Z",
+    "modified": "2021-03-14T00:00:00.000Z",
     "title": "BinaryToDecimal",
     "shortDescription": "This function is used to convert binary to decimal.",
     "longDescription": [
@@ -113,7 +123,9 @@
       "Power Apps",
       "Power Platform"
     ],
-    "categories": [],
+    "categories": [
+            "POWERFX"
+        ],
     "metadata": [
       {
         "key": "POWERAPPS-MANIFEST-VERSION",
@@ -124,7 +136,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions/assets/preview.png",
+        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/convertbasenumber-functions/assets/preview.png",
         "alt": "Convert Base Number Functions"
       }
     ],
@@ -154,6 +166,8 @@
     "name": "pnp-powerfx--samples-convertbasenumber-functions-decimaltobinary",
     "version": "1.0.0.0",
     "source": "pnp",
+    "created": "2021-03-14T00:00:00.000Z",
+    "modified": "2021-03-14T00:00:00.000Z",
     "title": "DecimalToBinary",
     "shortDescription": "This function is used to convert decimal to binary. ",
     "longDescription": [
@@ -163,7 +177,9 @@
       "Power Apps",
       "Power Platform"
     ],
-    "categories": [],
+    "categories": [
+            "POWERFX"
+        ],
     "metadata": [
       {
         "key": "POWERAPPS-MANIFEST-VERSION",
@@ -174,7 +190,7 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions/assets/preview.png",
+        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/convertbasenumber-functions/assets/preview.png",
         "alt": "Convert Base Number Functions"
       }
     ],
