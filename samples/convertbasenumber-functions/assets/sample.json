@@ -8,16 +8,18 @@
     "modified": "2021-03-14T00:00:00.000Z",
     "title": "HexToDecimal",
     "shortDescription": "This function is used to convert hex to decimal.",
-    "longDescription": [
-    ],
+    "longDescription": [],
     "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions",
     "products": [
       "Power Apps",
       "Power Platform"
     ],
+    "tags": [
+      "NUMBER", "HEX", "DECIMAL", "CONVERT"
+    ],
     "categories": [
-            "POWERFX"
-        ],
+      "POWERFX"
+    ],
     "metadata": [
       {
         "key": "POWERAPPS-MANIFEST-VERSION",
@@ -62,16 +64,18 @@
     "modified": "2021-03-14T00:00:00.000Z",
     "title": "DecimalToHex",
     "shortDescription": "This function is used to convert decimal to hex.  ",
-    "longDescription": [
-    ],
+    "longDescription": [],
     "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions",
     "products": [
       "Power Apps",
       "Power Platform"
     ],
+    "tags": [
+      "NUMBER", "HEX", "DECIMAL", "CONVERT"
+    ],
     "categories": [
-            "POWERFX"
-        ],
+      "POWERFX"
+    ],
     "metadata": [
       {
         "key": "POWERAPPS-MANIFEST-VERSION",
@@ -116,16 +120,18 @@
     "modified": "2021-03-14T00:00:00.000Z",
     "title": "BinaryToDecimal",
     "shortDescription": "This function is used to convert binary to decimal.",
-    "longDescription": [
-    ],
+    "longDescription": [],
     "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions",
     "products": [
       "Power Apps",
       "Power Platform"
     ],
+    "tags": [
+      "NUMBER", "BINARY", "DECIMAL", "CONVERT"
+    ],
     "categories": [
-            "POWERFX"
-        ],
+      "POWERFX"
+    ],
     "metadata": [
       {
         "key": "POWERAPPS-MANIFEST-VERSION",
@@ -170,16 +176,18 @@
     "modified": "2021-03-14T00:00:00.000Z",
     "title": "DecimalToBinary",
     "shortDescription": "This function is used to convert decimal to binary. ",
-    "longDescription": [
-    ],
+    "longDescription": [],
     "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions",
     "products": [
       "Power Apps",
       "Power Platform"
     ],
+    "tags": [
+      "NUMBER", "BINARY", "DECIMAL", "CONVERT"
+    ],
     "categories": [
-            "POWERFX"
-        ],
+      "POWERFX"
+    ],
     "metadata": [
       {
         "key": "POWERAPPS-MANIFEST-VERSION",

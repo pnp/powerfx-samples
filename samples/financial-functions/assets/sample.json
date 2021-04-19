@@ -16,6 +16,10 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "NUMBER",
+            "FINANCIAL"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -23,10 +27,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Financial"
             }
         ],
         "thumbnails": [
@@ -74,6 +74,10 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "NUMBER",
+            "FINANCIAL"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -81,10 +85,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Financial"
             }
         ],
         "thumbnails": [
@@ -132,6 +132,10 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "NUMBER",
+            "FINANCIAL"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -139,10 +143,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Financial"
             }
         ],
         "thumbnails": [
@@ -190,6 +190,10 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "NUMBER",
+            "FINANCIAL"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -197,10 +201,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Financial"
             }
         ],
         "thumbnails": [

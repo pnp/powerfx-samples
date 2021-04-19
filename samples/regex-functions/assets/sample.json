@@ -14,6 +14,11 @@
       "Power Apps",
       "Power Platform"
     ],
+    "tags": [
+      "TEXT",
+      "CURRENCY",
+      "VALIDATION"
+    ],
     "categories": [
       "POWERFX"
     ],
@@ -21,10 +26,6 @@
       {
         "key": "POWERAPPS-MANIFEST-VERSION",
         "value": "0.19"
-      },
-      {
-        "key": "POWERFX-TAGS",
-        "value": "RegEx"
       }
     ],
     "thumbnails": [
@@ -83,6 +84,11 @@
       "Power Apps",
       "Power Platform"
     ],
+    "tags": [
+      "TEXT",
+      "PERCENT",
+      "VALIDATION"
+    ],
     "categories": [
       "POWERFX"
     ],
@@ -90,10 +96,6 @@
       {
         "key": "POWERAPPS-MANIFEST-VERSION",
         "value": "0.19"
-      },
-      {
-        "key": "POWERFX-TAGS",
-        "value": "RegEx"
       }
     ],
     "thumbnails": [
@@ -152,6 +154,11 @@
       "Power Apps",
       "Power Platform"
     ],
+    "tags": [
+      "TEXT",
+      "TIME",
+      "VALIDATION"
+    ],
     "categories": [
       "POWERFX"
     ],
@@ -159,10 +166,6 @@
       {
         "key": "POWERAPPS-MANIFEST-VERSION",
         "value": "0.19"
-      },
-      {
-        "key": "POWERFX-TAGS",
-        "value": "RegEx"
       }
     ],
     "thumbnails": [

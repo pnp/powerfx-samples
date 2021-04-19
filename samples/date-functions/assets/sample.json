@@ -16,6 +16,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "QUARTER",
+            "DAY"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -23,10 +28,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -74,6 +75,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "MONTH",
+            "DAY"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -81,10 +87,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -132,6 +134,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "WEEK",
+            "DAY"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -139,10 +146,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -190,6 +193,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "YEAR",
+            "DAY"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -197,10 +205,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -248,6 +252,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "RANGE",
+            "DAY"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -255,10 +264,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -306,6 +311,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "YEAR",
+            "LEAP"
+        ],        
         "categories": [
             "POWERFX"
         ],
@@ -313,10 +323,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -364,6 +370,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "TODAY",
+            "DAY"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -371,10 +382,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -422,6 +429,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "MONTH",
+            "DAY"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -429,10 +441,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -480,6 +488,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "QUARTER",
+            "DAY"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -487,10 +500,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -538,6 +547,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "WEEK",
+            "DAY"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -545,10 +559,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -596,6 +606,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "YEAR",
+            "DAY"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -603,10 +618,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -654,6 +665,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "RANGE",
+            "DAY"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -661,10 +677,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -712,6 +724,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "RANGE",
+            "MONTH"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -719,10 +736,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -770,6 +783,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "RANGE",
+            "QUARTER"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -777,10 +795,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -828,6 +842,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "RANGE",
+            "WEEK"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -835,10 +854,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -886,6 +901,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "RANGE",
+            "YEAR"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -893,10 +913,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -944,6 +960,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "RANGE",
+            "DAY"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -951,10 +972,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -1002,6 +1019,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "RANGE",
+            "MONTH"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -1009,10 +1031,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -1060,6 +1078,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "RANGE",
+            "QUARTER"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -1067,10 +1090,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -1118,6 +1137,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "RANGE",
+            "WEEK"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -1125,10 +1149,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -1176,6 +1196,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "RANGE",
+            "YEAR"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -1183,10 +1208,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -1234,6 +1255,12 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "RANGE",
+            "DAY",
+            "WEEKDAY"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -1241,10 +1268,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -1292,6 +1315,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "RANGE",
+            "MONTH"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -1299,10 +1327,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -1350,6 +1374,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "QUARTER",
+            "DAY"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -1357,10 +1386,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -1408,6 +1433,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "DAY",
+            "WEEK"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -1415,10 +1445,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -1466,6 +1492,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "YEAR",
+            "DAY"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -1473,10 +1504,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -1524,6 +1551,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "WEEK",
+            "MONTH"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -1531,10 +1563,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -1582,6 +1610,11 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "WEEK",
+            "YEAR"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -1589,10 +1622,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
@@ -1640,6 +1669,12 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+            "DATE",
+            "YEAR",
+            "DECIMAL",
+            "RANGE"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -1647,10 +1682,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.19"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Date"
             }
         ],
         "thumbnails": [
