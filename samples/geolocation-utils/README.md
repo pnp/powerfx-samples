@@ -38,7 +38,7 @@ Version|Date|Comments
 
 ## Minimal Path to Awesome
 
-* [Download](solution/GeoLocation-Utils.msapp) the `.msapp` from the `solution` folder
+* [Download](https://github.com/pnp/powerfx-samples/raw/main/samples/geolocation-utils/solution/GeoLocation-Utils.msapp) the `.msapp` from the `solution` folder
 * Use the `.msapp` file using **File** > **Open** > **Browse** within Power Apps Studio.
 
 
