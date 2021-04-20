@@ -2,6 +2,22 @@ Screen1 As screen:
 
     UDFRegexUtils As RegexUtils:
         Height: =25
+        IsCanadaPhoneNumber: |-
+            =//Regex to match [CA] phone number
+                            If(
+                                IsMatch(
+                                    CanadianPhoneNumberTxt,
+                                    "^(?:(?:\+?1\s*(?:[.-]\s*)?)?(?:\(\s*([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9])\s*\)|([2-9]1[02-9]|[2-9][02-8]1|[2-9][02-8][02-9]))\s*(?:[.-]\s*)?)?([2-9]1[02-9]|[2-9][02-9]1|[2-9][02-9]{2})\s*(?:[.-]\s*)?([0-9]{4})(?:\s*(?:#|x\.?|ext\.?|extension)\s*(\d+))?$"
+                                ),
+                                true,
+                                false
+                            )
+        IsCreditCard: |-
+            =//Regex to match a valid credit card, Visa, Mastercard, AMEX
+            If(IsMatch(CreditCardTxt, "\b((4\d{3}|5[1-5]\d{2}|2\d{3}|3[47]\d{1,2})[\s\-]?\d{4,6}[\s\-]?\d{4,6}?([\s\-]\d{3,4})?(\d{3})?)\b"),
+                true,
+                false
+            )
         IsCurrency: |-
             =//Regex to match [US] currency format
             If(
@@ -12,6 +28,36 @@ Screen1 As screen:
                 true,
                 false
             )
+        IsEmail: |-
+            =//Regex to match email address
+                            If(
+                                IsMatch(
+                                    EmailTxt,
+                                   "^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"
+                                ),
+                                true,
+                                false
+                            )
+        IsIPAddress: |-
+            =//Regex to match v4 IP Address
+                            If(
+                                IsMatch(
+                                    IPv4Txt,
+                                    "\b(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}\b"
+                                ),
+                                true,
+                                false
+                            )
+        IsNHSNumber: |-
+            =//Regex to match [UK] NHS Number
+                            If(
+                                IsMatch(
+                                    NHSNumberTxt,
+                                    "\b\d{3}\s\d{3}\s\d{4}\b"
+                                ),
+                                true,
+                                false
+                            )
         IsPercent: |-
             =//Regex to match percent format
             If(
@@ -32,6 +78,76 @@ Screen1 As screen:
                 true,
                 false
             )
+        IsUKDrivingLicence: |-
+            =//Regex to match [UK] Driving Licence number
+                            If(
+                                IsMatch(
+                                    UKDrivingLicenceTxt,
+                                    "^([A-Z]{2}[9]{3}|[A-Z]{3}[9]{2}|[A-Z]{4}[9]{1}|[A-Z]{5})[0-9]{6}([A-Z]{1}[9]{1}|[A-Z]{2})[A-Z0,9]{3}$"
+                                ),
+                                true,
+                                false
+                            )
+        IsUKNationalInsuranceNumber: |-
+            =//Regex to match [UK] National Insurance Number
+                            If(
+                                IsMatch(
+                                    UKNINumberTxt,
+                                    "^(?!BG)(?!GB)(?!NK)(?!KN)(?!TN)(?!NT)(?!ZZ)(?:[A-CEGHJ-PR-TW-Z][A-CEGHJ-NPR-TW-Z])(?:\s*\d\s*){6}([A-D]|\s)$"
+                                ),
+                                true,
+                                false
+                            )
+        IsUKPassport: |-
+            =//Regex to match [UK] passport number
+            If(
+                IsMatch(
+                    UKPassportTxt,
+                    "^[0-9]{10}GBR[0-9]{7}[U,M,F]{1}[0-9]{9}$"
+                ),
+                true,
+                false
+            )
+        IsUKPhoneNumber: |-
+            =//Regex to match [UK] phone number
+                            If(
+                                IsMatch(
+                                    UKPhoneNumberTxt,
+                                    "^(?:(?:\(?(?:0(?:0|11)\)?[\s-]?\(?|\+)44\)?[\s-]?(?:\(?0\)?[\s-]?)?)|(?:\(?0))(?:(?:\d{5}\)?[\s-]?\d{4,5})|(?:\d{4}\)?[\s-]?(?:\d{5}|\d{3}[\s-]?\d{3}))|(?:\d{3}\)?[\s-]?\d{3}[\s-]?\d{3,4})|(?:\d{2}\)?[\s-]?\d{4}[\s-]?\d{4}))(?:[\s-]?(?:x|ext\.?|\#)\d{3,4})?$"
+                                ),
+                                true,
+                                false
+                            )
+        IsURL: |-
+            =//Regex to match a valid url
+            If(
+                IsMatch(
+                    URLTxt,
+                    "(?:(?=[\s`!()\[\]{};:'.,<>?«»“”‘’])|\b)((?:[a-z][\w-]+:(?:\/{1,3}|[a-z0-9%])|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}\/|[a-z0-9.\-]+[.](?:com|org|net))(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))*(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'.,<>?«»“”‘’]|\b))"
+                ),
+                true,
+                false
+            )
+        IsUSPhoneNumber: |-
+            =//Regex to match [US] phone number
+            If(
+                IsMatch(
+                    USPhoneNumberTxt,
+                    "1?[-|\.|\s]*[-|\.|(|\s]*([2-9][0-8][0-9])[-|\.|)|\s]*([2-9][0-9]{2})[-|\.|\s]*([0-9]{4})(\se?x?t?(\d*))?"
+                ),
+                true,
+                false
+            )
+        IsUSSocialSecurityNumber: |-
+            =//Regex to match [US] social security number format
+                            If(
+                                IsMatch(
+                                    USSNTxt,
+                                    "\b[\d]{3} [\d]{2} [\d]{4}|([\d] ?){3}[\—\-_] ?([\d] ?){2}[\—\-_] ?([\d] ?){4}\b"
+                                ),
+                                true,
+                                false
+                            )
         Width: =87
         X: =24
         Y: =716
@@ -48,8 +164,8 @@ Screen1 As screen:
         RadiusTopLeft: =1
         RadiusTopRight: =1
         Width: =144
-        X: =68
-        Y: =75
+        X: =24
+        Y: =58
         ZIndex: =3
 
     CurrencyValidator As toggleSwitch:
@@ -62,8 +178,8 @@ Screen1 As screen:
         TrueFill: =RGBA(141, 198, 63, 1)
         TrueText: ="Valid"
         Width: =132
-        X: =249
-        Y: =75
+        X: =207
+        Y: =58
         ZIndex: =4
 
     Time As text:
@@ -73,14 +189,14 @@ Screen1 As screen:
             ="10:59:59"
         Font: =Font.Lato
         Height: =34
-        HintText: ="Currency"
+        HintText: ="Time"
         RadiusBottomLeft: =1
         RadiusBottomRight: =1
         RadiusTopLeft: =1
         RadiusTopRight: =1
         Width: =144
-        X: =75
-        Y: =289
+        X: =24
+        Y: =213
         ZIndex: =5
 
     TimeValidator As toggleSwitch:
@@ -93,8 +209,8 @@ Screen1 As screen:
         TrueFill: =RGBA(141, 198, 63, 1)
         TrueText: ="Valid"
         Width: =132
-        X: =256
-        Y: =289
+        X: =207
+        Y: =213
         ZIndex: =6
 
     CurrencyInputHdr As label:
@@ -105,8 +221,8 @@ Screen1 As screen:
         Size: =11
         Text: ="Currency format Input Validation"
         Width: =293
-        X: =66
-        Y: =40
+        X: =24
+        Y: =23
         ZIndex: =7
 
     TimeInputHdr As label:
@@ -117,8 +233,8 @@ Screen1 As screen:
         Size: =11
         Text: ="Time format Input Validation"
         Width: =293
-        X: =73
-        Y: =264
+        X: =24
+        Y: =188
         ZIndex: =9
 
     Percent As text:
@@ -127,14 +243,14 @@ Screen1 As screen:
         Default: ="100%"
         Font: =Font.Lato
         Height: =34
-        HintText: ="Currency"
+        HintText: ="Percent"
         RadiusBottomLeft: =1
         RadiusBottomRight: =1
         RadiusTopLeft: =1
         RadiusTopRight: =1
         Width: =144
-        X: =68
-        Y: =178
+        X: =24
+        Y: =131
         ZIndex: =10
 
     PercentValidator As toggleSwitch:
@@ -147,8 +263,8 @@ Screen1 As screen:
         TrueFill: =RGBA(141, 198, 63, 1)
         TrueText: ="Valid"
         Width: =132
-        X: =249
-        Y: =182
+        X: =207
+        Y: =135
         ZIndex: =11
 
     PercentInputHdr As label:
@@ -159,7 +275,577 @@ Screen1 As screen:
         Size: =11
         Text: ="Percent format Input Validation"
         Width: =293
-        X: =66
-        Y: =153
+        X: =24
+        Y: =106
         ZIndex: =12
+
+    IsCanadianPhoneNumberInputHdr_1 As label:
+        Color: =RGBA(130, 141, 158, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Size: =11
+        Text: ="Canadian Phone Number Validation"
+        Width: =293
+        X: =24
+        Y: =263
+        ZIndex: =13
+
+    CanadianPhoneNumber As text:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =1
+        Default: ="47-555-1212"
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="Phone Number"
+        RadiusBottomLeft: =1
+        RadiusBottomRight: =1
+        RadiusTopLeft: =1
+        RadiusTopRight: =1
+        Width: =144
+        X: =24
+        Y: =302
+        ZIndex: =14
+
+    CanadianPhoneNumberValidator As toggleSwitch:
+        Default: =UDFRegexUtils.IsCanadaPhoneNumber(CanadianPhoneNumber.Text)
+        FalseFill: =RGBA(255, 0, 0, 1)
+        FalseText: ="Invalid"
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =34
+        TrueFill: =RGBA(141, 198, 63, 1)
+        TrueText: ="Valid"
+        Width: =132
+        X: =207
+        Y: =302
+        ZIndex: =15
+
+    IsCreditCardNumberInputHdr As label:
+        Color: =RGBA(130, 141, 158, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Size: =11
+        Text: ="Credit Card Validation"
+        Width: =293
+        X: =24
+        Y: =347
+        ZIndex: =16
+
+    CreditCardNumber As text:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =1
+        Default: ="47-555-1212"
+        Font: =Font.Lato
+        Height: =34
+        HintText: ="Credit Card Number"
+        RadiusBottomLeft: =1
+        RadiusBottomRight: =1
+        RadiusTopLeft: =1
+        RadiusTopRight: =1
+        Width: =144
+        X: =24
+        Y: =386
+        ZIndex: =17
+
+    CreditCardValidator As toggleSwitch:
+        Default: =UDFRegexUtils.IsCreditCard(CreditCardNumber.Text)
+        FalseFill: =RGBA(255, 0, 0, 1)
+        FalseText: ="Invalid"
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =34
+        TrueFill: =RGBA(141, 198, 63, 1)
+        TrueText: ="Valid"
+        Width: =132
+        X: =207
+        Y: =386
+        ZIndex: =18
+
+    IsEmailInputHdr As label:
+        Color: =RGBA(130, 141, 158, 1)
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =39
+        Size: =11
+        Text: ="Email Validation"
+        Width: =293
+        X: =24
+        Y: =431
+        ZIndex: =19
+
+    EmailInput As text:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =1
+        Default: ="47-555-1212"
+        Font: =Font.Lato
+        Height: =34
+        HintText: |
+            ="Email address"
+        RadiusBottomLeft: =1
+        RadiusBottomRight: =1
+        RadiusTopLeft: =1
+        RadiusTopRight: =1
+        Width: =144
+        X: =24
+        Y: =470
+        ZIndex: =20
+
+    EmailValidator As toggleSwitch:
+        Default: =UDFRegexUtils.IsEmail(EmailInput.Text)
+        FalseFill: =RGBA(255, 0, 0, 1)
+        FalseText: ="Invalid"
+        Font: =Font.Lato
+        FontWeight: =FontWeight.Semibold
+        Height: =34
+        TrueFill: =RGBA(141, 198, 63, 1)
+        TrueText: ="Valid"
+        Width: =132
+        X: =207
+        Y: =470
+        ZIndex: =21
+
+    Group7 As group:
+        Height: =5
+        Width: =5
+        X: =60
+        Y: =60
+        ZIndex: =25
+
+        IsIPV4InputHdr As label:
+            Color: =RGBA(130, 141, 158, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Size: =11
+            Text: ="IPV4 Validation"
+            Width: =293
+            X: =24
+            Y: =515
+            ZIndex: =22
+
+        IPV4Input As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Default: ="47-555-1212"
+            Font: =Font.Lato
+            Height: =34
+            HintText: ="IP Address"
+            RadiusBottomLeft: =1
+            RadiusBottomRight: =1
+            RadiusTopLeft: =1
+            RadiusTopRight: =1
+            Width: =144
+            X: =24
+            Y: =554
+            ZIndex: =23
+
+        IPV4Validator As toggleSwitch:
+            Default: =UDFRegexUtils.IsIPAddress(IPV4Input.Text)
+            FalseFill: =RGBA(255, 0, 0, 1)
+            FalseText: ="Invalid"
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =34
+            TrueFill: =RGBA(141, 198, 63, 1)
+            TrueText: ="Valid"
+            Width: =132
+            X: =207
+            Y: =554
+            ZIndex: =24
+
+    Group7_1 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =28
+
+        NHSNumberInputHdr As label:
+            Color: =RGBA(130, 141, 158, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Size: =11
+            Text: ="NHS Number Validation"
+            Width: =293
+            X: =24
+            Y: =599
+            ZIndex: =25
+
+        NHSNumberInput As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Default: ="47-555-1212"
+            Font: =Font.Lato
+            Height: =34
+            HintText: ="NHS Number"
+            RadiusBottomLeft: =1
+            RadiusBottomRight: =1
+            RadiusTopLeft: =1
+            RadiusTopRight: =1
+            Width: =144
+            X: =24
+            Y: =638
+            ZIndex: =26
+
+        NHSNumberValidator As toggleSwitch:
+            Default: =UDFRegexUtils.IsNHSNumber(NHSNumberInput.Text)
+            FalseFill: =RGBA(255, 0, 0, 1)
+            FalseText: ="Invalid"
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =34
+            TrueFill: =RGBA(141, 198, 63, 1)
+            TrueText: ="Valid"
+            Width: =132
+            X: =207
+            Y: =638
+            ZIndex: =27
+
+    Group7_2 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =31
+
+        UKDrivingLicenseNumberInputHdr As label:
+            Color: =RGBA(130, 141, 158, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Size: =11
+            Text: ="UK Driving License Number Validation"
+            Width: =293
+            X: =22
+            Y: =683
+            ZIndex: =28
+
+        UKDrivingLicenseNumberInput As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Default: ="47-555-1212"
+            Font: =Font.Lato
+            Height: =34
+            HintText: ="Driving Licence Number"
+            RadiusBottomLeft: =1
+            RadiusBottomRight: =1
+            RadiusTopLeft: =1
+            RadiusTopRight: =1
+            Width: =144
+            X: =22
+            Y: =722
+            ZIndex: =29
+
+        UKDrivingLicenseNumberValidator As toggleSwitch:
+            Default: =UDFRegexUtils.IsUKDrivingLicence(UKDrivingLicenseNumberInput.Text)
+            FalseFill: =RGBA(255, 0, 0, 1)
+            FalseText: ="Invalid"
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =34
+            TrueFill: =RGBA(141, 198, 63, 1)
+            TrueText: ="Valid"
+            Width: =132
+            X: =205
+            Y: =722
+            ZIndex: =30
+
+    Group21 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =49
+
+        USSNInput As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Default: ="856-45-6789"
+            Font: =Font.Lato
+            Height: =34
+            HintText: ="URL"
+            RadiusBottomLeft: =1
+            RadiusBottomRight: =1
+            RadiusTopLeft: =1
+            RadiusTopRight: =1
+            Width: =144
+            X: =357
+            Y: =468
+            ZIndex: =46
+
+        USSNValidator As toggleSwitch:
+            Default: =UDFRegexUtils.IsUSSocialSecurityNumber(USSNInput.Text)
+            FalseFill: =RGBA(255, 0, 0, 1)
+            FalseText: ="Invalid"
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =34
+            TrueFill: =RGBA(141, 198, 63, 1)
+            TrueText: ="Valid"
+            Width: =132
+            X: =540
+            Y: =468
+            ZIndex: =47
+
+        USSNInputHdr As label:
+            Color: =RGBA(130, 141, 158, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Size: =11
+            Text: ="US Social Security Number Validation"
+            Width: =293
+            X: =357
+            Y: =433
+            ZIndex: =48
+
+    Group20 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =49
+
+        USPhoneNumberInput As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Default: |-
+                ="https://www.github.com"
+            Font: =Font.Lato
+            Height: =34
+            HintText: ="URL"
+            RadiusBottomLeft: =1
+            RadiusBottomRight: =1
+            RadiusTopLeft: =1
+            RadiusTopRight: =1
+            Width: =144
+            X: =357
+            Y: =384
+            ZIndex: =43
+
+        USPhoneNumberValidator As toggleSwitch:
+            Default: =UDFRegexUtils.IsUSPhoneNumber(USPhoneNumberInput.Text)
+            FalseFill: =RGBA(255, 0, 0, 1)
+            FalseText: ="Invalid"
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =34
+            TrueFill: =RGBA(141, 198, 63, 1)
+            TrueText: ="Valid"
+            Width: =132
+            X: =540
+            Y: =384
+            ZIndex: =44
+
+        USPhoneNumberInputHdr As label:
+            Color: =RGBA(130, 141, 158, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Size: =11
+            Text: ="US Phone Number Validation"
+            Width: =293
+            X: =357
+            Y: =349
+            ZIndex: =45
+
+    Group17 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =49
+
+        URLInput As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Default: |-
+                ="https://www.github.com"
+            Font: =Font.Lato
+            Height: =34
+            HintText: ="URL"
+            RadiusBottomLeft: =1
+            RadiusBottomRight: =1
+            RadiusTopLeft: =1
+            RadiusTopRight: =1
+            Width: =144
+            X: =357
+            Y: =300
+            ZIndex: =40
+
+        URLValidator As toggleSwitch:
+            Default: =UDFRegexUtils.IsURL(URLInput.Text)
+            FalseFill: =RGBA(255, 0, 0, 1)
+            FalseText: ="Invalid"
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =34
+            TrueFill: =RGBA(141, 198, 63, 1)
+            TrueText: ="Valid"
+            Width: =132
+            X: =540
+            Y: =300
+            ZIndex: =41
+
+        URLInputHdr As label:
+            Color: =RGBA(130, 141, 158, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Size: =11
+            Text: ="URL Input Validation"
+            Width: =293
+            X: =357
+            Y: =265
+            ZIndex: =42
+
+    Group16 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =49
+
+        UKPhoneNumberInput As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Default: ="$1,000"
+            Font: =Font.Lato
+            Height: =34
+            HintText: ="Phone Number"
+            RadiusBottomLeft: =1
+            RadiusBottomRight: =1
+            RadiusTopLeft: =1
+            RadiusTopRight: =1
+            Width: =144
+            X: =357
+            Y: =218
+            ZIndex: =37
+
+        UKPhoneNumberValidator As toggleSwitch:
+            Default: =UDFRegexUtils.IsUKPhoneNumber(UKPhoneNumberInput.Text)
+            FalseFill: =RGBA(255, 0, 0, 1)
+            FalseText: ="Invalid"
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =34
+            TrueFill: =RGBA(141, 198, 63, 1)
+            TrueText: ="Valid"
+            Width: =132
+            X: =540
+            Y: =218
+            ZIndex: =38
+
+        UKPhoneNumberInputHdr As label:
+            Color: =RGBA(130, 141, 158, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Size: =11
+            Text: ="UK Phone Number Input Validation"
+            Width: =293
+            X: =357
+            Y: =183
+            ZIndex: =39
+
+    Group15 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =49
+
+        UKPassportNumberInput As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Default: ="$1,000"
+            Font: =Font.Lato
+            Height: =34
+            HintText: ="Passport Number"
+            RadiusBottomLeft: =1
+            RadiusBottomRight: =1
+            RadiusTopLeft: =1
+            RadiusTopRight: =1
+            Width: =144
+            X: =357
+            Y: =138
+            ZIndex: =34
+
+        UKPassportNumberValidator As toggleSwitch:
+            Default: =UDFRegexUtils.IsUKPassport(UKPassportNumberInput.Text)
+            FalseFill: =RGBA(255, 0, 0, 1)
+            FalseText: ="Invalid"
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =34
+            TrueFill: =RGBA(141, 198, 63, 1)
+            TrueText: ="Valid"
+            Width: =132
+            X: =540
+            Y: =138
+            ZIndex: =35
+
+        UKPassportNumberInputHdr As label:
+            Color: =RGBA(130, 141, 158, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Size: =11
+            Text: ="UK Passport Number Input Validation"
+            Width: =293
+            X: =357
+            Y: =103
+            ZIndex: =36
+
+    Group14 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =49
+
+        UKNationalInsuranceInput As text:
+            BorderColor: =RGBA(128, 128, 128, 1)
+            BorderThickness: =1
+            Default: ="$1,000"
+            Font: =Font.Lato
+            Height: =34
+            HintText: ="National Insurance Number"
+            RadiusBottomLeft: =1
+            RadiusBottomRight: =1
+            RadiusTopLeft: =1
+            RadiusTopRight: =1
+            Width: =144
+            X: =357
+            Y: =58
+            ZIndex: =31
+
+        UKNationalInsuranceValidator As toggleSwitch:
+            Default: =UDFRegexUtils.IsUKNationalInsuranceNumber(UKNationalInsuranceInput.Text)
+            FalseFill: =RGBA(255, 0, 0, 1)
+            FalseText: ="Invalid"
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =34
+            TrueFill: =RGBA(141, 198, 63, 1)
+            TrueText: ="Valid"
+            Width: =132
+            X: =540
+            Y: =58
+            ZIndex: =32
+
+        UKNationalInsuranceInputHdr As label:
+            Color: =RGBA(130, 141, 158, 1)
+            Font: =Font.Lato
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Size: =11
+            Text: ="UK National Insurance Input Validation"
+            Width: =293
+            X: =357
+            Y: =23
+            ZIndex: =33
 

@@ -32,12 +32,12 @@
               "ScopeVariableName": "CurrencyTxt"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.300\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.300\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -61,12 +61,12 @@
               "ScopeVariableName": "PercentTxt"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.300\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.300\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -90,12 +90,360 @@
               "ScopeVariableName": "TimeTxt"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.300\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.300\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsCanadaPhoneNumber",
+      "Hidden": true,
+      "Name": "IsCanadaPhoneNumber",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsCanadaPhoneNumber_CanadianPhoneNumberTxt",
+            "Name": "IsCanadaPhoneNumber_CanadianPhoneNumberTxt",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "The text value to evaluate for a Canadian phone number",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "CanadianPhoneNumberTxt"
+            },
+            "Tooltip": "The text value to evaluate for a Canadian phone number",
+            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Indicates whether a string follows a valid Canadian phone number pattern",
+      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsCreditCard",
+      "Hidden": true,
+      "Name": "IsCreditCard",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsCreditCard_CreditCardTxt",
+            "Name": "IsCreditCard_CreditCardTxt",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "The text value to evaluate for a credit card pattern",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "CreditCardTxt"
+            },
+            "Tooltip": "The text value to evaluate for a credit card pattern",
+            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Indicates whether a string follows a valid credit card pattern",
+      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsEmail",
+      "Hidden": true,
+      "Name": "IsEmail",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsEmail_EmailTxt",
+            "Name": "IsEmail_EmailTxt",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "The text value to evaluate for a email pattern",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "EmailTxt"
+            },
+            "Tooltip": "The text value to evaluate for a email pattern",
+            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Indicates whether a string follows a valid email address pattern",
+      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsIPAddress",
+      "Hidden": true,
+      "Name": "IsIPAddress",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsIPAddress_IPv4Txt",
+            "Name": "IsIPAddress_IPv4Txt",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "The text value to evaluate for an IPV4 address pattern",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "IPv4Txt"
+            },
+            "Tooltip": "The text value to evaluate for an IPV4 address pattern",
+            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Indicates whether a string follows a valid  IPV4 address pattern",
+      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsNHSNumber",
+      "Hidden": true,
+      "Name": "IsNHSNumber",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsNHSNumber_NHSNumberTxt",
+            "Name": "IsNHSNumber_NHSNumberTxt",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "The text value to evaluate for a valid UK NHS number pattern",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "NHSNumberTxt"
+            },
+            "Tooltip": "The text value to evaluate for a valid UK NHS number pattern",
+            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Indicates whether a string follows a valid UK NHS number pattern",
+      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsUKDrivingLicence",
+      "Hidden": true,
+      "Name": "IsUKDrivingLicence",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsUKDrivingLicence_UKDrivingLicenceTxt",
+            "Name": "IsUKDrivingLicence_UKDrivingLicenceTxt",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "The text value to evaluate for a valid UK driving license pattern",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "UKDrivingLicenceTxt"
+            },
+            "Tooltip": "The text value to evaluate for a valid UK driving license pattern",
+            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Regex to validate whether a string matches a valid UK driving license pattern",
+      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsUKNationalInsuranceNumber",
+      "Hidden": true,
+      "Name": "IsUKNationalInsuranceNumber",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsUKNationalInsuranceNumber_UKNINumberTxt",
+            "Name": "IsUKNationalInsuranceNumber_UKNINumberTxt",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "The text value to evaluate for a valid UK National Insurance Number pattern",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "UKNINumberTxt"
+            },
+            "Tooltip": "The text value to evaluate for a valid UK National Insurance Number pattern",
+            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Regex to validate whether a string matches a valid UK National Insurance Number pattern",
+      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsUKPassport",
+      "Hidden": true,
+      "Name": "IsUKPassport",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsUKPassport_UKPassportTxt",
+            "Name": "IsUKPassport_UKPassportTxt",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "The text value to evaluate for a valid UK passport pattern",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "UKPassportTxt"
+            },
+            "Tooltip": "The text value to evaluate for a valid UK passport pattern",
+            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Regex to validate whether a string matches a valid UK passport pattern",
+      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsUKPhoneNumber",
+      "Hidden": true,
+      "Name": "IsUKPhoneNumber",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsUKPhoneNumber_UKPhoneNumberTxt",
+            "Name": "IsUKPhoneNumber_UKPhoneNumberTxt",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "The text value to evaluate for a valid UK phone number pattern",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "UKPhoneNumberTxt"
+            },
+            "Tooltip": "The text value to evaluate for a valid UK phone number pattern",
+            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Regex to validate whether a string matches a valid UK phone number pattern",
+      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsURL",
+      "Hidden": true,
+      "Name": "IsURL",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsURL_URLTxt",
+            "Name": "IsURL_URLTxt",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "The text value to evaluate for a valid URL pattern",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "URLTxt"
+            },
+            "Tooltip": "The text value to evaluate for a valid URL pattern",
+            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Regex to validate whether a string matches a valid URL pattern",
+      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsUSPhoneNumber",
+      "Hidden": true,
+      "Name": "IsUSPhoneNumber",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsUSPhoneNumber_USPhoneNumberTxt",
+            "Name": "IsUSPhoneNumber_USPhoneNumberTxt",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "The text value to evaluate for a valid US phone number pattern",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "USPhoneNumberTxt"
+            },
+            "Tooltip": "The text value to evaluate for a valid US phone number pattern",
+            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Regex to validate whether a string matches a valid US phone number pattern",
+      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "IsUSSocialSecurityNumber",
+      "Hidden": true,
+      "Name": "IsUSSocialSecurityNumber",
+      "PropertyDataTypeKey": "Boolean",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "IsUSSocialSecurityNumber_USSNTxt",
+            "Name": "IsUSSocialSecurityNumber_USSNTxt",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "The text value to evaluate for a valid US US Social Security number pattern",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "USSNTxt"
+            },
+            "Tooltip": "The text value to evaluate for a valid US US Social Security number pattern",
+            "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Regex to validate whether a string matches a valid US Social Security number pattern",
+      "Type": "{\"Version\":\"1.309\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -103,8 +451,9 @@
   "IsComponentLocked": false,
   "IsComponentTemplate": true,
   "IsCustomGroupControlTemplate": false,
-  "LastModifiedTimestamp": "637501697839586960",
+  "IsPremiumPcfControl": false,
+  "LastModifiedTimestamp": "637544875608493254",
   "Name": "79723e172bf3415391a3e296355fbe4d",
   "OverridableProperties": {},
-  "Version": "637497386660048041"
+  "Version": "637544885702107727"
 }
