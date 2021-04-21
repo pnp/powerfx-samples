@@ -1,0 +1,11 @@
+App As appinfo:
+    OnStart: |-
+        =ClearCollect(
+            ccIceCreams,
+            { Name: "Cornish Delight" , Flavour: "Vanilla" },
+            { Name: "Cornish Fudge" , Flavour: "Fudge" },
+            { Name: "Cheap and Cheerful" , Flavour: "Vanilla" },
+            { Name: "Italian Deluxe" , Flavour: "Vanilla" },
+            { Name: "Mary Chocolate Best" , Flavour: "Chocolate" }
+        )
+

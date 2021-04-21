@@ -1,0 +1,68 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentManifest": {
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "ListFunctions",
+    "TemplateGuid": "353778c733ea4ac1a442dc848ee57b17"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "AddTopValue",
+      "Hidden": true,
+      "Name": "AddTopValue",
+      "PropertyDataTypeKey": "Table",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "AddTopValue_DataList",
+            "Name": "AddTopValue_DataList",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "Single column called \"Result\"",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "DataList"
+            },
+            "Tooltip": "Single column called \"Result\"",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"Result\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+          },
+          {
+            "DisplayName": "AddTopValue_TopValue",
+            "Name": "AddTopValue_TopValue",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "Value to be added to the top of the list. Default is All",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "TopValue"
+            },
+            "Tooltip": "Value to be added to the top of the list. Default is All",
+            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Adds an extra value to a list with a single column called Result",
+      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"Result\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPremiumPcfControl": false,
+  "LastModifiedTimestamp": "637506360035764301",
+  "Name": "353778c733ea4ac1a442dc848ee57b17",
+  "OverridableProperties": {},
+  "Version": "637506369245041635"
+}

@@ -1,0 +1,64 @@
+{
+  "ComponentIndexes": {
+    "ListFunctions": 1,
+    "ListFunctions_1": 1
+  },
+  "ControlUniqueIds": {
+    "AddTopValueContainer": 12,
+    "AddTopValueDDAll": 14,
+    "AddTopValueDDCustom": 13,
+    "App": 1,
+    "ATVLabel1": 16,
+    "ATVLabel2": 17,
+    "ATVTitle": 15,
+    "H_Title": 11,
+    "Home": 4,
+    "ListFunctions": 3,
+    "ListFunctions_1": 6
+  },
+  "HeaderLastSavedDateTimeUTC": "03/06/2021 14:15:35",
+  "LocalResourceRootPaths": {},
+  "OldLogoFileName": "gzuylusy.jpg",
+  "OrderComponentMetadata": {
+    "353778c733ea4ac1a442dc848ee57b17": 0
+  },
+  "OrderComponentTemplate": {
+    "353778c733ea4ac1a442dc848ee57b17": 0
+  },
+  "OrderDataSource": {
+    "ccIceCreams": 1,
+    "DropDownSample": 0
+  },
+  "OrderGroupControls": {},
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "dropdown": 1,
+    "label": 0
+  },
+  "PublishOrderIndices": {
+    "AddTopValueContainer": 1,
+    "AddTopValueDDAll": 6,
+    "AddTopValueDDCustom": 4,
+    "App": 0,
+    "ATVLabel1": 3,
+    "ATVLabel2": 5,
+    "ATVTitle": 2,
+    "H_Title": 0,
+    "Home": 0,
+    "ListFunctions": 0,
+    "ListFunctions_1": 7
+  },
+  "TemplateVersions": {
+    "353778c733ea4ac1a442dc848ee57b17": "637506369351697951"
+  },
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.0417407,
+    "ControlCount": {
+      "353778c733ea4ac1a442dc848ee57b17": 2,
+      "dropdown": 3,
+      "label": 4,
+      "screen": 1
+    },
+    "DeserializationLoadTime": 0.7019797
+  }
+}

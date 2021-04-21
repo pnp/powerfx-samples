@@ -1,0 +1,29 @@
+ListFunctions As CanvasComponent:
+    AddTopValue(DataList As Table, TopValue As String):
+        DataList:
+            Default: |-
+                =Table({Result:"Sample"})
+        TopValue:
+            Default: ="All"
+        ThisProperty:
+            Default: |-
+                =Ungroup(
+                    Table(
+                        {DropdownOptions: RenameColumns([TopValue],"Value","Result")},
+                        {
+                            DropdownOptions: Sort(
+                                DataList,
+                                Result,
+                                Ascending
+                            )
+                        }
+                    ),
+                    "DropdownOptions"
+                )
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
