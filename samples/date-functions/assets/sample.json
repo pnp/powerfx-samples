@@ -388,8 +388,8 @@
             {
                 "type": "image",
                 "order": 100,
-                "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/date-functions/assets/date-functions-preview.png",
-                "alt": "Date functions"
+                "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/date-functions/assets/isincurrentday.png",
+                "alt": "Is In Current Day"
             }
         ],
         "authors": [
@@ -447,8 +447,8 @@
             {
                 "type": "image",
                 "order": 100,
-                "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/date-functions/assets/date-functions-preview.png",
-                "alt": "Date functions"
+                "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/date-functions/assets/isincurrentmonth.png",
+                "alt": "Is In Current Month"
             }
         ],
         "authors": [
@@ -624,8 +624,8 @@
             {
                 "type": "image",
                 "order": 100,
-                "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/date-functions/assets/date-functions-preview.png",
-                "alt": "Date functions"
+                "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/date-functions/assets/isincurrentyear.png",
+                "alt": "Is In Current Year"
             }
         ],
         "authors": [
