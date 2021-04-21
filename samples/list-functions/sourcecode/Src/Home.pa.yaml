@@ -1,0 +1,80 @@
+Home As screen:
+
+    ListFunctions_1 As ListFunctions:
+        AddTopValue: |-
+            =Ungroup(
+                Table(
+                    {DropdownOptions: RenameColumns([TopValue],"Value","Result")},
+                    {
+                        DropdownOptions: Sort(
+                            DataList,
+                            Result,
+                            Ascending
+                        )
+                    }
+                ),
+                "DropdownOptions"
+            )
+        Fill: =BlueViolet
+        Height: =46
+        Width: =46
+        X: =1304
+        Y: =704
+
+    H_Title As label:
+        Align: =Center
+        Color: =RGBA(255, 255, 255, 1)
+        Fill: =RGBA(0, 18, 107, 1)
+        Height: =77
+        Size: =32
+        Text: ="Laura GB's Custom Functions"
+        Width: =1366
+        ZIndex: =6
+
+    AddTopValueContainer As groupContainer:
+        DisplayMode: =DisplayMode.Edit
+        Height: =185
+        LayoutAlignItems: =LayoutAlignItems.Start
+        LayoutDirection: =LayoutDirection.Horizontal
+        LayoutJustifyContent: =LayoutJustifyContent.Start
+        LayoutMode: =LayoutMode.Manual
+        LayoutOverflowX: =LayoutOverflow.Hide
+        LayoutOverflowY: =LayoutOverflow.Hide
+        Width: =583
+        X: =52
+        Y: =148
+        ZIndex: =7
+
+        AddTopValueDDCustom As dropdown:
+            Items: =ListFunctions_1.AddTopValue(Distinct(ccIceCreams,Flavour))
+            X: =203
+            Y: =68
+            ZIndex: =1
+
+        AddTopValueDDAll As dropdown:
+            Items: =ListFunctions_1.AddTopValue(Distinct(ccIceCreams,Flavour),"Please Select")
+            X: =203
+            Y: =124
+            ZIndex: =2
+
+        ATVTitle As label:
+            Size: =20
+            Text: ="AddTopValue Examples"
+            Width: =341
+            X: =12
+            Y: =16
+            ZIndex: =3
+
+        ATVLabel1 As label:
+            Text: ="Add All to top"
+            X: =16
+            Y: =68
+            ZIndex: =4
+
+        ATVLabel2 As label:
+            Text: ="Add 'Please Select' to top"
+            Width: =187
+            X: =16
+            Y: =124
+            ZIndex: =5
+
