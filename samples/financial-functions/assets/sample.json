@@ -4,8 +4,8 @@
         "name": "pnp-powerfx-samples-financial-functions-fv",
         "version": "1.0.0.0",
         "source": "pnp",
-        "created": "2021-02-08T00:00:00.000Z",
-        "modified": "2021-02-08T00:00:00.000Z",
+        "creationDateTime": "2021-02-08T00:00:00.000Z",
+        "updateDateTime": "2021-02-08T00:00:00.000Z",
         "title": "Future Value (FV)",
         "shortDescription": "Future value: a cash balance you want to attain after the last payment is made",
         "longDescription": [
@@ -62,8 +62,8 @@
         "name": "pnp-powerfx-samples-financial-functions-pv",
         "version": "1.0.0.0",
         "source": "pnp",
-        "created": "2021-02-08T00:00:00.000Z",
-        "modified": "2021-02-08T00:00:00.000Z",
+        "creationDateTime": "2021-02-08T00:00:00.000Z",
+        "updateDateTime": "2021-02-08T00:00:00.000Z",
         "title": "Present Value (PV)",
         "shortDescription": "Present value: the total amount that a series of future payments is worth now",
         "longDescription": [
@@ -120,8 +120,8 @@
         "name": "pnp-powerfx-samples-financial-functions-nper",
         "version": "1.0.0.0",
         "source": "pnp",
-        "created": "2021-02-08T00:00:00.000Z",
-        "modified": "2021-02-08T00:00:00.000Z",
+        "creationDateTime": "2021-02-08T00:00:00.000Z",
+        "updateDateTime": "2021-02-08T00:00:00.000Z",
         "title": "NPER",
         "shortDescription": "The total number of payments for a loan",
         "longDescription": [
@@ -178,8 +178,8 @@
         "name": "pnp-powerfx-samples-financial-functions-pmt",
         "version": "1.0.0.0",
         "source": "pnp",
-        "created": "2021-02-08T00:00:00.000Z",
-        "modified": "2021-02-08T00:00:00.000Z",
+        "creationDateTime": "2021-02-08T00:00:00.000Z",
+        "updateDateTime": "2021-02-08T00:00:00.000Z",
         "title": "PMT",
         "shortDescription": "The payment made each period over the life of an investment.",
         "longDescription": [

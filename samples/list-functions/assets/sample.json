@@ -4,8 +4,8 @@
         "name": "pnp-powerfx-samples-list-functions-addtopvalue",
         "version": "1.0.0.0",
         "source": "pnp",
-        "created": "2021-03-06T00:00:00.000Z",
-        "modified": "2021-03-06T00:00:00.000Z",
+        "creationDateTime": "2021-03-06T00:00:00.000Z",
+        "updateDateTime": "2021-03-06T00:00:00.000Z",
         "title": "AddTopValue",
         "shortDescription": "Adds a value to a list of values ready to use in a drop down box. Returns a single column, named Result, table.",
         "longDescription": [
