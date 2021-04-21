@@ -15,7 +15,7 @@ functions that are used by accounting & finance
 
 ## Compatibility
 
-![Power Apps Source File Pack and Unpack Utility 0.19](https://img.shields.io/badge/PSAopa-0.19-green.svg)
+![Power Apps Source File Pack and Unpack Utility 0.20](https://img.shields.io/badge/PSAopa-0.20-green.svg)
 
 ## Prerequisites
 
