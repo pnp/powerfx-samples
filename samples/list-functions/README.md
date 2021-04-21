@@ -9,7 +9,7 @@ Functions that perform operations on a list
 
 The following image shows the custom function (component) properties and a sample implementation of List Functions when added to Power App:
 
-
+![ListFunctions](assets/AddTopValueImg.PNG)
 
 ## Applies to
 
