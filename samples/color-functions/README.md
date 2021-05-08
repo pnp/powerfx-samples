@@ -3,7 +3,7 @@
 
 ## Summary
 
-Functions that calculate the contrast between two colors. 
+Functions that calculate the contrast between two colors.  
 
 * [Color Functions](https://github.com/pnp/powerfx-samples/tree/main/samples/color-functions)
 
