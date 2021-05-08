@@ -1,0 +1,154 @@
+{
+  "color-functions": {
+    "AllowAccessToGlobals": false,
+    "ControlPropertyState": [
+      "Fill",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "640",
+        "InvariantPropertyName": "Height",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "640",
+        "InvariantPropertyName": "Width",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "X",
+      "Y",
+      "ZIndex",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "Table(\r\n    {\r\n        DEC: 0,\r\n        HEX: \"00\"\r\n    },\r\n    {\r\n        DEC: 1,\r\n        HEX: \"01\"\r\n    },\r\n    {\r\n        DEC: 2,\r\n        HEX: \"02\"\r\n    },\r\n    {\r\n        DEC: 3,\r\n        HEX: \"03\"\r\n    },\r\n    {\r\n        DEC: 4,\r\n        HEX: \"04\"\r\n    },\r\n    {\r\n        DEC: 5,\r\n        HEX: \"05\"\r\n    },\r\n    {\r\n        DEC: 6,\r\n        HEX: \"06\"\r\n    },\r\n    {\r\n        DEC: 7,\r\n        HEX: \"07\"\r\n    },\r\n    {\r\n        DEC: 8,\r\n        HEX: \"08\"\r\n    },\r\n    {\r\n        DEC: 9,\r\n        HEX: \"09\"\r\n    },\r\n    {\r\n        DEC: 10,\r\n        HEX: \"0A\"\r\n    },\r\n    {\r\n        DEC: 11,\r\n        HEX: \"0B\"\r\n    },\r\n    {\r\n        DEC: 12,\r\n        HEX: \"0C\"\r\n    },\r\n    {\r\n        DEC: 13,\r\n        HEX: \"0D\"\r\n    },\r\n    {\r\n        DEC: 14,\r\n        HEX: \"0E\"\r\n    },\r\n    {\r\n        DEC: 15,\r\n        HEX: \"0F\"\r\n    },\r\n    {\r\n        DEC: 16,\r\n        HEX: \"10\"\r\n    },\r\n    {\r\n        DEC: 17,\r\n        HEX: \"11\"\r\n    },\r\n    {\r\n        DEC: 18,\r\n        HEX: \"12\"\r\n    },\r\n    {\r\n        DEC: 19,\r\n        HEX: \"13\"\r\n    },\r\n    {\r\n        DEC: 20,\r\n        HEX: \"14\"\r\n    },\r\n    {\r\n        DEC: 21,\r\n        HEX: \"15\"\r\n    },\r\n    {\r\n        DEC: 22,\r\n        HEX: \"16\"\r\n    },\r\n    {\r\n        DEC: 23,\r\n        HEX: \"17\"\r\n    },\r\n    {\r\n        DEC: 24,\r\n        HEX: \"18\"\r\n    },\r\n    {\r\n        DEC: 25,\r\n        HEX: \"19\"\r\n    },\r\n    {\r\n        DEC: 26,\r\n        HEX: \"1A\"\r\n    },\r\n    {\r\n        DEC: 27,\r\n        HEX: \"1B\"\r\n    },\r\n    {\r\n        DEC: 28,\r\n        HEX: \"1C\"\r\n    },\r\n    {\r\n        DEC: 29,\r\n        HEX: \"1D\"\r\n    },\r\n    {\r\n        DEC: 30,\r\n        HEX: \"1E\"\r\n    },\r\n    {\r\n        DEC: 31,\r\n        HEX: \"1F\"\r\n    },\r\n    {\r\n        DEC: 32,\r\n        HEX: \"20\"\r\n    },\r\n    {\r\n        DEC: 33,\r\n        HEX: \"21\"\r\n    },\r\n    {\r\n        DEC: 34,\r\n        HEX: \"22\"\r\n    },\r\n    {\r\n        DEC: 35,\r\n        HEX: \"23\"\r\n    },\r\n    {\r\n        DEC: 36,\r\n        HEX: \"24\"\r\n    },\r\n    {\r\n        DEC: 37,\r\n        HEX: \"25\"\r\n    },\r\n    {\r\n        DEC: 38,\r\n        HEX: \"26\"\r\n    },\r\n    {\r\n        DEC: 39,\r\n        HEX: \"27\"\r\n    },\r\n    {\r\n        DEC: 40,\r\n        HEX: \"28\"\r\n    },\r\n    {\r\n        DEC: 41,\r\n        HEX: \"29\"\r\n    },\r\n    {\r\n        DEC: 42,\r\n        HEX: \"2A\"\r\n    },\r\n    {\r\n        DEC: 43,\r\n        HEX: \"2B\"\r\n    },\r\n    {\r\n        DEC: 44,\r\n        HEX: \"2C\"\r\n    },\r\n    {\r\n        DEC: 45,\r\n        HEX: \"2D\"\r\n    },\r\n    {\r\n        DEC: 46,\r\n        HEX: \"2E\"\r\n    },\r\n    {\r\n        DEC: 47,\r\n        HEX: \"2F\"\r\n    },\r\n    {\r\n        DEC: 48,\r\n        HEX: \"30\"\r\n    },\r\n    {\r\n        DEC: 49,\r\n        HEX: \"31\"\r\n    },\r\n    {\r\n        DEC: 50,\r\n        HEX: \"32\"\r\n    },\r\n    {\r\n        DEC: 51,\r\n        HEX: \"33\"\r\n    },\r\n    {\r\n        DEC: 52,\r\n        HEX: \"34\"\r\n    },\r\n    {\r\n        DEC: 53,\r\n        HEX: \"35\"\r\n    },\r\n    {\r\n        DEC: 54,\r\n        HEX: \"36\"\r\n    },\r\n    {\r\n        DEC: 55,\r\n        HEX: \"37\"\r\n    },\r\n    {\r\n        DEC: 56,\r\n        HEX: \"38\"\r\n    },\r\n    {\r\n        DEC: 57,\r\n        HEX: \"39\"\r\n    },\r\n    {\r\n        DEC: 58,\r\n        HEX: \"3A\"\r\n    },\r\n    {\r\n        DEC: 59,\r\n        HEX: \"3B\"\r\n    },\r\n    {\r\n        DEC: 60,\r\n        HEX: \"3C\"\r\n    },\r\n    {\r\n        DEC: 61,\r\n        HEX: \"3D\"\r\n    },\r\n    {\r\n        DEC: 62,\r\n        HEX: \"3E\"\r\n    },\r\n    {\r\n        DEC: 63,\r\n        HEX: \"3F\"\r\n    },\r\n    {\r\n        DEC: 64,\r\n        HEX: \"40\"\r\n    },\r\n    {\r\n        DEC: 65,\r\n        HEX: \"41\"\r\n    },\r\n    {\r\n        DEC: 66,\r\n        HEX: \"42\"\r\n    },\r\n    {\r\n        DEC: 67,\r\n        HEX: \"43\"\r\n    },\r\n    {\r\n        DEC: 68,\r\n        HEX: \"44\"\r\n    },\r\n    {\r\n        DEC: 69,\r\n        HEX: \"45\"\r\n    },\r\n    {\r\n        DEC: 70,\r\n        HEX: \"46\"\r\n    },\r\n    {\r\n        DEC: 71,\r\n        HEX: \"47\"\r\n    },\r\n    {\r\n        DEC: 72,\r\n        HEX: \"48\"\r\n    },\r\n    {\r\n        DEC: 73,\r\n        HEX: \"49\"\r\n    },\r\n    {\r\n        DEC: 74,\r\n        HEX: \"4A\"\r\n    },\r\n    {\r\n        DEC: 75,\r\n        HEX: \"4B\"\r\n    },\r\n    {\r\n        DEC: 76,\r\n        HEX: \"4C\"\r\n    },\r\n    {\r\n        DEC: 77,\r\n        HEX: \"4D\"\r\n    },\r\n    {\r\n        DEC: 78,\r\n        HEX: \"4E\"\r\n    },\r\n    {\r\n        DEC: 79,\r\n        HEX: \"4F\"\r\n    },\r\n    {\r\n        DEC: 80,\r\n        HEX: \"50\"\r\n    },\r\n    {\r\n        DEC: 81,\r\n        HEX: \"51\"\r\n    },\r\n    {\r\n        DEC: 82,\r\n        HEX: \"52\"\r\n    },\r\n    {\r\n        DEC: 83,\r\n        HEX: \"53\"\r\n    },\r\n    {\r\n        DEC: 84,\r\n        HEX: \"54\"\r\n    },\r\n    {\r\n        DEC: 85,\r\n        HEX: \"55\"\r\n    },\r\n    {\r\n        DEC: 86,\r\n        HEX: \"56\"\r\n    },\r\n    {\r\n        DEC: 87,\r\n        HEX: \"57\"\r\n    },\r\n    {\r\n        DEC: 88,\r\n        HEX: \"58\"\r\n    },\r\n    {\r\n        DEC: 89,\r\n        HEX: \"59\"\r\n    },\r\n    {\r\n        DEC: 90,\r\n        HEX: \"5A\"\r\n    },\r\n    {\r\n        DEC: 91,\r\n        HEX: \"5B\"\r\n    },\r\n    {\r\n        DEC: 92,\r\n        HEX: \"5C\"\r\n    },\r\n    {\r\n        DEC: 93,\r\n        HEX: \"5D\"\r\n    },\r\n    {\r\n        DEC: 94,\r\n        HEX: \"5E\"\r\n    },\r\n    {\r\n        DEC: 95,\r\n        HEX: \"5F\"\r\n    },\r\n    {\r\n        DEC: 96,\r\n        HEX: \"60\"\r\n    },\r\n    {\r\n        DEC: 97,\r\n        HEX: \"61\"\r\n    },\r\n    {\r\n        DEC: 98,\r\n        HEX: \"62\"\r\n    },\r\n    {\r\n        DEC: 99,\r\n        HEX: \"63\"\r\n    },\r\n    {\r\n        DEC: 100,\r\n        HEX: \"64\"\r\n    },\r\n    {\r\n        DEC: 101,\r\n        HEX: \"65\"\r\n    },\r\n    {\r\n        DEC: 102,\r\n        HEX: \"66\"\r\n    },\r\n    {\r\n        DEC: 103,\r\n        HEX: \"67\"\r\n    },\r\n    {\r\n        DEC: 104,\r\n        HEX: \"68\"\r\n    },\r\n    {\r\n        DEC: 105,\r\n        HEX: \"69\"\r\n    },\r\n    {\r\n        DEC: 106,\r\n        HEX: \"6A\"\r\n    },\r\n    {\r\n        DEC: 107,\r\n        HEX: \"6B\"\r\n    },\r\n    {\r\n        DEC: 108,\r\n        HEX: \"6C\"\r\n    },\r\n    {\r\n        DEC: 109,\r\n        HEX: \"6D\"\r\n    },\r\n    {\r\n        DEC: 110,\r\n        HEX: \"6E\"\r\n    },\r\n    {\r\n        DEC: 111,\r\n        HEX: \"6F\"\r\n    },\r\n    {\r\n        DEC: 112,\r\n        HEX: \"70\"\r\n    },\r\n    {\r\n        DEC: 113,\r\n        HEX: \"71\"\r\n    },\r\n    {\r\n        DEC: 114,\r\n        HEX: \"72\"\r\n    },\r\n    {\r\n        DEC: 115,\r\n        HEX: \"73\"\r\n    },\r\n    {\r\n        DEC: 116,\r\n        HEX: \"74\"\r\n    },\r\n    {\r\n        DEC: 117,\r\n        HEX: \"75\"\r\n    },\r\n    {\r\n        DEC: 118,\r\n        HEX: \"76\"\r\n    },\r\n    {\r\n        DEC: 119,\r\n        HEX: \"77\"\r\n    },\r\n    {\r\n        DEC: 120,\r\n        HEX: \"78\"\r\n    },\r\n    {\r\n        DEC: 121,\r\n        HEX: \"79\"\r\n    },\r\n    {\r\n        DEC: 122,\r\n        HEX: \"7A\"\r\n    },\r\n    {\r\n        DEC: 123,\r\n        HEX: \"7B\"\r\n    },\r\n    {\r\n        DEC: 124,\r\n        HEX: \"7C\"\r\n    },\r\n    {\r\n        DEC: 125,\r\n        HEX: \"7D\"\r\n    },\r\n    {\r\n        DEC: 126,\r\n        HEX: \"7E\"\r\n    },\r\n    {\r\n        DEC: 127,\r\n        HEX: \"7F\"\r\n    },\r\n    {\r\n        DEC: 128,\r\n        HEX: \"80\"\r\n    },\r\n    {\r\n        DEC: 129,\r\n        HEX: \"81\"\r\n    },\r\n    {\r\n        DEC: 130,\r\n        HEX: \"82\"\r\n    },\r\n    {\r\n        DEC: 131,\r\n        HEX: \"83\"\r\n    },\r\n    {\r\n        DEC: 132,\r\n        HEX: \"84\"\r\n    },\r\n    {\r\n        DEC: 133,\r\n        HEX: \"85\"\r\n    },\r\n    {\r\n        DEC: 134,\r\n        HEX: \"86\"\r\n    },\r\n    {\r\n        DEC: 135,\r\n        HEX: \"87\"\r\n    },\r\n    {\r\n        DEC: 136,\r\n        HEX: \"88\"\r\n    },\r\n    {\r\n        DEC: 137,\r\n        HEX: \"89\"\r\n    },\r\n    {\r\n        DEC: 138,\r\n        HEX: \"8A\"\r\n    },\r\n    {\r\n        DEC: 139,\r\n        HEX: \"8B\"\r\n    },\r\n    {\r\n        DEC: 140,\r\n        HEX: \"8C\"\r\n    },\r\n    {\r\n        DEC: 141,\r\n        HEX: \"8D\"\r\n    },\r\n    {\r\n        DEC: 142,\r\n        HEX: \"8E\"\r\n    },\r\n    {\r\n        DEC: 143,\r\n        HEX: \"8F\"\r\n    },\r\n    {\r\n        DEC: 144,\r\n        HEX: \"90\"\r\n    },\r\n    {\r\n        DEC: 145,\r\n        HEX: \"91\"\r\n    },\r\n    {\r\n        DEC: 146,\r\n        HEX: \"92\"\r\n    },\r\n    {\r\n        DEC: 147,\r\n        HEX: \"93\"\r\n    },\r\n    {\r\n        DEC: 148,\r\n        HEX: \"94\"\r\n    },\r\n    {\r\n        DEC: 149,\r\n        HEX: \"95\"\r\n    },\r\n    {\r\n        DEC: 150,\r\n        HEX: \"96\"\r\n    },\r\n    {\r\n        DEC: 151,\r\n        HEX: \"97\"\r\n    },\r\n    {\r\n        DEC: 152,\r\n        HEX: \"98\"\r\n    },\r\n    {\r\n        DEC: 153,\r\n        HEX: \"99\"\r\n    },\r\n    {\r\n        DEC: 154,\r\n        HEX: \"9A\"\r\n    },\r\n    {\r\n        DEC: 155,\r\n        HEX: \"9B\"\r\n    },\r\n    {\r\n        DEC: 156,\r\n        HEX: \"9C\"\r\n    },\r\n    {\r\n        DEC: 157,\r\n        HEX: \"9D\"\r\n    },\r\n    {\r\n        DEC: 158,\r\n        HEX: \"9E\"\r\n    },\r\n    {\r\n        DEC: 159,\r\n        HEX: \"9F\"\r\n    },\r\n    {\r\n        DEC: 160,\r\n        HEX: \"A0\"\r\n    },\r\n    {\r\n        DEC: 161,\r\n        HEX: \"A1\"\r\n    },\r\n    {\r\n        DEC: 162,\r\n        HEX: \"A2\"\r\n    },\r\n    {\r\n        DEC: 163,\r\n        HEX: \"A3\"\r\n    },\r\n    {\r\n        DEC: 164,\r\n        HEX: \"A4\"\r\n    },\r\n    {\r\n        DEC: 165,\r\n        HEX: \"A5\"\r\n    },\r\n    {\r\n        DEC: 166,\r\n        HEX: \"A6\"\r\n    },\r\n    {\r\n        DEC: 167,\r\n        HEX: \"A7\"\r\n    },\r\n    {\r\n        DEC: 168,\r\n        HEX: \"A8\"\r\n    },\r\n    {\r\n        DEC: 169,\r\n        HEX: \"A9\"\r\n    },\r\n    {\r\n        DEC: 170,\r\n        HEX: \"AA\"\r\n    },\r\n    {\r\n        DEC: 171,\r\n        HEX: \"AB\"\r\n    },\r\n    {\r\n        DEC: 172,\r\n        HEX: \"AC\"\r\n    },\r\n    {\r\n        DEC: 173,\r\n        HEX: \"AD\"\r\n    },\r\n    {\r\n        DEC: 174,\r\n        HEX: \"AE\"\r\n    },\r\n    {\r\n        DEC: 175,\r\n        HEX: \"AF\"\r\n    },\r\n    {\r\n        DEC: 176,\r\n        HEX: \"B0\"\r\n    },\r\n    {\r\n        DEC: 177,\r\n        HEX: \"B1\"\r\n    },\r\n    {\r\n        DEC: 178,\r\n        HEX: \"B2\"\r\n    },\r\n    {\r\n        DEC: 179,\r\n        HEX: \"B3\"\r\n    },\r\n    {\r\n        DEC: 180,\r\n        HEX: \"B4\"\r\n    },\r\n    {\r\n        DEC: 181,\r\n        HEX: \"B5\"\r\n    },\r\n    {\r\n        DEC: 182,\r\n        HEX: \"B6\"\r\n    },\r\n    {\r\n        DEC: 183,\r\n        HEX: \"B7\"\r\n    },\r\n    {\r\n        DEC: 184,\r\n        HEX: \"B8\"\r\n    },\r\n    {\r\n        DEC: 185,\r\n        HEX: \"B9\"\r\n    },\r\n    {\r\n        DEC: 186,\r\n        HEX: \"BA\"\r\n    },\r\n    {\r\n        DEC: 187,\r\n        HEX: \"BB\"\r\n    },\r\n    {\r\n        DEC: 188,\r\n        HEX: \"BC\"\r\n    },\r\n    {\r\n        DEC: 189,\r\n        HEX: \"BD\"\r\n    },\r\n    {\r\n        DEC: 190,\r\n        HEX: \"BE\"\r\n    },\r\n    {\r\n        DEC: 191,\r\n        HEX: \"BF\"\r\n    },\r\n    {\r\n        DEC: 192,\r\n        HEX: \"C0\"\r\n    },\r\n    {\r\n        DEC: 193,\r\n        HEX: \"C1\"\r\n    },\r\n    {\r\n        DEC: 194,\r\n        HEX: \"C2\"\r\n    },\r\n    {\r\n        DEC: 195,\r\n        HEX: \"C3\"\r\n    },\r\n    {\r\n        DEC: 196,\r\n        HEX: \"C4\"\r\n    },\r\n    {\r\n        DEC: 197,\r\n        HEX: \"C5\"\r\n    },\r\n    {\r\n        DEC: 198,\r\n        HEX: \"C6\"\r\n    },\r\n    {\r\n        DEC: 199,\r\n        HEX: \"C7\"\r\n    },\r\n    {\r\n        DEC: 200,\r\n        HEX: \"C8\"\r\n    },\r\n    {\r\n        DEC: 201,\r\n        HEX: \"C9\"\r\n    },\r\n    {\r\n        DEC: 202,\r\n        HEX: \"CA\"\r\n    },\r\n    {\r\n        DEC: 203,\r\n        HEX: \"CB\"\r\n    },\r\n    {\r\n        DEC: 204,\r\n        HEX: \"CC\"\r\n    },\r\n    {\r\n        DEC: 205,\r\n        HEX: \"CD\"\r\n    },\r\n    {\r\n        DEC: 206,\r\n        HEX: \"CE\"\r\n    },\r\n    {\r\n        DEC: 207,\r\n        HEX: \"CF\"\r\n    },\r\n    {\r\n        DEC: 208,\r\n        HEX: \"D0\"\r\n    },\r\n    {\r\n        DEC: 209,\r\n        HEX: \"D1\"\r\n    },\r\n    {\r\n        DEC: 210,\r\n        HEX: \"D2\"\r\n    },\r\n    {\r\n        DEC: 211,\r\n        HEX: \"D3\"\r\n    },\r\n    {\r\n        DEC: 212,\r\n        HEX: \"D4\"\r\n    },\r\n    {\r\n        DEC: 213,\r\n        HEX: \"D5\"\r\n    },\r\n    {\r\n        DEC: 214,\r\n        HEX: \"D6\"\r\n    },\r\n    {\r\n        DEC: 215,\r\n        HEX: \"D7\"\r\n    },\r\n    {\r\n        DEC: 216,\r\n        HEX: \"D8\"\r\n    },\r\n    {\r\n        DEC: 217,\r\n        HEX: \"D9\"\r\n    },\r\n    {\r\n        DEC: 218,\r\n        HEX: \"DA\"\r\n    },\r\n    {\r\n        DEC: 219,\r\n        HEX: \"DB\"\r\n    },\r\n    {\r\n        DEC: 220,\r\n        HEX: \"DC\"\r\n    },\r\n    {\r\n        DEC: 221,\r\n        HEX: \"DD\"\r\n    },\r\n    {\r\n        DEC: 222,\r\n        HEX: \"DE\"\r\n    },\r\n    {\r\n        DEC: 223,\r\n        HEX: \"DF\"\r\n    },\r\n    {\r\n        DEC: 224,\r\n        HEX: \"E0\"\r\n    },\r\n    {\r\n        DEC: 225,\r\n        HEX: \"E1\"\r\n    },\r\n    {\r\n        DEC: 226,\r\n        HEX: \"E2\"\r\n    },\r\n    {\r\n        DEC: 227,\r\n        HEX: \"E3\"\r\n    },\r\n    {\r\n        DEC: 228,\r\n        HEX: \"E4\"\r\n    },\r\n    {\r\n        DEC: 229,\r\n        HEX: \"E5\"\r\n    },\r\n    {\r\n        DEC: 230,\r\n        HEX: \"E6\"\r\n    },\r\n    {\r\n        DEC: 231,\r\n        HEX: \"E7\"\r\n    },\r\n    {\r\n        DEC: 232,\r\n        HEX: \"E8\"\r\n    },\r\n    {\r\n        DEC: 233,\r\n        HEX: \"E9\"\r\n    },\r\n    {\r\n        DEC: 234,\r\n        HEX: \"EA\"\r\n    },\r\n    {\r\n        DEC: 235,\r\n        HEX: \"EB\"\r\n    },\r\n    {\r\n        DEC: 236,\r\n        HEX: \"EC\"\r\n    },\r\n    {\r\n        DEC: 237,\r\n        HEX: \"ED\"\r\n    },\r\n    {\r\n        DEC: 238,\r\n        HEX: \"EE\"\r\n    },\r\n    {\r\n        DEC: 239,\r\n        HEX: \"EF\"\r\n    },\r\n    {\r\n        DEC: 240,\r\n        HEX: \"F0\"\r\n    },\r\n    {\r\n        DEC: 241,\r\n        HEX: \"F1\"\r\n    },\r\n    {\r\n        DEC: 242,\r\n        HEX: \"F2\"\r\n    },\r\n    {\r\n        DEC: 243,\r\n        HEX: \"F3\"\r\n    },\r\n    {\r\n        DEC: 244,\r\n        HEX: \"F4\"\r\n    },\r\n    {\r\n        DEC: 245,\r\n        HEX: \"F5\"\r\n    },\r\n    {\r\n        DEC: 246,\r\n        HEX: \"F6\"\r\n    },\r\n    {\r\n        DEC: 247,\r\n        HEX: \"F7\"\r\n    },\r\n    {\r\n        DEC: 248,\r\n        HEX: \"F8\"\r\n    },\r\n    {\r\n        DEC: 249,\r\n        HEX: \"F9\"\r\n    },\r\n    {\r\n        DEC: 250,\r\n        HEX: \"FA\"\r\n    },\r\n    {\r\n        DEC: 251,\r\n        HEX: \"FB\"\r\n    },\r\n    {\r\n        DEC: 252,\r\n        HEX: \"FC\"\r\n    },\r\n    {\r\n        DEC: 253,\r\n        HEX: \"FD\"\r\n    },\r\n    {\r\n        DEC: 254,\r\n        HEX: \"FE\"\r\n    },\r\n    {\r\n        DEC: 255,\r\n        HEX: \"FF\"\r\n    }\r\n)",
+        "InvariantPropertyName": "HEXtoDEC",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "getLuminance_R",
+      "chkContrast",
+      "chkContrast_LightColor",
+      "chkContrast_DarkColor",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "If(\r\n    Sum(colourChannel / 255) <= 0.03928,\r\n    Sum(colourChannel / 255) / 12.92,\r\n    Power(\r\n        ((Sum(colourChannel / 255) + 0.055) / 1.055),\r\n        2.4\r\n    )\r\n)",
+        "InvariantPropertyName": "sRGBtoLIN",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      },
+      "sRGBtoLIN_colorChannel",
+      "getLuminance_G",
+      "getLuminance_B",
+      {
+        "AFDDataSourceName": "",
+        "AutoRuleBindingEnabled": false,
+        "AutoRuleBindingString": "Sum(\r\n    ('color-functions' sRGBtoLIN(R) * 0.2126) + \r\n    ('color-functions'.sRGBtoLIN(G) * 0.7152) + \r\n    ('color-functions'.sRGBtoLIN(B) * 0.0722)\r\n)",
+        "InvariantPropertyName": "getLuminance",
+        "IsLockable": false,
+        "NameMapSourceSchema": "?"
+      }
+    ],
+    "IsAutoGenerated": false,
+    "IsComponentDefinition": true,
+    "IsDataControl": false,
+    "IsFromScreenLayout": false,
+    "IsGroupControl": false,
+    "IsLocked": false,
+    "LayoutName": "",
+    "MetaDataIDKey": "",
+    "Name": "color-functions",
+    "ParentIndex": 0,
+    "PersistMetaDataIDKey": false,
+    "Properties": [
+      {
+        "Category": "Data",
+        "NameMap": "{\"DEC\":\"DEC\",\"HEX\":\"HEX\"}",
+        "PropertyName": "HEXtoDEC",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "getLuminance_R",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "chkContrast",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "chkContrast_LightColor",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "chkContrast_DarkColor",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "sRGBtoLIN",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "sRGBtoLIN_colorChannel",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "getLuminance_G",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "getLuminance_B",
+        "RuleProviderType": "System"
+      },
+      {
+        "Category": "Data",
+        "PropertyName": "getLuminance",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "ZIndex",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Y",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "X",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Width",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Height",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Fill",
+        "RuleProviderType": "Unknown"
+      }
+    ],
+    "StyleName": "",
+    "Type": "ControlInfo"
+  }
+}
