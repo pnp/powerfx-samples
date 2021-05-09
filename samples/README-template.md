@@ -31,11 +31,6 @@ Short summary on functionality and used technologies.
 
 ![Power Apps Source File Pack and Unpack Utility 0.20](https://img.shields.io/badge/PSAopa-0.20-green.svg)
 
-## Prerequisites
-
-> Any special pre-requisites? Include anything that needs to be done for this sample to work (anything in addition to importing the `.msapp`).
-> DELETE THIS PARAGRAPH BEFORE SUBMITTING
-
 ## Solution
 
 Solution|Author(s)
@@ -49,11 +44,11 @@ Version|Date|Comments
 1.1|September 2, 2021|Update comment
 1.0|August 29, 2021|Initial release
 
-## Disclaimer
 
-**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+## Prerequisites
 
----
+> Any special pre-requisites? Include anything that needs to be done for this sample to work (anything in addition to importing the `.msapp`).
+> DELETE THIS PARAGRAPH BEFORE SUBMITTING
 
 ## Minimal Path to Awesome
 
@@ -124,5 +119,20 @@ MyCustomFunction(MyParameterName)
 ```
 
 > END: REPEAT HERE
+
+
+## Disclaimer
+
+**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+
+## Support
+
+We do not support samples, but we do use GitHub to track issues and constantly want to improve these samples.
+
+If you encounter any issues while using this sample, [create a new issue](https://github.com/pnp/powerfx-samples/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=bug-report.yml&sample=YOUR-SOLUTION-NAME&authors=@YOURGITHUBUSERNAME&title=YOUR-SOLUTION-NAME%20-%20).
+
+For questions regarding this sample, [create a new question](https://github.com/pnp/powerfx-samples/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=question.yml&sample=YOUR-SOLUTION-NAME&authors=@YOURGITHUBUSERNAME&title=YOUR-SOLUTION-NAME%20-%20).
+
+Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/powerfx-samples/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=suggestion.yml&sample=YOUR-SOLUTION-NAME&authors=@YOURGITHUBUSERNAME&title=YOUR-SOLUTION-NAME%20-%20).
 
 <img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/readme-template" />
