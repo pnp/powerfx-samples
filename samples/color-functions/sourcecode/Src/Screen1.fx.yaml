@@ -1,0 +1,1196 @@
+Screen1 As screen:
+
+    Button1_2 As button:
+        AutoDisableOnSelect: =false
+        BorderThickness: =1
+        Fill: =RGBA(243,242,241,1)
+        FocusedBorderThickness: =1
+        Height: =768
+        HoverBorderColor: =RGBA(243,242,241,1)
+        HoverFill: =RGBA(243,242,241,1)
+        PressedFill: =RGBA(243,242,241,1)
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Text: =""
+        Width: =1366
+        ZIndex: =1
+
+    Rectangle2 As rectangle:
+        BorderColor: =RGBA(230, 230, 230, 1)
+        BorderThickness: =1
+        Fill: |
+            =White
+        Height: =395
+        Width: =974
+        X: =160
+        Y: =327
+        ZIndex: =2
+
+    Button1_1 As button:
+        AutoDisableOnSelect: =false
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =1
+        Height: =194
+        HoverBorderColor: =RGBA(243,242,241,1)
+        HoverFill: =White
+        PressedColor: =White
+        PressedFill: =White
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Text: =""
+        Width: =349
+        X: =160
+        Y: =61
+        ZIndex: =3
+
+    Button1 As button:
+        AutoDisableOnSelect: =false
+        BorderThickness: =1
+        Fill: =RGBA(255, 255, 255, 1)
+        FocusedBorderThickness: =1
+        Height: =194
+        HoverBorderColor: =RGBA(243,242,241,1)
+        HoverFill: =White
+        PressedColor: =White
+        PressedFill: =White
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Text: =""
+        Width: =349
+        X: =785
+        Y: =61
+        ZIndex: =4
+
+    "'color-functions_1' As 'color-functions'":
+        chkContrast: |-
+            =If(
+                // Check which Value is higher, calculation then is (darkColor+0.05) / (lightColor+0.05)
+                LightColor >DarkColor,
+                Text(
+                    Sum((LightColor + 0.05) / (DarkColor + 0.05)),
+                    "[$-en-GB]#.000"
+                ),
+                Text(
+                    Sum((DarkColor + 0.05) / (LightColor + 0.05)),
+                    "[$-en-GB]#.000"
+                )
+            )
+        getLuminance: |-
+            =Sum(
+                ('color-functions'.sRGBtoLIN(R) * 0.2126) + 
+                ('color-functions'.sRGBtoLIN(G) * 0.7152) + 
+                ('color-functions'.sRGBtoLIN(B) * 0.0722)
+            )
+        Height: =46
+        sRGBtoLIN: |-
+            =If(
+                Sum(colorChannel / 255) <= 0.03928,
+                Sum(colorChannel / 255) / 12.92,
+                Power(
+                    ((Sum(colorChannel / 255) + 0.055) / 1.055),
+                    2.4
+                )
+            )
+        Width: =664
+        X: =702
+        Y: =722
+        ZIndex: =5
+
+    Guidelines As group:
+        Height: =5
+        Width: =5
+        X: =34
+        Y: =40
+        ZIndex: =22
+
+        HtmlText2 As htmlViewer:
+            Height: =56
+            HtmlText: |-
+                ="<p style='margin:0 0 0 0;'><a href='https://www.w3.org/TR/WCAG21/'> Web Content Accessibility Guidelines (WCAG) 2.1 </a></p>"
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =18
+            Width: =653
+            X: =343
+            Y: =338
+            ZIndex: =8
+
+        Image1 As image:
+            Height: =49
+            Image: =header
+            ImagePosition: =ImagePosition.Stretch
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =785
+            X: =581
+            ZIndex: =9
+
+        Image2 As image:
+            Height: =50
+            Image: ='cropped-logo-red'
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =145
+            X: =15
+            ZIndex: =10
+
+        Label3 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =36
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =15
+            Text: ="Normal Text"
+            Width: =176
+            X: =340
+            Y: =381
+            ZIndex: =11
+
+        Label3_1 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =36
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =15
+            Text: ="Large Text"
+            Width: =176
+            X: =340
+            Y: =488
+            ZIndex: =12
+
+        Label3_2 As label:
+            FontWeight: =FontWeight.Semibold
+            Height: =36
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =15
+            Text: ="Graphical Objects and Interface Components"
+            Width: =657
+            X: =340
+            Y: =587
+            ZIndex: =13
+
+        Label3_3 As label:
+            Height: =33
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =15
+            Text: |-
+                ="WCAG AA:"
+            Width: =260
+            X: =343
+            Y: =415
+            ZIndex: =14
+
+        Label3_4 As label:
+            Height: =33
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =15
+            Text: |-
+                ="WCAG AAA:"
+            Width: =239
+            X: =343
+            Y: =452
+            ZIndex: =15
+
+        Label3_5 As label:
+            Height: =30
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =15
+            Text: |-
+                ="WCAG AA:"
+            Width: =115
+            X: =343
+            Y: =524
+            ZIndex: =16
+
+        Label3_6 As label:
+            Height: =33
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =15
+            Text: |-
+                ="WCAG AAA:"
+            Width: =143
+            X: =343
+            Y: =559
+            ZIndex: =17
+
+        Label3_7 As label:
+            Height: =30
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =15
+            Text: |-
+                ="WCAG AA:"
+            Width: =106
+            X: =343
+            Y: =623
+            ZIndex: =18
+
+        Label3_9 As label:
+            Align: =Align.Center
+            Color: =RGBA(243,242,241,1)
+            Fill: |-
+                =If(Value(Substitute(lbl_ContrastRatio.Text,":1",""))< 4.5,Red,Green)
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =15
+            Text: |-
+                =If(Value(Substitute(lbl_ContrastRatio.Text,":1",""))< 4.5,"Fail","Pass")
+            Width: =75
+            X: =518
+            Y: =419
+            ZIndex: =19
+
+        Label4 As label:
+            Align: =Align.Center
+            Color: =ColorValue(iconColor)
+            Fill: =ColorValue(backgroundColor)
+            Height: =64
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Text: ="Color Contrast Check"
+            Width: =377
+            X: =618
+            Y: =419
+            ZIndex: =20
+
+        Label4_1 As label:
+            Align: =Align.Center
+            Color: =ColorValue(iconColor)
+            Fill: =ColorValue(backgroundColor)
+            FontWeight: =FontWeight.Bold
+            Height: =65
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =18
+            Text: ="Color Contrast Check"
+            Width: =377
+            X: =618
+            Y: =502
+            ZIndex: =21
+
+        Label4_2 As label:
+            Align: =Align.Center
+            Color: =ColorValue(backgroundColor)
+            Fill: =ColorValue(backgroundColor)
+            Height: =69
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =4.10
+            Text: =""
+            Width: =377
+            X: =613
+            Y: =623
+            ZIndex: =22
+
+        TextInput2 As text:
+            BorderColor: =ColorValue(iconColor)
+            Color: =ColorValue(iconColor)
+            Default: ="Text input"
+            Height: =32
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Width: =273
+            X: =699
+            Y: =641
+            ZIndex: =23
+
+        img_icon_1 As image:
+            Fill: =ColorValue(inp_BackgroundColor.Text)
+            FocusedBorderColor: =img_icon_1.BorderColor
+            Height: =54
+            HoverBorderColor: =ColorFade(img_icon_1.BorderColor, 20%)
+            HoverFill: =ColorFade(img_icon_1.Fill, 20%)
+            Image: |-
+                ="data:image/svg+xml,"& EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='568' height='568'  version='1.1'>
+                   <path fill='"& iconColor &"'
+                d='M290.59 192c-20.18 0-106.82 1.98-162.59 85.95V192c0-52.94-43.06-96-96-96-17.67 0-32 14.33-32 32s14.33 32 32 32c17.64 0 32 14.36 32 32v256c0 35.3 28.7 64 64 64h176c8.84 0 16-7.16 16-16v-16c0-17.67-14.33-32-32-32h-32l128-96v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V289.86c-10.29 2.67-20.89 4.54-32 4.54-61.81 0-113.52-44.05-125.41-102.4zM448 96h-64l-64-64v134.4c0 53.02 42.98 96 96 96s96-42.98 96-96V32l-64 64zm-72 80c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16zm80 0c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16z' />
+                </svg>")
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            PressedBorderColor: =ColorFade(img_icon_1.BorderColor, -20%)
+            PressedFill: =ColorFade(img_icon_1.Fill, -20%)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Width: =47
+            X: =634
+            Y: =627
+            ZIndex: =24
+
+        Label3_14 As label:
+            Align: =Align.Center
+            Color: =RGBA(243,242,241,1)
+            Fill: |-
+                =If(Value(Substitute(lbl_ContrastRatio.Text,":1",""))< 3.1,Red,Green)
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =15
+            Text: |-
+                =If(Value(Substitute(lbl_ContrastRatio.Text,":1",""))< 3.1,"Fail","Pass")
+            Width: =75
+            X: =518
+            Y: =502
+            ZIndex: =25
+
+        Label3_15 As label:
+            Align: =Align.Center
+            Color: =RGBA(243,242,241,1)
+            Fill: |-
+                =If(Value(Substitute(lbl_ContrastRatio.Text,":1",""))< 3.1,Red,Green)
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =15
+            Text: |-
+                =If(Value(Substitute(lbl_ContrastRatio.Text,":1",""))< 3.1,"Fail","Pass")
+            Width: =75
+            X: =518
+            Y: =623
+            ZIndex: =26
+
+        Label3_16 As label:
+            Align: =Align.Center
+            Color: =RGBA(243,242,241,1)
+            Fill: |-
+                =If(Value(Substitute(lbl_ContrastRatio.Text,":1",""))< 4.5,Red,Green)
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =15
+            Text: |-
+                =If(Value(Substitute(lbl_ContrastRatio.Text,":1",""))< 4.5,"Fail","Pass")
+            Width: =75
+            X: =518
+            Y: =537
+            ZIndex: =27
+
+        Label3_10 As label:
+            Align: =Align.Center
+            Color: =RGBA(243,242,241,1)
+            Fill: |-
+                =If(Value(Substitute(lbl_ContrastRatio.Text,":1",""))< 7.1,Red,Green)
+            FontWeight: =FontWeight.Bold
+            Height: =30
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            Size: =15
+            Text: |-
+                =If(Value(Substitute(lbl_ContrastRatio.Text,":1",""))< 7.1,"Fail","Pass")
+            Width: =75
+            X: =518
+            Y: =453
+            ZIndex: =28
+
+    Header As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =25
+
+        Rectangle1 As rectangle:
+            Fill: =Black
+            Height: =50
+            Width: =1366
+            ZIndex: =6
+
+        lbl_ComponentName As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FocusedBorderColor: =lbl_ComponentName.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            HoverBorderColor: =lbl_ComponentName.BorderColor
+            HoverColor: =lbl_ComponentName.Color
+            HoverFill: =lbl_ComponentName.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lbl_ComponentName.BorderColor
+            PressedColor: =lbl_ComponentName.Color
+            PressedFill: =lbl_ComponentName.Fill
+            Size: =15
+            Text: ="Contrast Checker"
+            Width: =350
+            X: =177
+            Y: =12
+            ZIndex: =7
+
+    "'Background Color' As group":
+        Height: =5
+        Width: =5
+        X: =-61
+        Y: =-17
+        ZIndex: =36
+
+        inp_BackgroundColor As text:
+            BorderColor: =RGBA(237, 237, 237, 1)
+            Default: =backgroundColor
+            FocusedBorderColor: =inp_BackgroundColor.BorderColor
+            Height: =42
+            HintText: ="Enter color here"
+            HoverFill: =RGBA(186, 202, 226, 0)
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =inp_BackgroundColor.HoverBorderColor
+            PressedColor: =inp_BackgroundColor.Color
+            PressedFill: =inp_BackgroundColor.Fill
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =15
+            Width: =290
+            X: =816
+            Y: =105
+            ZIndex: =32
+
+        lbl_BackgroundColorHeading As label:
+            Align: =Align.Center
+            FocusedBorderColor: =lbl_BackgroundColorHeading.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            HoverBorderColor: =lbl_BackgroundColorHeading.BorderColor
+            HoverColor: =lbl_BackgroundColorHeading.Color
+            HoverFill: =lbl_BackgroundColorHeading.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lbl_BackgroundColorHeading.BorderColor
+            PressedColor: =lbl_BackgroundColorHeading.Color
+            PressedFill: =lbl_BackgroundColorHeading.Fill
+            Size: =15
+            Text: ="Background color"
+            Width: =290
+            X: =816
+            Y: =66
+            ZIndex: =33
+
+        value_BackGroundColor_R As label:
+            Align: =Align.Right
+            FocusedBorderColor: =value_BackGroundColor_R.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            HoverBorderColor: =value_BackGroundColor_R.BorderColor
+            HoverColor: =value_BackGroundColor_R.Color
+            HoverFill: =value_BackGroundColor_R.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =value_BackGroundColor_R.BorderColor
+            PressedColor: =value_BackGroundColor_R.Color
+            PressedFill: =value_BackGroundColor_R.Fill
+            Size: =11
+            Text: |+
+                =Slider_Background_R.Value
+                /*Right( String, NumberOfCharacters )*/
+                
+            Width: =45
+            X: =1061
+            Y: =163
+            ZIndex: =34
+
+        value_BackGroundColor_G As label:
+            Align: =Align.Right
+            FocusedBorderColor: =value_BackGroundColor_G.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            HoverBorderColor: =value_BackGroundColor_G.BorderColor
+            HoverColor: =value_BackGroundColor_G.Color
+            HoverFill: =value_BackGroundColor_G.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =value_BackGroundColor_G.BorderColor
+            PressedColor: =value_BackGroundColor_G.Color
+            PressedFill: =value_BackGroundColor_G.Fill
+            Size: =11
+            Text: |+
+                =Slider_Background_G.Value
+                /*Right( String, NumberOfCharacters )*/
+                
+            Width: =45
+            X: =1061
+            Y: =185
+            ZIndex: =35
+
+        value_BackGroundColor_B As label:
+            Align: =Align.Right
+            FocusedBorderColor: =value_BackGroundColor_B.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            HoverBorderColor: =value_BackGroundColor_B.BorderColor
+            HoverColor: =value_BackGroundColor_B.Color
+            HoverFill: =value_BackGroundColor_B.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =value_BackGroundColor_B.BorderColor
+            PressedColor: =value_BackGroundColor_B.Color
+            PressedFill: =value_BackGroundColor_B.Fill
+            Size: =11
+            Text: |+
+                =Slider_Background_B
+                /*Right( String, NumberOfCharacters )*/
+                
+            Width: =45
+            X: =1061
+            Y: =207
+            ZIndex: =36
+
+        lbl_BackGroundLuminance As label:
+            Align: =Align.Right
+            Color: =Black
+            FocusedBorderColor: =lbl_BackGroundLuminance.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =22
+            HoverBorderColor: =lbl_BackGroundLuminance.BorderColor
+            HoverColor: =lbl_BackGroundLuminance.Color
+            HoverFill: =lbl_BackGroundLuminance.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lbl_BackGroundLuminance.BorderColor
+            PressedColor: =lbl_BackGroundLuminance.Color
+            PressedFill: =lbl_BackGroundLuminance.Fill
+            Size: =11
+            Text: |
+                ='color-functions_1'.getLuminance(Slider_Background_R.Value,Slider_Background_G.Value,Slider_Background_B.Value)
+            Width: =121
+            X: =985
+            Y: =233
+            ZIndex: =37
+
+        Slider_Background_R As slider:
+            Default: =LookUp('color-functions_1'.HEXtoDEC,HEX =  Mid( inp_BackgroundColor.Text, 2, 2 )).DEC
+            FocusedBorderThickness: =0
+            HandleFill: =RGBA(83, 101, 150, 1)
+            HandleSize: =10
+            Height: =22
+            Max: =255
+            OnChange: |-
+                =Set(
+                    backgroundColor,
+                    Concatenate(
+                        "#",
+                        LookUp(
+                            'color-functions_1'.HEXtoDEC,
+                            DEC = Slider_Background_R.Value
+                        ).HEX,
+                        LookUp(
+                            'color-functions_1'.HEXtoDEC,
+                            DEC = Slider_Background_G.Value
+                        ).HEX,
+                        LookUp(
+                            'color-functions_1'.HEXtoDEC,
+                            DEC = Slider_Background_B.Value
+                        ).HEX
+                    )
+                );
+                Reset(inp_BackgroundColor)
+            RailFill: =RGBA(230, 234, 240, 1)
+            RailThickness: =4
+            ValueFill: =RGBA(83, 101, 150, 1)
+            Width: =228
+            X: =841
+            Y: =164
+            ZIndex: =38
+
+        Slider_Background_G As slider:
+            Default: =LookUp('color-functions_1'.HEXtoDEC,HEX =  Mid( inp_BackgroundColor.Text, 4, 2 )).DEC
+            FocusedBorderThickness: =0
+            HandleFill: =RGBA(83, 101, 150, 1)
+            HandleSize: =10
+            Height: =22
+            Max: =255
+            OnChange: |-
+                =Set(
+                    backgroundColor,
+                    Concatenate(
+                        "#",
+                        LookUp(
+                            'color-functions_1'.HEXtoDEC,
+                            DEC = Slider_Background_R.Value
+                        ).HEX,
+                        LookUp(
+                            'color-functions_1'.HEXtoDEC,
+                            DEC = Slider_Background_G.Value
+                        ).HEX,
+                        LookUp(
+                            'color-functions_1'.HEXtoDEC,
+                            DEC = Slider_Background_B.Value
+                        ).HEX
+                    )
+                );
+                Reset(inp_BackgroundColor)
+            RailFill: =RGBA(230, 234, 240, 1)
+            RailThickness: =4
+            ValueFill: =RGBA(83, 101, 150, 1)
+            Width: =228
+            X: =841
+            Y: =186
+            ZIndex: =39
+
+        Slider_Background_B As slider:
+            Default: =LookUp('color-functions_1'.HEXtoDEC,HEX =  Mid( inp_BackgroundColor.Text, 6, 2 )).DEC
+            FocusedBorderThickness: =0
+            HandleFill: =RGBA(83, 101, 150, 1)
+            HandleSize: =10
+            Height: =22
+            Max: =255
+            OnChange: |-
+                =Set(
+                    backgroundColor,
+                    Concatenate(
+                        "#",
+                        LookUp(
+                           'color-functions_1'.HEXtoDEC,
+                            DEC = Slider_Background_R.Value
+                        ).HEX,
+                        LookUp(
+                            'color-functions_1'.HEXtoDEC,
+                            DEC = Slider_Background_G.Value
+                        ).HEX,
+                        LookUp(
+                            'color-functions_1'.HEXtoDEC,
+                            DEC = Slider_Background_B.Value
+                        ).HEX
+                    )
+                );
+                Reset(inp_BackgroundColor)
+            RailFill: =RGBA(230, 234, 240, 1)
+            RailHoverFill: =White
+            RailThickness: =4
+            ValueFill: =RGBA(83, 101, 150, 1)
+            Width: =228
+            X: =841
+            Y: =209
+            ZIndex: =40
+
+        lbl_RelativeBackgroundColorLuminance As label:
+            Color: =Black
+            FocusedBorderColor: =lbl_RelativeBackgroundColorLuminance.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =22
+            HoverBorderColor: =lbl_RelativeBackgroundColorLuminance.BorderColor
+            HoverColor: =lbl_RelativeBackgroundColorLuminance.Color
+            HoverFill: =lbl_RelativeBackgroundColorLuminance.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lbl_RelativeBackgroundColorLuminance.BorderColor
+            PressedColor: =lbl_RelativeBackgroundColorLuminance.Color
+            PressedFill: =lbl_RelativeBackgroundColorLuminance.Fill
+            Size: =11
+            Text: |
+                ="Relative Luminance:"
+            Width: =185
+            X: =816
+            Y: =233
+            ZIndex: =41
+
+        lbl_BackgroundColor_R As label:
+            FocusedBorderColor: =lbl_BackgroundColor_R.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            HoverBorderColor: =lbl_BackgroundColor_R.BorderColor
+            HoverColor: =lbl_BackgroundColor_R.Color
+            HoverFill: =lbl_BackgroundColor_R.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lbl_BackgroundColor_R.BorderColor
+            PressedColor: =lbl_BackgroundColor_R.Color
+            PressedFill: =lbl_BackgroundColor_R.Fill
+            Text: ="R"
+            Width: =25
+            X: =816
+            Y: =161
+            ZIndex: =42
+
+        lbl_BackgroundColor_G As label:
+            FocusedBorderColor: =lbl_BackgroundColor_G.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            HoverBorderColor: =lbl_BackgroundColor_G.BorderColor
+            HoverColor: =lbl_BackgroundColor_G.Color
+            HoverFill: =lbl_BackgroundColor_G.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lbl_BackgroundColor_G.BorderColor
+            PressedColor: =lbl_BackgroundColor_G.Color
+            PressedFill: =lbl_BackgroundColor_G.Fill
+            Text: ="G"
+            Width: =25
+            X: =816
+            Y: =183
+            ZIndex: =43
+
+        lbl_BackgroundColor_B As label:
+            FocusedBorderColor: =lbl_BackgroundColor_B.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            HoverBorderColor: =lbl_BackgroundColor_B.BorderColor
+            HoverColor: =lbl_BackgroundColor_B.Color
+            HoverFill: =lbl_BackgroundColor_B.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lbl_BackgroundColor_B.BorderColor
+            PressedColor: =lbl_BackgroundColor_B.Color
+            PressedFill: =lbl_BackgroundColor_B.Fill
+            Text: ="B"
+            Width: =25
+            X: =816
+            Y: =205
+            ZIndex: =44
+
+    "'Contrast Ratio' As group":
+        Height: =5
+        Width: =5
+        X: =-61
+        Y: =-17
+        ZIndex: =54
+
+        img_icon As image:
+            Fill: =ColorValue(inp_BackgroundColor.Text)
+            FocusedBorderColor: =img_icon.BorderColor
+            Height: =189
+            HoverBorderColor: =ColorFade(img_icon.BorderColor, 20%)
+            HoverFill: =ColorFade(img_icon.Fill, 20%)
+            Image: |-
+                ="data:image/svg+xml,"& EncodeUrl("<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='568' height='568'  version='1.1'>
+                   <path fill='"& iconColor &"'
+                d='M290.59 192c-20.18 0-106.82 1.98-162.59 85.95V192c0-52.94-43.06-96-96-96-17.67 0-32 14.33-32 32s14.33 32 32 32c17.64 0 32 14.36 32 32v256c0 35.3 28.7 64 64 64h176c8.84 0 16-7.16 16-16v-16c0-17.67-14.33-32-32-32h-32l128-96v144c0 8.84 7.16 16 16 16h32c8.84 0 16-7.16 16-16V289.86c-10.29 2.67-20.89 4.54-32 4.54-61.81 0-113.52-44.05-125.41-102.4zM448 96h-64l-64-64v134.4c0 53.02 42.98 96 96 96s96-42.98 96-96V32l-64 64zm-72 80c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16zm80 0c-8.84 0-16-7.16-16-16s7.16-16 16-16 16 7.16 16 16-7.16 16-16 16z' />
+                </svg>")
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            PressedBorderColor: =ColorFade(img_icon.BorderColor, -20%)
+            PressedFill: =ColorFade(img_icon.Fill, -20%)
+            RadiusBottomLeft: =5
+            RadiusBottomRight: =5
+            RadiusTopLeft: =5
+            RadiusTopRight: =5
+            Width: =223
+            X: =538
+            Y: =66
+            ZIndex: =29
+
+        lbl_ContrastRatio As label:
+            Align: =Align.Center
+            Color: |-
+                =If(Value(Substitute(lbl_ContrastRatio.Text,":1",""))< 3.1,Red,Green)
+            FocusedBorderColor: =lbl_ContrastRatio.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            HoverBorderColor: =lbl_ContrastRatio.BorderColor
+            HoverColor: =lbl_ContrastRatio.Color
+            HoverFill: =lbl_ContrastRatio.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lbl_ContrastRatio.BorderColor
+            PressedColor: =lbl_ContrastRatio.Color
+            PressedFill: =lbl_ContrastRatio.Fill
+            Size: =18
+            Text: |-
+                =Concatenate(Text('color-functions_1'.chkContrast(Value(lbl_IconColorLuminance.Text),Value(lbl_BackGroundLuminance.Text))),":1")
+            Width: =223
+            X: =538
+            Y: =286
+            ZIndex: =30
+
+        lblIconColorOFI_2 As label:
+            Align: =Align.Center
+            FocusedBorderColor: =lblIconColorOFI_2.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            HoverBorderColor: =lblIconColorOFI_2.BorderColor
+            HoverColor: =lblIconColorOFI_2.Color
+            HoverFill: =lblIconColorOFI_2.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lblIconColorOFI_2.BorderColor
+            PressedColor: =lblIconColorOFI_2.Color
+            PressedFill: =lblIconColorOFI_2.Fill
+            Text: |-
+                ="Contrast Ratio:"
+            Width: =223
+            X: =538
+            Y: =251
+            ZIndex: =31
+
+    "'Foreground  Color' As group":
+        Height: =5
+        Width: =5
+        X: =-61
+        Y: =-17
+        ZIndex: =55
+
+        inp_Color As text:
+            BorderColor: =RGBA(237, 237, 237, 1)
+            Default: =iconColor
+            FocusedBorderColor: =inp_Color.BorderColor
+            Height: =35
+            HintText: ="Enter color here"
+            HoverFill: =RGBA(186, 202, 226, 0)
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =inp_Color.HoverBorderColor
+            PressedColor: =inp_Color.Color
+            PressedFill: =inp_Color.Fill
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =15
+            Width: =293
+            X: =186
+            Y: =108
+            ZIndex: =45
+
+        lbl_IconColorHeading As label:
+            Align: =Align.Center
+            FocusedBorderColor: =lbl_IconColorHeading.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            HoverBorderColor: =lbl_IconColorHeading.BorderColor
+            HoverColor: =lbl_IconColorHeading.Color
+            HoverFill: =lbl_IconColorHeading.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lbl_IconColorHeading.BorderColor
+            PressedColor: =lbl_IconColorHeading.Color
+            PressedFill: =lbl_IconColorHeading.Fill
+            Size: =15
+            Text: ="Foreground color"
+            Width: =293
+            X: =186
+            Y: =66
+            ZIndex: =46
+
+        lbl_IconColorLuminance As label:
+            Align: =Align.Right
+            Color: =Black
+            FocusedBorderColor: =lbl_IconColorLuminance.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =22
+            HoverBorderColor: =lbl_IconColorLuminance.BorderColor
+            HoverColor: =lbl_IconColorLuminance.Color
+            HoverFill: =lbl_IconColorLuminance.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lbl_IconColorLuminance.BorderColor
+            PressedColor: =lbl_IconColorLuminance.Color
+            PressedFill: =lbl_IconColorLuminance.Fill
+            Size: =11
+            Text: |
+                ='color-functions_1'.getLuminance(Slider_Icon_R.Value,Slider_Icon_G.Value,Slider_Icon_B.Value)
+            Width: =107
+            X: =372
+            Y: =233
+            ZIndex: =47
+
+        Slider_Icon_R As slider:
+            Default: |+
+                =LookUp('color-functions_1'.HEXtoDEC,HEX =  Mid( inp_Color.Text, 2, 2 )).DEC
+                
+                
+                
+            FocusedBorderThickness: =0
+            HandleFill: =RGBA(83, 101, 150, 1)
+            HandleSize: =10
+            Height: =22
+            Max: =255
+            OnChange: |-
+                =Set(
+                    iconColor, Concatenate(
+                            "#",
+                            LookUp(
+                               'color-functions_1'.HEXtoDEC,
+                                DEC = Slider_Icon_R.Value
+                            ).HEX,
+                            LookUp(
+                                'color-functions_1'.HEXtoDEC,
+                                DEC = Slider_Icon_G.Value
+                            ).HEX,
+                            LookUp(
+                                'color-functions_1'.HEXtoDEC,
+                                DEC = Slider_Icon_B.Value
+                            ).HEX
+                        )
+                );
+                Reset(inp_Color);
+            RailFill: =RGBA(230, 234, 240, 1)
+            RailHoverFill: =White
+            RailThickness: =4
+            ValueFill: =RGBA(83, 101, 150, 1)
+            Width: =231
+            X: =212
+            Y: =161
+            ZIndex: =48
+
+        Slider_Icon_G As slider:
+            Default: =LookUp('color-functions_1'.HEXtoDEC,HEX =  Mid( inp_Color.Text, 4, 2 )).DEC
+            FocusedBorderThickness: =0
+            HandleFill: =RGBA(83, 101, 150, 1)
+            HandleSize: =10
+            Height: =22
+            Max: =255
+            OnChange: |-
+                =Set(
+                    iconColor, Concatenate(
+                            "#",
+                            LookUp(
+                               'color-functions_1'.HEXtoDEC,
+                                DEC = Slider_Icon_R.Value
+                            ).HEX,
+                            LookUp(
+                                'color-functions_1'.HEXtoDEC,
+                                DEC = Slider_Icon_G.Value
+                            ).HEX,
+                            LookUp(
+                                'color-functions_1'.HEXtoDEC,
+                                DEC = Slider_Icon_B.Value
+                            ).HEX
+                        )
+                );
+                Reset(inp_Color);
+            RailFill: =RGBA(230, 234, 240, 1)
+            RailHoverFill: =White
+            RailThickness: =4
+            ValueFill: =RGBA(83, 101, 150, 1)
+            Width: =231
+            X: =212
+            Y: =183
+            ZIndex: =49
+
+        Slider_Icon_B As slider:
+            Default: =LookUp('color-functions_1'.HEXtoDEC,HEX =  Mid( inp_Color.Text, 6, 2 )).DEC
+            FocusedBorderThickness: =0
+            HandleFill: =RGBA(83, 101, 150, 1)
+            HandleSize: =10
+            Height: =22
+            Max: =255
+            OnChange: |-
+                =Set(
+                    iconColor, Concatenate(
+                            "#",
+                            LookUp(
+                                'color-functions_1'.HEXtoDEC,
+                                DEC = Slider_Icon_R.Value
+                            ).HEX,
+                            LookUp(
+                                'color-functions_1'.HEXtoDEC,
+                                DEC = Slider_Icon_G.Value
+                            ).HEX,
+                            LookUp(
+                               'color-functions_1'.HEXtoDEC,
+                                DEC = Slider_Icon_B.Value
+                            ).HEX
+                        )
+                );
+                Reset(inp_Color);
+            RailFill: =RGBA(230, 234, 240, 1)
+            RailHoverFill: =White
+            RailThickness: =4
+            ValueFill: =RGBA(83, 101, 150, 1)
+            ValueHoverFill: =White
+            Width: =231
+            X: =212
+            Y: =205
+            ZIndex: =50
+
+        lbl_IconRelativeLuminance As label:
+            Color: =Black
+            FocusedBorderColor: =lbl_IconRelativeLuminance.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =22
+            HoverBorderColor: =lbl_IconRelativeLuminance.BorderColor
+            HoverColor: =lbl_IconRelativeLuminance.Color
+            HoverFill: =lbl_IconRelativeLuminance.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lbl_IconRelativeLuminance.BorderColor
+            PressedColor: =lbl_IconRelativeLuminance.Color
+            PressedFill: =lbl_IconRelativeLuminance.Fill
+            Size: =11
+            Text: |
+                ="Relative Luminance:"
+            Width: =187
+            X: =186
+            Y: =233
+            ZIndex: =51
+
+        lbl_IconR As label:
+            FocusedBorderColor: =lbl_IconR.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =22
+            HoverBorderColor: =lbl_IconR.BorderColor
+            HoverColor: =lbl_IconR.Color
+            HoverFill: =lbl_IconR.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lbl_IconR.BorderColor
+            PressedColor: =lbl_IconR.Color
+            PressedFill: =lbl_IconR.Fill
+            Text: ="R"
+            Width: =26
+            X: =186
+            Y: =161
+            ZIndex: =52
+
+        lbl_IconG As label:
+            FocusedBorderColor: =lbl_IconG.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =22
+            HoverBorderColor: =lbl_IconG.BorderColor
+            HoverColor: =lbl_IconG.Color
+            HoverFill: =lbl_IconG.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lbl_IconG.BorderColor
+            PressedColor: =lbl_IconG.Color
+            PressedFill: =lbl_IconG.Fill
+            Text: ="G"
+            Width: =26
+            X: =186
+            Y: =183
+            ZIndex: =53
+
+        lbl_IconB As label:
+            FocusedBorderColor: =lbl_IconB.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =22
+            HoverBorderColor: =lbl_IconB.BorderColor
+            HoverColor: =lbl_IconB.Color
+            HoverFill: =lbl_IconB.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lbl_IconB.BorderColor
+            PressedColor: =lbl_IconB.Color
+            PressedFill: =lbl_IconB.Fill
+            Text: ="B"
+            Width: =26
+            X: =186
+            Y: =205
+            ZIndex: =54
+
+        value_BackGroundColor_R_1 As label:
+            Align: =Align.Right
+            FocusedBorderColor: =value_BackGroundColor_R_1.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =26
+            HoverBorderColor: =value_BackGroundColor_R_1.BorderColor
+            HoverColor: =value_BackGroundColor_R_1.Color
+            HoverFill: =value_BackGroundColor_R_1.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =value_BackGroundColor_R_1.BorderColor
+            PressedColor: =value_BackGroundColor_R_1.Color
+            PressedFill: =value_BackGroundColor_R_1.Fill
+            Size: =11
+            Text: |+
+                =Slider_Icon_R.Value
+                /*Right( String, NumberOfCharacters )*/
+                
+            Width: =43
+            X: =436
+            Y: =161
+            ZIndex: =55
+
+        value_BackGroundColor_G_1 As label:
+            Align: =Align.Right
+            FocusedBorderColor: =value_BackGroundColor_G_1.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =30
+            HoverBorderColor: =value_BackGroundColor_G_1.BorderColor
+            HoverColor: =value_BackGroundColor_G_1.Color
+            HoverFill: =value_BackGroundColor_G_1.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =value_BackGroundColor_G_1.BorderColor
+            PressedColor: =value_BackGroundColor_G_1.Color
+            PressedFill: =value_BackGroundColor_G_1.Fill
+            Size: =11
+            Text: |+
+                =Slider_Icon_G.Value
+                /*Right( String, NumberOfCharacters )*/
+                
+            Width: =43
+            X: =436
+            Y: =183
+            ZIndex: =56
+
+        value_BackGroundColor_B_1 As label:
+            Align: =Align.Right
+            FocusedBorderColor: =value_BackGroundColor_B_1.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =26
+            HoverBorderColor: =value_BackGroundColor_B_1.BorderColor
+            HoverColor: =value_BackGroundColor_B_1.Color
+            HoverFill: =value_BackGroundColor_B_1.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =value_BackGroundColor_B_1.BorderColor
+            PressedColor: =value_BackGroundColor_B_1.Color
+            PressedFill: =value_BackGroundColor_B_1.Fill
+            Size: =11
+            Text: |+
+                =Slider_Icon_B.Value
+                /*Right( String, NumberOfCharacters )*/
+                
+            Width: =43
+            X: =436
+            Y: =205
+            ZIndex: =57
+
+    Icon1 As icon.Reload:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =38
+        Icon: =Icon.Reload
+        OnSelect: |-
+            =Set(backgroundColor,"#E6EAF0");Set(iconColor,"#536596")
+        Width: =27
+        X: =1319
+        Y: =6
+        ZIndex: =58
+
+    Label1 As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =38
+        Text: ="Reset Colors"
+        Width: =114
+        X: =1204
+        Y: =6
+        ZIndex: =59
+

@@ -1,0 +1,5 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |-
+        =Set(iconColor,"#536596");Set(iconColor,"#E6EAF0")
+
