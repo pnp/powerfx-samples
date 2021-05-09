@@ -27,7 +27,7 @@
       "Name": "sRGBtoLIN",
       "PropertyDataTypeKey": "Number",
       "PropertyScopeKey": {
-        "PropertyScopeRuleNamespaceKey": "18",
+        "PropertyScopeRuleNamespaceKey": "3",
         "PropertyScopeRulesKey": [
           {
             "DisplayName": "sRGBtoLIN_colorChannel",
@@ -56,7 +56,7 @@
       "Name": "getLuminance",
       "PropertyDataTypeKey": "Number",
       "PropertyScopeKey": {
-        "PropertyScopeRuleNamespaceKey": "18",
+        "PropertyScopeRuleNamespaceKey": "3",
         "PropertyScopeRulesKey": [
           {
             "DisplayName": "getLuminance_R",
@@ -115,7 +115,7 @@
       "Name": "chkContrast",
       "PropertyDataTypeKey": "Number",
       "PropertyScopeKey": {
-        "PropertyScopeRuleNamespaceKey": "18",
+        "PropertyScopeRuleNamespaceKey": "3",
         "PropertyScopeRulesKey": [
           {
             "DisplayName": "chkContrast_DarkColor",
@@ -159,7 +159,7 @@
   "IsComponentTemplate": true,
   "IsCustomGroupControlTemplate": false,
   "IsPremiumPcfControl": false,
-  "LastModifiedTimestamp": "637560459789024414",
+  "LastModifiedTimestamp": "637561752101673186",
   "Name": "28096ff402fb46daa26ec0c6a933ce1f",
   "OverridableProperties": {},
   "Version": "637560478629315177"
