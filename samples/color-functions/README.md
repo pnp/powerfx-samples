@@ -7,7 +7,7 @@ Functions that calculate the contrast between two colors.
 
 The following image shows a sample implementation of Color Functions component to create a color contrast checker when added to Power App:
 
-![Contrast Checker](./assets/ContrastChecker.PNG)
+![Contrast Checker](./assets/ContrastChecker.png)
 
 ## Applies to
 
