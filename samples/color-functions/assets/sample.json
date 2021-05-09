@@ -33,7 +33,7 @@
             {
                 "type": "image",
                 "order": 100,
-                "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/color-functions/assets/ContrastChecker.png",
+                "url": "https://github.com/pnp/powerfx-samples/blob/main/samples/color-functions/assets/ContrastChecker.png?raw=true",
                 "alt": "Color functions"
             }
         ],
@@ -91,7 +91,7 @@
             {
                 "type": "image",
                 "order": 100,
-                "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/color-functions/assets/ContrastChecker.png",
+                "url": "https://github.com/pnp/powerfx-samples/blob/main/samples/color-functions/assets/ContrastChecker.png?raw=true",
                 "alt": "Color functions"
             }
         ],
@@ -149,7 +149,7 @@
             {
                 "type": "image",
                 "order": 100,
-                "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/color-functions/assets/ContrastChecker.png",
+                "url": "https://github.com/pnp/powerfx-samples/blob/main/samples/color-functions/assets/ContrastChecker.png?raw=true",
                 "alt": "Color functions"
             }
         ],
