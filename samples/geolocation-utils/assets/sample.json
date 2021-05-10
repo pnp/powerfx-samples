@@ -5,7 +5,7 @@
     "version": "1.0.0.0",
     "source": "pnp",
     "creationDateTime": "2021-03-07T00:00:00.000Z",
-    "modified": "2021-03-07T00:00:00.000Z",
+    "updateDateTime": "2021-03-07T00:00:00.000Z",
     "title": "TwoPoints",
     "shortDescription": "Calculate distance in unit of meter and compass heading.",
     "longDescription": [
@@ -64,7 +64,7 @@
     "version": "1.0.0.0",
     "source": "pnp",
     "creationDateTime": "2021-03-07T00:00:00.000Z",
-    "modified": "2021-03-07T00:00:00.000Z",
+    "updateDateTime": "2021-03-07T00:00:00.000Z",
     "title": "ConvertUnit",
     "shortDescription": "Perform unit conversion for length.",
     "longDescription": [],
