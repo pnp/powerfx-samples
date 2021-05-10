@@ -16,6 +16,9 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+        "COLOR", "HEX", "DECIMAL", "CONVERT"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -23,10 +26,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.20"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Color"
             }
         ],
         "thumbnails": [
@@ -74,6 +73,9 @@
             "Power Apps",
             "Power Platform"
         ],
+        "tags": [
+          "COLOR"
+        ],
         "categories": [
             "POWERFX"
         ],
@@ -81,10 +83,6 @@
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.20"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Color"
             }
         ],
         "thumbnails": [
@@ -135,14 +133,13 @@
         "categories": [
             "POWERFX"
         ],
+        "tags": [
+          "COLOR"
+        ],
         "metadata": [
             {
                 "key": "POWERAPPS-MANIFEST-VERSION",
                 "value": "0.20"
-            },
-            {
-                "key": "POWERFX-TAGS",
-                "value": "Color"
             }
         ],
         "thumbnails": [
