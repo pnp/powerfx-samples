@@ -1,0 +1,101 @@
+{
+  "ComponentIndexes": {
+    "Decode-Url": 1,
+    "Decode-Url_1": 1
+  },
+  "ControlUniqueIds": {
+    "App": 1,
+    "btn_background": 5,
+    "btn_decode_url": 73,
+    "Decode-Url": 69,
+    "Decode-Url_1": 75,
+    "Guidelines": 64,
+    "Header": 65,
+    "Home": 4,
+    "Image1": 8,
+    "Image2": 7,
+    "inp_encoded_url": 72,
+    "Label4": 76,
+    "lbl_ComponentName": 11,
+    "lbl_decoded_header": 70,
+    "lbl_encoding_header": 71,
+    "out_decoded_url": 74,
+    "rec_background": 6
+  },
+  "HeaderLastSavedDateTimeUTC": "06/03/2021 21:34:02",
+  "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {
+    "cropped-logo-red": "0001.png",
+    "header": "0002.png"
+  },
+  "LocalResourceRootPaths": {
+    "cropped-logo-red": "https://docserverpaaprodsuk.blob.core.windows.net/bdaf85d7-0028-47a1-b3bf-8e9694d5463c-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=ShcC35yMGXFyPjE9WugbMcLs4m2t6T4XpKIp3lb0Ueo%3D&spr=https&se=2021-06-04T20%3A30%3A07Z&sp=r",
+    "header": "https://docserverpaaprodsuk.blob.core.windows.net/bdaf85d7-0028-47a1-b3bf-8e9694d5463c-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=BTRGdX0n94jV8AXIUrh09wv1Ch%2F8W0bj6ROvFpcs%2BDY%3D&spr=https&se=2021-06-04T20%3A30%3A07Z&sp=r"
+  },
+  "OldLogoFileName": "0b50l5dd.jpg",
+  "OrderComponentMetadata": {
+    "a3f129dd53a94e8e9b9d254c2d7b9322": 0
+  },
+  "OrderComponentTemplate": {
+    "a3f129dd53a94e8e9b9d254c2d7b9322": 0
+  },
+  "OrderDataSource": {},
+  "OrderGroupControls": {
+    "Guidelines": {
+      "Image1": 1,
+      "Image2": 0
+    },
+    "Header": {
+      "lbl_ComponentName": 0,
+      "rec_background": 1
+    }
+  },
+  "OrderTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 3,
+    "image": 1,
+    "label": 2,
+    "rectangle": 0,
+    "text": 4
+  },
+  "PublishOrderIndices": {
+    "App": 0,
+    "btn_background": 6,
+    "btn_decode_url": 9,
+    "Decode-Url": 0,
+    "Decode-Url_1": 12,
+    "Guidelines": 3,
+    "Header": 1,
+    "Home": 0,
+    "Image1": 4,
+    "Image2": 2,
+    "inp_encoded_url": 8,
+    "Label4": 13,
+    "lbl_ComponentName": 5,
+    "lbl_decoded_header": 10,
+    "lbl_encoding_header": 7,
+    "out_decoded_url": 11,
+    "rec_background": 0
+  },
+  "TemplateVersions": {
+    "a3f129dd53a94e8e9b9d254c2d7b9322": "637583528420726922"
+  },
+  "VolatileProperties": {
+    "AnalysisLoadTime": 0.5360167,
+    "ControlCount": {
+      "28096ff402fb46daa26ec0c6a933ce1f": 2,
+      "a3f129dd53a94e8e9b9d254c2d7b9322": 1,
+      "button": 3,
+      "group": 5,
+      "htmlViewer": 1,
+      "icon": 1,
+      "image": 4,
+      "label": 38,
+      "rectangle": 2,
+      "screen": 1,
+      "slider": 6,
+      "text": 4
+    },
+    "DeserializationLoadTime": 1.5376761
+  }
+}

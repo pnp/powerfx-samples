@@ -1,0 +1,291 @@
+Home As screen:
+
+    "'Decode-Url_1' As 'Decode-Url'":
+        DecodeUrl: |-
+            =Substitute(
+                Substitute(
+                    Substitute(
+                        Substitute(
+                            Substitute(
+                                Substitute(
+                                    Substitute(
+                                        Substitute(
+                                            Substitute(
+                                                Substitute(
+                                                    Substitute(
+                                                        Substitute(
+                                                            Substitute(
+                                                                Substitute(
+                                                                    Substitute(
+                                                                        Substitute(
+                                                                            Substitute(
+                                                                                Substitute(
+                                                                                    Substitute(
+                                                                                        Substitute(
+                                                                                            Substitute(
+                                                                                                Substitute(
+                                                                                                    Substitute(
+                                                                                                        Substitute(
+                                                                                                            Substitute(
+                                                                                                                Substitute(
+                                                                                                                    Substitute(
+                                                                                                                        Substitute(
+                                                                                                                            Substitute(
+                                                                                                                                Substitute(
+                                                                                                                                    Substitute(
+                                                                                                                                        Substitute(
+                                                                                                                                            Substitute(
+                                                                                                                                                Substitute(
+                                                                                                                                                    Substitute(
+                                                                                                                                                        url,
+                                                                                                                                                        "%20",
+                                                                                                                                                        " "
+                                                                                                                                                    ),
+                                                                                                                                                    "%21",
+                                                                                                                                                    "!"
+                                                                                                                                                ),
+                                                                                                                                                "%22",
+                                                                                                                                                "'"
+                                                                                                                                            ),
+                                                                                                                                            "%23",
+                                                                                                                                            "#"
+                                                                                                                                        ),
+                                                                                                                                        "%24",
+                                                                                                                                        "$"
+                                                                                                                                    ),
+                                                                                                                                    "%25",
+                                                                                                                                    "%"
+                                                                                                                                ),
+                                                                                                                                "%26",
+                                                                                                                                "&"
+                                                                                                                            ),
+                                                                                                                            "%27",
+                                                                                                                            "'"
+                                                                                                                        ),
+                                                                                                                        "%28",
+                                                                                                                        "("
+                                                                                                                    ),
+                                                                                                                    "%29",
+                                                                                                                    ")"
+                                                                                                                ),
+                                                                                                                "%2A",
+                                                                                                                "*"
+                                                                                                            ),
+                                                                                                            "%2B",
+                                                                                                            "+"
+                                                                                                        ),
+                                                                                                        "%2C",
+                                                                                                        ","
+                                                                                                    ),
+                                                                                                    "%3C",
+                                                                                                    "<"
+                                                                                                ),
+                                                                                                "%3E",
+                                                                                                ">"
+                                                                                            ),
+                                                                                            "%2D",
+                                                                                            "-"
+                                                                                        ),
+                                                                                        "%2F",
+                                                                                        "/"
+                                                                                    ),
+                                                                                    "%2E",
+                                                                                    "."
+                                                                                ),
+                                                                                "%7B",
+                                                                                "{"
+                                                                            ),
+                                                                            "%7D",
+                                                                            "}"
+                                                                        ),
+                                                                        "%7C",
+                                                                        "|"
+                                                                    ),
+                                                                    "%5C",
+                                                                    ""
+                                                                ),
+                                                                "%5E",
+                                                                "^"
+                                                            ),
+                                                            "%7E",
+                                                            "~"
+                                                        ),
+                                                        "%5B",
+                                                        "["
+                                                    ),
+                                                    "%5D",
+                                                    "]"
+                                                ),
+                                                "%60",
+                                                "`"
+                                            ),
+                                            "%80",
+                                            "`"
+                                        ),
+                                        "%2F",
+                                        "/"
+                                    ),
+                                    "%3A",
+                                    ":"
+                                ),
+                                "%3B",
+                                ";"
+                            ),
+                            "%3D",
+                            "="
+                        ),
+                        "%3F",
+                        "?"
+                    ),
+                    "%40",
+                    "@"
+                ),
+                "%27",
+                "'"
+            )
+        Height: =34
+        Width: =973
+        X: =161
+        Y: =687
+
+    btn_background As button:
+        AutoDisableOnSelect: =false
+        BorderThickness: =1
+        Fill: =RGBA(243,242,241,1)
+        FocusedBorderThickness: =1
+        Height: =655
+        HoverBorderColor: =RGBA(243,242,241,1)
+        HoverFill: =RGBA(243,242,241,1)
+        PressedFill: =RGBA(243,242,241,1)
+        RadiusBottomLeft: =25
+        RadiusBottomRight: =25
+        RadiusTopLeft: =25
+        RadiusTopRight: =25
+        Text: =""
+        Width: =974
+        X: =160
+        Y: =86
+        ZIndex: =1
+
+    Guidelines As group:
+        Height: =5
+        Width: =5
+        X: =34
+        Y: =40
+        ZIndex: =22
+
+        Image1 As image:
+            Height: =49
+            Image: =header
+            ImagePosition: =ImagePosition.Stretch
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =785
+            X: =581
+            ZIndex: =9
+
+        Image2 As image:
+            Height: =50
+            Image: ='cropped-logo-red'
+            PaddingRight: =0.00
+            PaddingTop: =0.00
+            Width: =145
+            X: =15
+            ZIndex: =10
+
+    Header As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =25
+
+        rec_background As rectangle:
+            Fill: =Black
+            Height: =50
+            Width: =1366
+            ZIndex: =6
+
+        lbl_ComponentName As label:
+            Color: =RGBA(255, 255, 255, 1)
+            FocusedBorderColor: =lbl_ComponentName.BorderColor
+            FontWeight: =FontWeight.Semibold
+            Height: =37
+            HoverBorderColor: =lbl_ComponentName.BorderColor
+            HoverColor: =lbl_ComponentName.Color
+            HoverFill: =lbl_ComponentName.Fill
+            PaddingLeft: =0
+            PaddingRight: =1.58
+            PaddingTop: =1.58
+            PressedBorderColor: =lbl_ComponentName.BorderColor
+            PressedColor: =lbl_ComponentName.Color
+            PressedFill: =lbl_ComponentName.Fill
+            Size: =15
+            Text: ="Decode-Url"
+            Width: =350
+            X: =177
+            Y: =12
+            ZIndex: =7
+
+    lbl_decoded_header As label:
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =46
+        Size: =18
+        Text: ="Decoded URL string"
+        Width: =294
+        X: =192
+        Y: =377
+        ZIndex: =60
+
+    lbl_encoding_header As label:
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Size: =18
+        Text: ="Enter encoded URL string"
+        Width: =611
+        X: =190
+        Y: =97
+        ZIndex: =61
+
+    inp_encoded_url As text:
+        AccessibleLabel: ="enter a url encoded string here"
+        BorderThickness: =1
+        Default: =""
+        Font: =Font.Verdana
+        Height: =209
+        HintText: ="encoded url"
+        Mode: =TextMode.MultiLine
+        Size: =10
+        Width: =917
+        X: =192
+        Y: =152
+        ZIndex: =62
+
+    btn_decode_url As button:
+        BorderThickness: =1
+        OnSelect: =Set(decoded_url, 'Decode-Url_1'.DecodeUrl(inp_encoded_url.Text))
+        RadiusBottomLeft: =5
+        RadiusBottomRight: =5
+        RadiusTopLeft: =5
+        RadiusTopRight: =5
+        Text: ="Decode URL"
+        X: =947
+        Y: =367
+        ZIndex: =63
+
+    out_decoded_url As text:
+        AccessibleLabel: ="the decoded url string"
+        BorderColor: =RGBA(151, 0, 0, 1)
+        Default: =decoded_url
+        DisplayMode: =DisplayMode.View
+        Font: =Font.Verdana
+        Height: =298
+        HintText: ="decoded url"
+        Mode: =TextMode.MultiLine
+        Size: =10
+        Width: =917
+        X: =190
+        Y: =423
+        ZIndex: =64
+

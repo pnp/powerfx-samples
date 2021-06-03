@@ -5,24 +5,13 @@
 
 Functions that calculate the contrast between two colors.  
 
-* [Color Functions](https://github.com/pnp/powerfx-samples/tree/main/samples/color-functions)
+The following image shows a sample implementation of Color Functions component to create a color contrast checker when added to Power App:
 
-The following image shows a sample implementation of Color Functions component to create a color contrast cshecker when added to Power App:
-
-![Contrast Checker](assets/ContrastChecker.PNG)
+![Contrast Checker](./assets/ContrastChecker.PNG)
 
 ## Applies to
 
 * Power Apps Canvas app
-
-## Compatibility
-
-![Power Apps Source File Pack and Unpack Utility 0.20](https://img.shields.io/badge/PSAopa-0.20-green.svg)
-
-## Prerequisites
-
-None
-
 
 ## Solution
 
@@ -37,26 +26,30 @@ Version|Date|Comments
 1.0|May 8, 2021|Initial Release
 
 
-## Disclaimer
+## Compatibility
 
-*THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON_INFRINGEMENT.*
+![Power Apps Source File Pack and Unpack Utility 0.20](https://img.shields.io/badge/PSAopa-0.20-green.svg)
 
----
+## Prerequisites
+
+None
+
+
 ## Minimal Path to Awesome
 
-* [Download](https://github.com/pnp/powerfx-samples/raw/main/samples/color-functions/solution/color-functions.msapp) the `.msapp` from the `solution` folder
+* [Download](./solution/color-functions.msapp) the `.msapp` from the `solution` folder
 * Use the `.msapp` file using **File** > **Open** > **Browse** within Power Apps Studio.
 
 ## Using the Source Code
 
-  You can also use the [Power Apps Source Code tool](https://github.com/microsoft/PowerApps-Language-Tooling) to the code using these steps:
+You can also use the [Power Apps Source Code tool](https://github.com/microsoft/PowerApps-Language-Tooling) to the code using these steps:
 
 * Clone the repository to a local drive
 * Pack the source files back into `.msapp` file:
   * [Power Apps Tooling Usage](https://github.com/microsoft/PowerApps-Language-Tooling)
 * Use the `.msapp` file using **File** > **Open** > **Browse** in Power Apps Studio.
 
-## Functions 
+## Functions
 
 Functions that perform operations on colors
 
@@ -66,7 +59,7 @@ Functions that perform operations on colors
 
 ### sRGBtoLIn
 
-Linerizes an R G or B value,using the following formula:
+Linearizes an R G or B value,using the following formula:
 
 ```Excel
 If(
@@ -87,7 +80,7 @@ sRGB(colorChannel)
 
 Parameter | Description|Required | Type
 ---|---|---|---
-`colorChannel` | Linerizes an R G or B value |Yes | Number
+`colorChannel` | Linearizes an R G or B value |Yes | Number
 
 #### Output
 
@@ -95,7 +88,7 @@ Parameter | Description|Required | Type
 
 ### getLuminance
 
-Calclulates the relative luminance of linerized RGB colors using the following formula:
+Calculates the relative luminance of linearized RGB colors using the following formula:
 
 ```excel
 Sum(
@@ -113,9 +106,9 @@ getLuminance(R,G,B)
 
 Parameter | Description|Required | Type
 ---|---|---|---
-`R` | Linerized R Value |Yes | Number
-`G` | Linerized G Value |Yes | Number
-`B` | Linerized B Value |Yes | Number
+`R` | Linearized R Value |Yes | Number
+`G` | Linearized G Value |Yes | Number
+`B` | Linearized B Value |Yes | Number
 
 #### Output
 
@@ -123,7 +116,7 @@ Parameter | Description|Required | Type
 
 ### chkContrast
 
-Calclulates the contrast between two colors using the following formula:
+Calculates the contrast between two colors using the following formula:
 
 ```excel
 If(
@@ -149,10 +142,24 @@ chkContrast(DarkColor,LightColor)
 Parameter | Description|Required | Type
 ---|---|---|---
 `DarkColor` | Dark color relative luminance |Yes | Number
-`LightCOlor` | Light color relative luminance |Yes | Number
+`LightColor` | Light color relative luminance |Yes | Number
 
 #### Output
 
 * Number between 1 and 21
+
+## Disclaimer
+
+*THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON_INFRINGEMENT.*
+
+## Support
+
+We do not support samples, but we do use GitHub to track issues and constantly want to improve these samples.
+
+If you encounter any issues while using this sample, [create a new issue](https://github.com/pnp/powerfx-samples/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=bug-report.yml&sample=color-functions&authors=@P3N-101&title=color-functions%20-%20).
+
+For questions regarding this sample, [create a new question](https://github.com/pnp/powerfx-samples/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=question.yml&sample=color-functions&authors=@P3N-101&title=color-functions%20-%20).
+
+Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/powerfx-samples/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=suggestion.yml&sample=color-functions&authors=@P3N-101&title=color-functions%20-%20).
 
 <img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/color-functions" />

@@ -74,10 +74,6 @@
   },
   "HeaderLastSavedDateTimeUTC": "05/09/2021 16:40:59",
   "LocalDatabaseReferencesAsEmpty": false,
-  "LocalResourceFileNames": {
-    "cropped-logo-red": "0001.png",
-    "header": "0002.png"
-  },
   "LocalResourceRootPaths": {
     "cropped-logo-red": "https://docserverpaaprodsuk.blob.core.windows.net/a1626b21-f530-4384-8b13-88b0b70015bc-1/resource/Assets0Images00001.png?sv=2017-04-17&sr=b&sig=EYNqlavGYHY1%2B6lMPqLt04YoIAk6A1QxLd5vVeaz%2Fbo%3D&spr=https&se=2021-05-10T16%3A55%3A09Z&sp=r",
     "header": "https://docserverpaaprodsuk.blob.core.windows.net/a1626b21-f530-4384-8b13-88b0b70015bc-1/resource/Assets0Images00002.png?sv=2017-04-17&sr=b&sig=OM779%2BLWqsKyfrwgS3RWYH%2FB6Teg9w45dHD020waijw%3D&spr=https&se=2021-05-10T16%3A55%3A09Z&sp=r"

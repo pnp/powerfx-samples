@@ -1,0 +1,54 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "Decode-Url",
+    "TemplateGuid": "a3f129dd53a94e8e9b9d254c2d7b9322"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "Decode-Url",
+      "Hidden": true,
+      "Name": "DecodeUrl",
+      "PropertyDataTypeKey": "String",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "69",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "DecodeUrl_url",
+            "Name": "DecodeUrl_url",
+            "PropertyDataTypeKey": "Record",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "A parameter",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "url"
+            },
+            "Tooltip": "A parameter",
+            "Type": "{\"Version\":\"1.312\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "A custom property",
+      "Type": "{\"Version\":\"1.312\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPremiumPcfControl": false,
+  "LastModifiedTimestamp": "637583507559114626",
+  "Name": "a3f129dd53a94e8e9b9d254c2d7b9322",
+  "OverridableProperties": {},
+  "Version": "637583528322219793"
+}
