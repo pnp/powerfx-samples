@@ -1,0 +1,226 @@
+[
+  {
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
+    "name": "pnp-powerfx--samples-convertbasenumber-functions-hextodecimal",
+    "version": "1.0.0.0",
+    "source": "pnp",
+    "creationDateTime": "2021-03-14T00:00:00.000Z",
+    "updateDateTime": "2021-03-14T00:00:00.000Z",
+    "title": "HexToDecimal",
+    "shortDescription": "This function is used to convert hex to decimal.",
+    "longDescription": [],
+    "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions",
+    "products": [
+      "Power Apps",
+      "Power Platform"
+    ],
+    "tags": [
+      "NUMBER", "HEX", "DECIMAL", "CONVERT"
+    ],
+    "categories": [
+      "POWERFX"
+    ],
+    "metadata": [
+      {
+        "key": "POWERAPPS-MANIFEST-VERSION",
+        "value": "0.20"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/convertbasenumber-functions/assets/preview.png",
+        "alt": "Convert Base Number Functions"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Korune",
+        "gitHubAccount": "korune",
+        "pictureUrl": "https://github.com/korune.png",
+        "twitter": "koruneko32767"
+      }
+    ],
+    "references": [
+      {
+        "name": "Enhanced Component Properties",
+        "description": "Blog post announcing the enhanced component custom properties for Power Apps",
+        "url": "https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/"
+      },
+      {
+        "name": "Power Apps Formula Reference",
+        "description": "Formula reference guide for Power Apps",
+        "url": "https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference"
+      }
+    ]
+  },
+  {
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
+    "name": "pnp-powerfx--samples-convertbasenumber-functions-decimaltohex",
+    "version": "1.0.0.0",
+    "source": "pnp",
+    "creationDateTime": "2021-03-14T00:00:00.000Z",
+    "updateDateTime": "2021-03-14T00:00:00.000Z",
+    "title": "DecimalToHex",
+    "shortDescription": "This function is used to convert decimal to hex.  ",
+    "longDescription": [],
+    "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions",
+    "products": [
+      "Power Apps",
+      "Power Platform"
+    ],
+    "tags": [
+      "NUMBER", "HEX", "DECIMAL", "CONVERT"
+    ],
+    "categories": [
+      "POWERFX"
+    ],
+    "metadata": [
+      {
+        "key": "POWERAPPS-MANIFEST-VERSION",
+        "value": "0.20"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/convertbasenumber-functions/assets/preview.png",
+        "alt": "Convert Base Number Functions"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Korune",
+        "gitHubAccount": "korune",
+        "pictureUrl": "https://github.com/korune.png",
+        "twitter": "koruneko32767"
+      }
+    ],
+    "references": [
+      {
+        "name": "Enhanced Component Properties",
+        "description": "Blog post announcing the enhanced component custom properties for Power Apps",
+        "url": "https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/"
+      },
+      {
+        "name": "Power Apps Formula Reference",
+        "description": "Formula reference guide for Power Apps",
+        "url": "https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference"
+      }
+    ]
+  },
+  {
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
+    "name": "pnp-powerfx--samples-convertbasenumber-functions-binarytodecimal",
+    "version": "1.0.0.0",
+    "source": "pnp",
+    "creationDateTime": "2021-03-14T00:00:00.000Z",
+    "updateDateTime": "2021-03-14T00:00:00.000Z",
+    "title": "BinaryToDecimal",
+    "shortDescription": "This function is used to convert binary to decimal.",
+    "longDescription": [],
+    "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions",
+    "products": [
+      "Power Apps",
+      "Power Platform"
+    ],
+    "tags": [
+      "NUMBER", "BINARY", "DECIMAL", "CONVERT"
+    ],
+    "categories": [
+      "POWERFX"
+    ],
+    "metadata": [
+      {
+        "key": "POWERAPPS-MANIFEST-VERSION",
+        "value": "0.20"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/convertbasenumber-functions/assets/preview.png",
+        "alt": "Convert Base Number Functions"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Korune",
+        "gitHubAccount": "korune",
+        "pictureUrl": "https://github.com/korune.png",
+        "twitter": "koruneko32767"
+      }
+    ],
+    "references": [
+      {
+        "name": "Enhanced Component Properties",
+        "description": "Blog post announcing the enhanced component custom properties for Power Apps",
+        "url": "https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/"
+      },
+      {
+        "name": "Power Apps Formula Reference",
+        "description": "Formula reference guide for Power Apps",
+        "url": "https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference"
+      }
+    ]
+  },
+  {
+    "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
+    "name": "pnp-powerfx--samples-convertbasenumber-functions-decimaltobinary",
+    "version": "1.0.0.0",
+    "source": "pnp",
+    "creationDateTime": "2021-03-14T00:00:00.000Z",
+    "updateDateTime": "2021-03-14T00:00:00.000Z",
+    "title": "DecimalToBinary",
+    "shortDescription": "This function is used to convert decimal to binary. ",
+    "longDescription": [],
+    "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions",
+    "products": [
+      "Power Apps",
+      "Power Platform"
+    ],
+    "tags": [
+      "NUMBER", "BINARY", "DECIMAL", "CONVERT"
+    ],
+    "categories": [
+      "POWERFX"
+    ],
+    "metadata": [
+      {
+        "key": "POWERAPPS-MANIFEST-VERSION",
+        "value": "0.20"
+      }
+    ],
+    "thumbnails": [
+      {
+        "type": "image",
+        "order": 100,
+        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/convertbasenumber-functions/assets/preview.png",
+        "alt": "Convert Base Number Functions"
+      }
+    ],
+    "authors": [
+      {
+        "name": "Korune",
+        "gitHubAccount": "korune",
+        "pictureUrl": "https://github.com/korune.png",
+        "twitter": "koruneko32767"
+      }
+    ],
+    "references": [
+      {
+        "name": "Enhanced Component Properties",
+        "description": "Blog post announcing the enhanced component custom properties for Power Apps",
+        "url": "https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/"
+      },
+      {
+        "name": "Power Apps Formula Reference",
+        "description": "Formula reference guide for Power Apps",
+        "url": "https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference"
+      }
+    ]
+  }
+]

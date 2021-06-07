@@ -1,0 +1,75 @@
+CollisionUtils As CanvasComponent:
+    CircleCircle(x_1 As Number, y_1 As Number, r_1 As Number, x_2 As Number, y_2 As Number, r_2 As Number):
+        x_1:
+            Default: =100
+        y_1:
+            Default: =100
+        r_1:
+            Default: =100
+        x_2:
+            Default: =100
+        y_2:
+            Default: =100
+        r_2:
+            Default: =100
+        ThisProperty:
+            Default: =Power(x_1 - x_2, 2) + Power(y_1 - y_2, 2) < Power(r_1 + r_2, 2)
+    SquareCircle(x_1 As Number, y_1 As Number, width As Number, height As Number, x_2 As Number, y_2 As Number, r As Number):
+        x_1:
+            Default: =100
+        y_1:
+            Default: =100
+        width:
+            Default: =100
+        height:
+            Default: =100
+        x_2:
+            Default: =100
+        y_2:
+            Default: =100
+        r:
+            Default: =100
+        ThisProperty:
+            Default: |-
+                =// 矩形上下領域
+                (x_2 > x_1) && (x_2 < x_1 + width) && (y_2 > y_1 - r) && (y_2 < y_1 + height + r) ||
+                // 矩形左右領域
+                (x_2 > x_1 - r) && (x_2 < x_1 + width + r) && (y_2 > y_1) && (y_2 < y_1 + height) ||
+                // 左上の円
+                Power(x_1 - x_2, 2) + Power(y_1 - y_2, 2) < Power(r, 2) ||
+                // 右上の円
+                Power((x_1 + width) - x_2, 2) + Power(y_1 - y_2, 2) < Power(r, 2) ||
+                // 右下の円
+                Power((x_1 + width) - x_2, 2) + Power((y_1 + height) - y_2, 2) < Power(r, 2) ||
+                // 左下の円
+                Power(x_1 - x_2, 2) + Power((y_1 + height) - y_2, 2) < Power(r, 2)
+    SquareSquare(x_1 As Number, y_1 As Number, width_1 As Number, height_1 As Number, x_2 As Number, y_2 As Number, width_2 As Number, height_2 As Number):
+        x_1:
+            Default: =100
+        y_1:
+            Default: =100
+        width_1:
+            Default: =100
+        height_1:
+            Default: =100
+        x_2:
+            Default: =100
+        y_2:
+            Default: =100
+        width_2:
+            Default: =100
+        height_2:
+            Default: =100
+        ThisProperty:
+            Default: |-
+                =((x_1 > x_2 && x_1 < x_2 + width_2) ||
+                (x_2 > x_1 && x_2 < x_1 + width_1)) &&
+                ((y_1 > y_2 && y_1 < y_2 + height_2) ||
+                (y_2 > y_1 && y_2 < y_1 + height_1))
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =640
+    Width: =640
+    X: =0
+    Y: =0
+    ZIndex: =1
+
