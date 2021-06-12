@@ -1,8 +1,8 @@
-# CollisionDetection-functions
+# Collision Detection Functions
 
 ## Summary
 
-This function is collision detection functions.
+These functions detect whether two shapes (rectangular or circlular) overlap.
 
 ![picture of the sample](assets/preview.png)
 
@@ -30,11 +30,6 @@ Version|Date|Comments
 -------|----|--------
 1.0|May 30, 2021|Initial release
 
-## Disclaimer
-
-**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
-
----
 
 ## Minimal Path to Awesome
 
@@ -161,5 +156,9 @@ SquareCircle(
 )
 ```
 
+## Disclaimer
 
-<img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/convertbasenumber-functions" />
+**THIS CODE IS PROVIDED *AS IS* WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESS OR IMPLIED, INCLUDING ANY IMPLIED WARRANTIES OF FITNESS FOR A PARTICULAR PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.**
+
+
+<img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/collisiondetection-functions" />

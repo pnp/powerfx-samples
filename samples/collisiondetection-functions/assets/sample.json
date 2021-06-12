@@ -1,21 +1,21 @@
 [
   {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
-    "name": "pnp-powerfx--samples-convertbasenumber-functions-hextodecimal",
+    "name": "pnp-powerfx--samples-collisiondetection-functions-squaresquare",
     "version": "1.0.0.0",
     "source": "pnp",
-    "creationDateTime": "2021-03-14T00:00:00.000Z",
-    "updateDateTime": "2021-03-14T00:00:00.000Z",
-    "title": "HexToDecimal",
-    "shortDescription": "This function is used to convert hex to decimal.",
+    "creationDateTime": "2021-06-07T00:00:00.000Z",
+    "updateDateTime": "2021-06-07T00:00:00.000Z",
+    "title": "Square to Square Collision Detection",
+    "shortDescription": "Detects whether two rectangular shapes intersect.",
     "longDescription": [],
-    "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions",
+    "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/collisiondetection-functions",
     "products": [
       "Power Apps",
       "Power Platform"
     ],
     "tags": [
-      "NUMBER", "HEX", "DECIMAL", "CONVERT"
+      "GEOMETRY", "SQUARE", "RECTANGULAR"
     ],
     "categories": [
       "POWERFX"
@@ -30,8 +30,8 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/convertbasenumber-functions/assets/preview.png",
-        "alt": "Convert Base Number Functions"
+        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/collisiondetection-functions/assets/preview.png",
+        "alt": "Preview"
       }
     ],
     "authors": [
@@ -57,21 +57,21 @@
   },
   {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
-    "name": "pnp-powerfx--samples-convertbasenumber-functions-decimaltohex",
+    "name": "pnp-powerfx--samples-collisiondetection-functions-circlecircle",
     "version": "1.0.0.0",
     "source": "pnp",
-    "creationDateTime": "2021-03-14T00:00:00.000Z",
-    "updateDateTime": "2021-03-14T00:00:00.000Z",
-    "title": "DecimalToHex",
-    "shortDescription": "This function is used to convert decimal to hex.  ",
+    "creationDateTime": "2021-06-07T00:00:00.000Z",
+    "updateDateTime": "2021-06-07T00:00:00.000Z",
+    "title": "Circle to Circle Collision Detection",
+    "shortDescription": "Detects whether two circular shapes intersect.",
     "longDescription": [],
-    "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions",
+    "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/collisiondetection-functions",
     "products": [
       "Power Apps",
       "Power Platform"
     ],
     "tags": [
-      "NUMBER", "HEX", "DECIMAL", "CONVERT"
+      "GEOMETRY", "CIRCLE", "CIRCULAR"
     ],
     "categories": [
       "POWERFX"
@@ -86,8 +86,8 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/convertbasenumber-functions/assets/preview.png",
-        "alt": "Convert Base Number Functions"
+        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/collisiondetection-functions/assets/preview.png",
+        "alt": "Preview"
       }
     ],
     "authors": [
@@ -113,21 +113,21 @@
   },
   {
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
-    "name": "pnp-powerfx--samples-convertbasenumber-functions-binarytodecimal",
+    "name": "pnp-powerfx--samples-collisiondetection-functions-squarecircle",
     "version": "1.0.0.0",
     "source": "pnp",
-    "creationDateTime": "2021-03-14T00:00:00.000Z",
-    "updateDateTime": "2021-03-14T00:00:00.000Z",
-    "title": "BinaryToDecimal",
-    "shortDescription": "This function is used to convert binary to decimal.",
+    "creationDateTime": "2021-06-07T00:00:00.000Z",
+    "updateDateTime": "2021-06-07T00:00:00.000Z",
+    "title": "Square to Circle Collision Detection",
+    "shortDescription": "Detects whether a rectangular and a circular shape intersect.",
     "longDescription": [],
-    "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions",
+    "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/collisiondetection-functions",
     "products": [
       "Power Apps",
       "Power Platform"
     ],
     "tags": [
-      "NUMBER", "BINARY", "DECIMAL", "CONVERT"
+      "GEOMETRY", "SQUARE", "CIRCLE", "RECTANGULAR", "CIRCULAR"
     ],
     "categories": [
       "POWERFX"
@@ -142,64 +142,8 @@
       {
         "type": "image",
         "order": 100,
-        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/convertbasenumber-functions/assets/preview.png",
-        "alt": "Convert Base Number Functions"
-      }
-    ],
-    "authors": [
-      {
-        "name": "Korune",
-        "gitHubAccount": "korune",
-        "pictureUrl": "https://github.com/korune.png",
-        "twitter": "koruneko32767"
-      }
-    ],
-    "references": [
-      {
-        "name": "Enhanced Component Properties",
-        "description": "Blog post announcing the enhanced component custom properties for Power Apps",
-        "url": "https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/"
-      },
-      {
-        "name": "Power Apps Formula Reference",
-        "description": "Formula reference guide for Power Apps",
-        "url": "https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference"
-      }
-    ]
-  },
-  {
-    "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
-    "name": "pnp-powerfx--samples-convertbasenumber-functions-decimaltobinary",
-    "version": "1.0.0.0",
-    "source": "pnp",
-    "creationDateTime": "2021-03-14T00:00:00.000Z",
-    "updateDateTime": "2021-03-14T00:00:00.000Z",
-    "title": "DecimalToBinary",
-    "shortDescription": "This function is used to convert decimal to binary. ",
-    "longDescription": [],
-    "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/convertbasenumber-functions",
-    "products": [
-      "Power Apps",
-      "Power Platform"
-    ],
-    "tags": [
-      "NUMBER", "BINARY", "DECIMAL", "CONVERT"
-    ],
-    "categories": [
-      "POWERFX"
-    ],
-    "metadata": [
-      {
-        "key": "POWERAPPS-MANIFEST-VERSION",
-        "value": "0.20"
-      }
-    ],
-    "thumbnails": [
-      {
-        "type": "image",
-        "order": 100,
-        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/convertbasenumber-functions/assets/preview.png",
-        "alt": "Convert Base Number Functions"
+        "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/collisiondetection-functions/assets/preview.png",
+        "alt": "Preview"
       }
     ],
     "authors": [
