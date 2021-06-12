@@ -1,0 +1,154 @@
+Screen1 As screen:
+    OnVisible: |-
+        =ClearCollect(
+            stage,
+            {x:0, y:0, width:0, height:0, Type:"Square"},
+            {x:0, y:Self.Height / 2, width:150, height:150, Type:"Square"},
+            {x:200, y:100, width:150, height:150, Type:"Square"},
+            {x:500, y:300, width:300, height:150, Type:"Square"},
+            {x:1000, y:70, width:150, height:400, Type:"Square"},
+            {x:50, y:100, r:50, Type:"Circle"},
+            {x:300, y:400, r:100, Type:"Circle"},
+            {x:600, y:650, r:70, Type:"Circle"},
+            {x:650, y:90, r:90, Type:"Circle"},
+            {x:1200, y:550, r:40, Type:"Circle"},
+            {x:0, y:0, r:0, Type:"Circle"}
+        )
+
+    CollisionUtils_1 As CollisionUtils:
+        CircleCircle: =Power(x_1 - x_2, 2) + Power(y_1 - y_2, 2) < Power(r_1 + r_2, 2)
+        SquareCircle: |-
+            =// 矩形上下領域
+            (x_2 > x_1) && (x_2 < x_1 + width) && (y_2 > y_1 - r) && (y_2 < y_1 + height + r) ||
+            // 矩形左右領域
+            (x_2 > x_1 - r) && (x_2 < x_1 + width + r) && (y_2 > y_1) && (y_2 < y_1 + height) ||
+            // 左上の円
+            Power(x_1 - x_2, 2) + Power(y_1 - y_2, 2) < Power(r, 2) ||
+            // 右上の円
+            Power((x_1 + width) - x_2, 2) + Power(y_1 - y_2, 2) < Power(r, 2) ||
+            // 右下の円
+            Power((x_1 + width) - x_2, 2) + Power((y_1 + height) - y_2, 2) < Power(r, 2) ||
+            // 左下の円
+            Power(x_1 - x_2, 2) + Power((y_1 + height) - y_2, 2) < Power(r, 2)
+        SquareSquare: |-
+            =((x_1 > x_2 && x_1 < x_2 + width_2) ||
+            (x_2 > x_1 && x_2 < x_1 + width_1)) &&
+            ((y_1 > y_2 && y_1 < y_2 + height_2) ||
+            (y_2 > y_1 && y_2 < y_1 + height_1))
+
+    Image1 As image:
+        Height: =768
+        Image: |-
+            ="data:image/svg+xml,"& 
+            EncodeUrl(
+                "<svg viewBox='0 0 "& Self.Width & " " & Self.Height & "' xmlns='http://www.w3.org/2000/svg'>" &
+                    Concat(
+                        ForAll(
+                            stage,
+                            Switch(
+                                Type,
+                                "Square",
+                                "<rect 
+                                    x='" & x &"' 
+                                    y='" & y &"' 
+                                    width='" & width &"' 
+                                    height='" & height &"' 
+                                />",
+                                "Circle",
+                                "<circle 
+                                    cx='" & x &"' 
+                                    cy='" & y &"'
+                                    r='" & r &"'   
+                                />"
+                            )
+                        ),
+                        Value
+                    ) & "
+                </svg>"
+            )
+        Width: =1366
+        ZIndex: =1
+
+    Rectangle1 As rectangle:
+        Fill: |-
+            =If(
+                Toggle1.Value,
+                Red,
+                RGBA(56, 96, 178, 1)
+            )
+        Visible: =Radio1.Selected.Value = "Square"
+        Width: =100
+        X: =X
+        Y: =Parent.Height - Y
+        ZIndex: =2
+
+    X As slider:
+        Default: =Parent.Width / 2
+        Max: =Parent.Width
+        Width: =Parent.Width
+        Y: =728
+        ZIndex: =3
+
+    Y As slider:
+        Default: =Parent.Height / 2
+        Height: =Parent.Height
+        Layout: =Layout.Vertical
+        Max: =Parent.Height
+        Width: =40
+        X: =1326
+        ZIndex: =4
+
+    Toggle1 As toggleSwitch:
+        Default: |-
+            =CountIf(
+                ForAll(
+                    stage,
+                    If(
+                        Type = "Square" && Radio1.Selected.Value = "Square",
+                        CollisionUtils_1.SquareSquare(
+                            Rectangle1.X, Rectangle1.Y, Rectangle1.Width, Rectangle1.Height,
+                            x, y, width, height
+                        ),
+                        Type = "Circle" && Radio1.Selected.Value = "Square",
+                        CollisionUtils_1.SquareCircle(
+                            Rectangle1.X, Rectangle1.Y, Rectangle1.Width, Rectangle1.Height,
+                            x, y, r
+                        ),
+                        Type = "Circle" && Radio1.Selected.Value = "Circle",
+                        CollisionUtils_1.CircleCircle(
+                            Circle1.X + Circle1.Width / 2, Circle1.Y + Circle1.Height / 2, Circle1.Width / 2,
+                            x, y, r
+                        ),
+                        Type = "Square" && Radio1.Selected.Value = "Circle",
+                        CollisionUtils_1.SquareCircle(
+                            x, y, width, height,
+                            Circle1.X + Circle1.Width / 2, Circle1.Y + Circle1.Height / 2, Circle1.Width / 2
+                        )
+                    )
+                ),
+                Value = true
+            ) > 0
+        Visible: =false
+        X: =40
+        Y: =40
+        ZIndex: =5
+
+    Radio1 As radio:
+        Default: ="Square"
+        Items: =["Square", "Circle"]
+        Y: =608
+        ZIndex: =6
+
+    Circle1 As circle:
+        Fill: |-
+            =If(
+                Toggle1.Value,
+                Red,
+                RGBA(56, 96, 178, 1)
+            )
+        Height: =Self.Width
+        Visible: =Radio1.Selected.Value = "Circle"
+        X: =X
+        Y: =Parent.Height - Y
+        ZIndex: =7
+
