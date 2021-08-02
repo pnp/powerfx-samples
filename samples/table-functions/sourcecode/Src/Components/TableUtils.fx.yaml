@@ -1,0 +1,29 @@
+TableUtils As CanvasComponent:
+    JsonToTable(json As String):
+        json:
+            Default: ="Text"
+        ThisProperty:
+            Default: |
+                =//Table({SampleStringField: "SampleText", SampleNumberField: 10, SampleBooleanField: true})
+                With({
+                        fields: Ungroup(
+                            MatchAll(json,"("".+?""\s*:[^,}]+)").SubMatches,
+                            "SubMatches"
+                        )
+                    },
+                    ForAll(
+                        fields,    
+                        With(Match(Value,"(?<Name>[^""]+?)""\s*:[""]?(?<Value>[^""]+)"),
+                        {
+                            Name:Name, 
+                            Value:Value 
+                        })
+                    )
+                )
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =10
+    Width: =10
+    X: =0
+    Y: =0
+    ZIndex: =1
+
