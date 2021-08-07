@@ -4,8 +4,6 @@
 
 This is a `TableUtils` PowerApp Component containing Custom Functions that allow to transform a Record in a Table 
 
-Short summary on functionality and used technologies.
-
 ![Sample](assets/sonDiffToTableSample.png)
 
 ## Applies to
