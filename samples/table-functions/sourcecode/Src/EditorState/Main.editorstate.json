@@ -1,5 +1,5 @@
 {
-  "Screen1": {
+  "Main": {
     "AllowAccessToGlobals": true,
     "ControlPropertyState": [
       "Fill",
@@ -19,18 +19,13 @@
     "IsLocked": false,
     "LayoutName": "",
     "MetaDataIDKey": "",
-    "Name": "Screen1",
+    "Name": "Main",
     "ParentIndex": 0,
     "PersistMetaDataIDKey": false,
     "Properties": [
       {
         "Category": "Design",
-        "PropertyName": "Fill",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "ImagePosition",
+        "PropertyName": "Width",
         "RuleProviderType": "Unknown"
       },
       {
@@ -40,17 +35,12 @@
       },
       {
         "Category": "Design",
-        "PropertyName": "Width",
+        "PropertyName": "ImagePosition",
         "RuleProviderType": "Unknown"
       },
       {
         "Category": "Design",
-        "PropertyName": "Size",
-        "RuleProviderType": "Unknown"
-      },
-      {
-        "Category": "Design",
-        "PropertyName": "Orientation",
+        "PropertyName": "Fill",
         "RuleProviderType": "Unknown"
       },
       {
@@ -61,6 +51,16 @@
       {
         "Category": "Design",
         "PropertyName": "LoadingSpinnerColor",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Size",
+        "RuleProviderType": "Unknown"
+      },
+      {
+        "Category": "Design",
+        "PropertyName": "Orientation",
         "RuleProviderType": "Unknown"
       }
     ],

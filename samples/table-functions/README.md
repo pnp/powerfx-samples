@@ -2,22 +2,15 @@
 
 ## Summary
 
-This is a `TableUtils` PowerApp Component containing Custom Functions that allow to manipulate PowerFx Table 
+This is a `TableUtils` PowerApp Component containing Custom Functions that allow to transform a Record in a Table 
 
- 
 Short summary on functionality and used technologies.
 
-> Please provide a high-quality screenshot of your web parts below. It should be stored in a folder called `assets`.
-> If possible, use a resolution of 1920x1080.
-> You can add as many screen shots as you'd like to help users understand your sample without having to download it and install it.
-> DELETE THIS PARAGRAPH BEFORE SUBMITTING
-
-![picture of the sample](assets/preview.png)
+![Sample](assets/sonDiffToTableSample.png)
 
 ## Applies to
 
-* [Microsoft Power Fx](https://docs.microsoft.com/en-us/power-platform/power-fx/overview)
-* [Canvas App](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/)
+* Power Apps [Canvas App](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/)
 
 ## Compatibility
 
@@ -27,17 +20,18 @@ Short summary on functionality and used technologies.
 
 Solution|Author(s)
 --------|---------
-folder name | [bsorrentino](https://github.com/settings/profile) ([@bsorrentinoJ](https://twitter.com/bsorrentinoJ)), Company
+table-functions | [bsorrentino](https://github.com/settings/profile) ([@bsorrentinoJ](https://twitter.com/bsorrentinoJ))
 
 ## Version history
 
 Version|Date|Comments
 -------|----|--------
-1.0|August 2, 2021|Initial release
+1.0.0.2|August 7, 2021|Initial release
 
 
 ## Prerequisites
 
+None
 
 ## Minimal Path to Awesome
 
@@ -56,8 +50,10 @@ Version|Date|Comments
 
 This sample includes following features:
 
-* JsonToTable(Transform a JSON Object in an equivalent PowerFx Table)
- > This function could be very useful for detecting fields that have changed before submitting form
+* `JsonToTable` - Transform a JSON Object in an equivalent PowerFx Table
+ > This function could be very useful for debug purpose 
+* `JsonDiffToTable` - Compare two JSON and return only the fields that are changed as PowerFx Table
+ > This function could be very useful for detect fields that have changed before submitting a form
 
 ## Functions
 
@@ -83,21 +79,67 @@ Table - `[ { Name:Text, Value:Text },{ Name:Text, Value:Text }, ... ]`
 #### Example
 
 Considering the JSON below as input
-```json
-  {
+```
+With( { jsonData: JSON({
     "bsc_field1": "value1",
     "bsc_field2": "value2",
     "bsc_field3": "value3"
-  }
+    },
+    ClearCollect( Metadata, TableUtils_1.JsonToTable(jsonData) )
+)
 ```
 
-after call of `JsonToTable` it will be transformed in the following **PoweFx Table**
+after call of `JsonToTable` in the `Metadata` collection we will have:
 
 >  Name | Value 
 > ---- | ---- 
 > bsc_field1 | value1 
 > bsc_field2 | value2 
 > bsc_field3 | value3 
+ 
+### JsonDiffToTable
+
+Compare two JSON and return only the fields that are changed as PowerFx Table
+
+#### Syntax
+
+```
+JsonDiffToTable(jsonBefore, jsonAfter)
+```
+
+Parameter | Description | Required | Type
+---|---|---|--
+jsonBefore | JSON Object representing a single record before update | Yes | Text
+jsonAfter | JSON Object representing a single record after update | Yes | Text
+
+
+#### Output
+
+Table - `[ { FieldName:Text, OldValue:Text, NewValue:Text },{ FieldName:Text, OldValue:Text, NewValue:Text }, ... ]`
+
+#### Example
+
+Considering the JSON below as input
+```
+With( {
+    before:JSON( {
+    "bsc_field1": "value1",
+    "bsc_field2": "value2",
+    "bsc_field3": "value3"
+    }),
+    after: JSON({
+    "bsc_field1": "value1",
+    "bsc_field2": "value3"
+  })
+},
+ClearCollect( Metadata, TableUtils_1.JsonDiffToTable(before,after) );
+```
+
+after call of `JsonDiffToTable` in the `Metadata` collection we will have:
+
+>  FieldName | OldValue | NewValue 
+> ---- | ---- | ----
+> bsc_field2 | value2 | value3
  
 
 ## Disclaimer

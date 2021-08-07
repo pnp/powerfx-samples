@@ -1,7 +1,7 @@
 {
   "FormatVersion": "0.24",
   "Header": {
-    "DocVersion": "1.314",
+    "DocVersion": "1.315",
     "MinVersionToLoad": "1.313",
     "MSAppStructureVersion": "2.0"
   },
@@ -13,7 +13,7 @@
       "allowmultiplescreensincanvaspages": false,
       "autocreateenvironmentvariables": false,
       "backfromhostaction": false,
-      "behaviorpropertyui": false,
+      "behaviorpropertyui": true,
       "blockmovingcontrol": true,
       "classiccontrols": false,
       "componentauthoring": true,
@@ -25,7 +25,9 @@
       "enableaimodelsindatapane": false,
       "enableappembeddingux": false,
       "enablecdsfileandlargeimage": true,
+      "enablecomponentscopeoldbehavior": true,
       "enableexcelonlinebusinessv2connector": false,
+      "enableideaspanel": false,
       "enableonstart": true,
       "enableonstartnavigate": true,
       "enablepcfmoderndatasets": true,
@@ -71,7 +73,7 @@
     "DocumentType": "ComponentLibrary",
     "EnableInstrumentation": false,
     "FileID": "ce9a66d5-06a6-456d-b94b-8858348a86c7",
-    "Id": "94ded046-cf57-49ce-aea0-1961945f91eb",
+    "Id": "ae0fa516-094b-4b2a-8623-3a0b44819367",
     "InstrumentationKey": "",
     "Name": "table-functions.msapp",
     "OriginatingVersion": "1.314"
@@ -88,6 +90,6 @@
     "UserLocale": "en-US"
   },
   "ScreenOrder": [
-    "Screen1"
+    "Main"
   ]
 }

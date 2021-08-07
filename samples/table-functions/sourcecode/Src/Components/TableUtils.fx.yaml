@@ -1,4 +1,45 @@
 TableUtils As CanvasComponent:
+    JsonDiffToTable(JsonBefore As String, JsonAfter As String):
+        JsonBefore:
+            Default: ="Text"
+        JsonAfter:
+            Default: ="Text"
+        ThisProperty:
+            Default: |-
+                =//Table({SampleStringField: "SampleText", SampleNumberField: 10, SampleBooleanField: true})
+                With({
+                        before: Ungroup(
+                            MatchAll(JsonBefore,"("".+?""\s*:[^,}]+)").SubMatches,
+                            "SubMatches"
+                        ),
+                        after: Ungroup(
+                            MatchAll(JsonAfter,"("".+?""\s*:[^,}]+)").SubMatches,
+                            "SubMatches"
+                        ) 
+                    },
+                    With( {
+                        beforeFields: ForAll(
+                        before,
+                        With( Match(Value, "(?<Name>[^""]+?)""\s*:[""]?(?<Value>[^""]+)"),
+                            {
+                                FieldName:Name,
+                                OldValue:Value
+                            }
+                        )
+                    )},
+                    ForAll(
+                        after,
+                        With( Match(Value,"(?<Name>[^""]+?)""\s*:[""]?(?<NewValue>[^""]+)"),
+                        With( { OldValue: LookUp(beforeFields, FieldName = Name, OldValue) },
+                        If( OldValue <> NewValue, {
+                                FieldName:Name,
+                                OldValue:OldValue,
+                                NewValue:NewValue
+                            },
+                            Blank()
+                        ))
+                    )
+                )))
     JsonToTable(json As String):
         json:
             Default: ="Text"
@@ -13,10 +54,10 @@ TableUtils As CanvasComponent:
                     },
                     ForAll(
                         fields,    
-                        With(Match(Value,"(?<Name>[^""]+?)""\s*:[""]?(?<Value>[^""]+)"),
+                        With(Match(Value,"(?<FName>[^""]+?)""\s*:[""]?(?<FValue>[^""]+)"),
                         {
-                            Name:Name, 
-                            Value:Value 
+                            Name:FName, 
+                            Value:FValue 
                         })
                     )
                 )
