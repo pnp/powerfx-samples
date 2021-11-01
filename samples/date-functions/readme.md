@@ -6,6 +6,7 @@ Functions that perform operations on a date value
 
 ![Preview](assets/date-functions-preview.png)
 
+* [DaysOfWeek](#DaysOfWeek)
 * [EndOfQuarter](#EndOfQuarter)
 * [EndOfMonth](#EndOfMonth)
 * [EndOfWeek](#EndOfWeek)
@@ -82,6 +83,27 @@ Version|Date|Comments
 * Use the `.msapp` file using **File** > **Open** > **Browse** in Power Apps Studio.
 
 ## Functions
+
+### DaysOfWeek
+
+Get the days of a week.
+
+#### Syntax
+
+```excel
+DaysOfWeek(StartDate [, AddWeeks, DayWeekStart])
+```
+
+Parameter | Description | Required | Type
+---|---|---|---
+`StartDate`|The date value to evaluate| Yes | DateTime
+`DayWeekStart`|The numeric value indicating which day of the week is considered the first day or the week| No | Number
+`NumberOfDays`|The number value indicating how many days from the week. If `NumberOfDays` is not specified, seven days are returned | No | Number
+
+
+#### Output
+
+Table
 
 ### EndOfQuarter
 
