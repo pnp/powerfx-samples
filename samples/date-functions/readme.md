@@ -55,6 +55,7 @@ None
 Solution|Author(s)
 --------|---------
 date-functions | [Matthew Devaney](https://github.com/matthewdevaney) ([@mattbdevaney](https://twitter.com/mattbdevaney))
+date-functions | [Loïc Cimon](https://github.com/lcimon) ([@mattbdevaney](https://twitter.com/loiccimon))
 
 ## Version history
 
