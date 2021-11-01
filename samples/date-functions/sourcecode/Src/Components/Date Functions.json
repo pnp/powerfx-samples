@@ -2,6 +2,7 @@
   "ComponentAllowCustomization": true,
   "ComponentChangedSinceFileImport": true,
   "ComponentManifest": {
+    "AllowAccessToGlobals": false,
     "AllowCustomization": true,
     "Description": "",
     "Name": "Date Functions",
@@ -32,7 +33,7 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "date/time value to operate on",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "EndOfMonth_AddMonths",
@@ -47,12 +48,12 @@
               "ScopeVariableName": "AddMonths"
             },
             "Tooltip": "number of months to add to the start date",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "find the last day of a month",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -76,7 +77,7 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "date/time value to operate on",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "EndOfYear_AddYears",
@@ -91,12 +92,12 @@
               "ScopeVariableName": "AddYears"
             },
             "Tooltip": "number of years to add to the start date",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "find the last day of a year",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -120,7 +121,7 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "date/time value to operate on",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "EndOfWeek_AddWeeks",
@@ -135,7 +136,7 @@
               "ScopeVariableName": "AddWeeks"
             },
             "Tooltip": "number of weeks to add to the start date",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "EndOfWeek_DayWeekStart",
@@ -150,12 +151,12 @@
               "ScopeVariableName": "DayWeekStart"
             },
             "Tooltip": "starting day of the week as an integer (Sunday=1, Monday=2... Saturday=7)",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "find the last day of a week",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -179,7 +180,7 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "date/time value to operate on",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "StartOfMonth_AddMonths",
@@ -194,12 +195,12 @@
               "ScopeVariableName": "AddMonths"
             },
             "Tooltip": "number of months to add to the start date",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "find the first day of a month",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -223,7 +224,7 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "date/time value to operate on",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "StartOfYear_AddYear",
@@ -238,12 +239,12 @@
               "ScopeVariableName": "AddYear"
             },
             "Tooltip": "number of years to add to the start date",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "find the first day of a year",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -267,7 +268,7 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "date/time value to operate on",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "StartOfWeek_AddWeeks",
@@ -282,7 +283,7 @@
               "ScopeVariableName": "AddWeeks"
             },
             "Tooltip": "number of weeks to add to the start date",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "StartOfWeek_DayWeekStart",
@@ -297,12 +298,12 @@
               "ScopeVariableName": "DayWeekStart"
             },
             "Tooltip": "starting day of the week as an integer (Sunday=1, Monday=2... Saturday=7)",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "find the first day of a week",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -326,7 +327,7 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "NetWorkDays_EndDate",
@@ -341,12 +342,12 @@
               "ScopeVariableName": "EndDate"
             },
             "Tooltip": "EndDate",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -370,7 +371,7 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "WeekOfYear_DayWeekStart",
@@ -385,12 +386,12 @@
               "ScopeVariableName": "DayWeekStart"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -414,7 +415,7 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "YearFraction_EndDate",
@@ -429,7 +430,7 @@
               "ScopeVariableName": "EndDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "YearFraction_Basis",
@@ -444,12 +445,12 @@
               "ScopeVariableName": "Basis"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -473,7 +474,7 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "EndOfQuarter_AddQuarters",
@@ -488,12 +489,12 @@
               "ScopeVariableName": "AddQuarters"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -517,7 +518,7 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "StartDate",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "StartOfQuarter_AddQuarters",
@@ -532,12 +533,12 @@
               "ScopeVariableName": "AddQuarters"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -561,7 +562,7 @@
               "ScopeVariableName": "WeekOfMonth"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "WeekOfMonth_DayOfWeek",
@@ -576,12 +577,12 @@
               "ScopeVariableName": "DayOfWeek"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -605,12 +606,12 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -634,12 +635,12 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -663,12 +664,12 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -692,7 +693,7 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInCurrentWeek_DayWeekStart",
@@ -707,12 +708,12 @@
               "ScopeVariableName": "DayWeekStart"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -736,12 +737,12 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -765,7 +766,7 @@
               "ScopeVariableName": "EvaluateDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInNextNDays_NumberOfDays",
@@ -780,7 +781,7 @@
               "ScopeVariableName": "NumberOfDays"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInNextNDays_StartDate",
@@ -795,12 +796,12 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -824,7 +825,7 @@
               "ScopeVariableName": "EvaluateDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInNextNMonths_NumberOfMonths",
@@ -839,7 +840,7 @@
               "ScopeVariableName": "NumberOfMonths"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInNextNMonths_StartDate",
@@ -854,12 +855,12 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -883,7 +884,7 @@
               "ScopeVariableName": "EvaluateDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInNextNYears_NumberOfYears",
@@ -898,7 +899,7 @@
               "ScopeVariableName": "NumberOfYears"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInNextNYears_StartDate",
@@ -913,12 +914,12 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -942,7 +943,7 @@
               "ScopeVariableName": "EvaluateDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInNextNWeeks_NumberOfWeeks",
@@ -957,7 +958,7 @@
               "ScopeVariableName": "NumberOfWeeks"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInNextNWeeks_StartDate",
@@ -972,12 +973,12 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -1001,7 +1002,7 @@
               "ScopeVariableName": "EvaluateDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInNextNQuarters_NumberOfQuarters",
@@ -1016,7 +1017,7 @@
               "ScopeVariableName": "NumberOfQuarters"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInNextNQuarters_StartDate",
@@ -1031,12 +1032,12 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -1060,7 +1061,7 @@
               "ScopeVariableName": "EvaluateDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInPreviousNDays_NumberOfDays",
@@ -1075,7 +1076,7 @@
               "ScopeVariableName": "NumberOfDays"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInPreviousNDays_StartDate",
@@ -1090,12 +1091,12 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -1119,7 +1120,7 @@
               "ScopeVariableName": "EvaluateDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInPreviousNMonths_NumberOfMonths",
@@ -1134,7 +1135,7 @@
               "ScopeVariableName": "NumberOfMonths"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInPreviousNMonths_StartDate",
@@ -1149,12 +1150,12 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -1178,7 +1179,7 @@
               "ScopeVariableName": "EvaluateDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInPreviousNYears_NumberOfYears",
@@ -1193,7 +1194,7 @@
               "ScopeVariableName": "NumberOfYears"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInPreviousNYears_StartDate",
@@ -1208,12 +1209,12 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -1237,7 +1238,7 @@
               "ScopeVariableName": "EvaluateDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInPreviousNQuarters_NumberOfQuarters",
@@ -1252,7 +1253,7 @@
               "ScopeVariableName": "NumberOfQuarters"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInPreviousNQuarters_StartDate",
@@ -1267,12 +1268,12 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -1296,7 +1297,7 @@
               "ScopeVariableName": "EvaluateDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInPreviousNWeeks_NumberOfWeeks",
@@ -1311,7 +1312,7 @@
               "ScopeVariableName": "NumberOfWeeks"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsInPreviousNWeeks_StartDate",
@@ -1326,12 +1327,12 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -1355,12 +1356,12 @@
               "ScopeVariableName": "EvaluateDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -1384,7 +1385,7 @@
               "ScopeVariableName": "EvaluateDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsBetweenDates_StartDate",
@@ -1399,7 +1400,7 @@
               "ScopeVariableName": "StartDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           },
           {
             "DisplayName": "IsBetweenDates_EndDate",
@@ -1414,12 +1415,71 @@
               "ScopeVariableName": "EndDate"
             },
             "Tooltip": "A parameter",
-            "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
           }
         ]
       },
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.301\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"_MinPrimitive\",\"EnumString\":\"\",\"Type\":[]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "DaysOfWeek",
+      "Hidden": true,
+      "Name": "DaysOfWeek",
+      "PropertyDataTypeKey": "Table",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "DaysOfWeek_StartDate",
+            "Name": "DaysOfWeek_StartDate",
+            "PropertyDataTypeKey": "DateTime",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "date/time value to operate on",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "StartDate"
+            },
+            "Tooltip": "date/time value to operate on",
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "DaysOfWeek_DayWeekStart",
+            "Name": "DaysOfWeek_DayWeekStart",
+            "PropertyDataTypeKey": "Number",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "starting day of the week as an integer (Sunday=1, Monday=2... Saturday=7)",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "DayWeekStart"
+            },
+            "Tooltip": "starting day of the week as an integer (Sunday=1, Monday=2... Saturday=7)",
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "DaysOfWeek_NumberOfDays",
+            "Name": "DaysOfWeek_NumberOfDays",
+            "PropertyDataTypeKey": "Number",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "Number of days to return (default: 7)",
+              "IsRequired": false,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "NumberOfDays"
+            },
+            "Tooltip": "Number of days to return (default: 7)",
+            "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Number\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Get the days of a week",
+      "Type": "{\"Version\":\"1.317\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"Value\",\"Kind\":\"DateTime\",\"EnumString\":\"\",\"Type\":[]}]}}"
     }
   ],
   "FirstParty": true,
@@ -1427,9 +1487,11 @@
   "IsComponentLocked": false,
   "IsComponentTemplate": true,
   "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
   "IsPremiumPcfControl": false,
-  "LastModifiedTimestamp": "637508112099593113",
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "637713820638074723",
   "Name": "cf1d2052d1834b2dac2630f084ce61b9",
   "OverridableProperties": {},
-  "Version": "637508112155525062"
+  "Version": "637713821258056887"
 }
