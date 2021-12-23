@@ -1,4 +1,22 @@
 "'Date Functions' As CanvasComponent":
+    DaysOfWeek(StartDate As DateTime, DayWeekStart As Number, NumberOfDays As Number):
+        StartDate:
+            Default: =Now()
+        DayWeekStart:
+            Default: =100
+        NumberOfDays:
+            Default: =100
+        ThisProperty:
+            Default: |-
+                =// Power Fx Date Functions > DaysOfWeek
+                // Contributers: @lcimon (Twitter)
+                With(
+                    {
+                        pFirstDay: 'Date Functions'.StartOfWeek(StartDate, 0, DayWeekStart),
+                        pNumberOfDays: Coalesce(NumberOfDays, 7)
+                    },
+                    ForAll(Sequence(pNumberOfDays, 0, 1), DateAdd(pFirstDay, ThisRecord.Value))
+                )
     EndOfMonth(StartDate As DateTime, AddMonths As Number):
         StartDate:
             Default: =Now()

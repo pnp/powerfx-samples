@@ -5,9 +5,7 @@
       "columnKind": "utf16CodeUnits",
       "invocations": [
         {
-          "endTimeUtc": "2021-03-08T14:40:22.951Z",
-          "executionSuccessful": true,
-          "startTimeUtc": "2021-03-08T14:40:22.949Z"
+          "executionSuccessful": true
         }
       ],
       "results": [
@@ -25,47 +23,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 14,
-                  "charOffset": 471,
-                  "snippet": {
-                    "text": "// Power Fx Date Functions > EndOfWeek\n// Contributers: @mattbdevaney (Twitter)\nDateAdd(\n    StartDate,\n    (7 - Weekday(\n        StartDate,\n        Switch(\n            DayWeekStart,\n            1,StartOfWeek.Sunday,\n            2,StartOfWeek.Monday,\n            3,StartOfWeek.Tuesday,\n            4,StartOfWeek.Wednesday,\n            5,StartOfWeek.Thursday,\n            6,StartOfWeek.Friday,\n            7,StartOfWeek.Saturday)\n        )\n    )+(7*AddWeeks),\n    Days\n)\n+Time(23,59,59)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "EndOfWeek",
-                "module": "Date Functions",
-                "type": "Date Functions"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadType",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Date Functions.EndOfWeek"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Date Functions.EndOfWeek",
-                  "relativeAddress": 0
-                },
-                "region": {
                   "charLength": 1,
-                  "charOffset": 470,
+                  "charOffset": 489,
                   "snippet": {
-                    "text": "// Power Fx Date Functions > EndOfWeek\n// Contributers: @mattbdevaney (Twitter)\nDateAdd(\n    StartDate,\n    (7 - Weekday(\n        StartDate,\n        Switch(\n            DayWeekStart,\n            1,StartOfWeek.Sunday,\n            2,StartOfWeek.Monday,\n            3,StartOfWeek.Tuesday,\n            4,StartOfWeek.Wednesday,\n            5,StartOfWeek.Thursday,\n            6,StartOfWeek.Friday,\n            7,StartOfWeek.Saturday)\n        )\n    )+(7*AddWeeks),\n    Days\n)\n+Time(23,59,59)"
+                    "text": "+"
                   }
                 }
               },
@@ -79,51 +40,14 @@
           "message": {
             "arguments": [
               "DateTime",
-              "Error"
+              "Time"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Date Functions.IsInCurrentWeek"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Date Functions.IsInCurrentWeek",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 782,
-                  "snippet": {
-                    "text": "// Power Fx Date Functions > IsInCurrentWeek\n// Contributers: @mattbdevaney (Twitter)\nStartDate \n- (Weekday(\n    Today(),\n    Switch(\n        DayWeekStart,\n        1,StartOfWeek.Sunday,\n        2,StartOfWeek.Monday,\n        3,StartOfWeek.Tuesday,\n        4,StartOfWeek.Wednesday,\n        5,StartOfWeek.Thursday,\n        6,StartOfWeek.Friday,\n        7,StartOfWeek.Saturday)\n    )-1\n) <= StartDate \nAnd\n(\nDateAdd(\n    StartDate,\n    (7 - Weekday(\n        StartDate,\n        Switch(\n            DayWeekStart,\n            1,StartOfWeek.Sunday,\n            2,StartOfWeek.Monday,\n            3,StartOfWeek.Tuesday,\n            4,StartOfWeek.Wednesday,\n            5,StartOfWeek.Thursday,\n            6,StartOfWeek.Friday,\n            7,StartOfWeek.Saturday)\n        )\n    ),\n    Days\n)\n+Time(23,59,59)) >= StartDate"
-                  }
-                }
-              },
-              "properties": {
-                "member": "IsInCurrentWeek",
-                "module": "Date Functions",
-                "type": "Date Functions"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadType",
+          "ruleId": "app-ErrBadOperatorTypes",
           "ruleIndex": 0
         },
         {
@@ -141,9 +65,9 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 781,
+                  "charOffset": 816,
                   "snippet": {
-                    "text": "// Power Fx Date Functions > IsInCurrentWeek\n// Contributers: @mattbdevaney (Twitter)\nStartDate \n- (Weekday(\n    Today(),\n    Switch(\n        DayWeekStart,\n        1,StartOfWeek.Sunday,\n        2,StartOfWeek.Monday,\n        3,StartOfWeek.Tuesday,\n        4,StartOfWeek.Wednesday,\n        5,StartOfWeek.Thursday,\n        6,StartOfWeek.Friday,\n        7,StartOfWeek.Saturday)\n    )-1\n) <= StartDate \nAnd\n(\nDateAdd(\n    StartDate,\n    (7 - Weekday(\n        StartDate,\n        Switch(\n            DayWeekStart,\n            1,StartOfWeek.Sunday,\n            2,StartOfWeek.Monday,\n            3,StartOfWeek.Tuesday,\n            4,StartOfWeek.Wednesday,\n            5,StartOfWeek.Thursday,\n            6,StartOfWeek.Friday,\n            7,StartOfWeek.Saturday)\n        )\n    ),\n    Days\n)\n+Time(23,59,59)) >= StartDate"
+                    "text": "+"
                   }
                 }
               },
@@ -156,51 +80,15 @@
           ],
           "message": {
             "arguments": [
-              "Number"
+              "DateTime",
+              "Time"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrBadType-ExpectedType",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Title Screen.fx_Date.IsInCurrentWeek"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Title Screen.fx_Date.IsInCurrentWeek",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 782,
-                  "snippet": {
-                    "text": "// Power Fx Date Functions > IsInCurrentWeek\n// Contributers: @mattbdevaney (Twitter)\nStartDate \n- (Weekday(\n    Today(),\n    Switch(\n        DayWeekStart,\n        1,StartOfWeek.Sunday,\n        2,StartOfWeek.Monday,\n        3,StartOfWeek.Tuesday,\n        4,StartOfWeek.Wednesday,\n        5,StartOfWeek.Thursday,\n        6,StartOfWeek.Friday,\n        7,StartOfWeek.Saturday)\n    )-1\n) <= StartDate \nAnd\n(\nDateAdd(\n    StartDate,\n    (7 - Weekday(\n        StartDate,\n        Switch(\n            DayWeekStart,\n            1,StartOfWeek.Sunday,\n            2,StartOfWeek.Monday,\n            3,StartOfWeek.Tuesday,\n            4,StartOfWeek.Wednesday,\n            5,StartOfWeek.Thursday,\n            6,StartOfWeek.Friday,\n            7,StartOfWeek.Saturday)\n        )\n    ),\n    Days\n)\n+Time(23,59,59)) >= StartDate"
-                  }
-                }
-              },
-              "properties": {
-                "member": "IsInCurrentWeek",
-                "module": "Title Screen",
-                "type": "Title Screen.fx_Date"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadType",
+          "ruleId": "app-ErrBadOperatorTypes",
           "ruleIndex": 0
         },
         {
@@ -218,9 +106,9 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 781,
+                  "charOffset": 816,
                   "snippet": {
-                    "text": "// Power Fx Date Functions > IsInCurrentWeek\n// Contributers: @mattbdevaney (Twitter)\nStartDate \n- (Weekday(\n    Today(),\n    Switch(\n        DayWeekStart,\n        1,StartOfWeek.Sunday,\n        2,StartOfWeek.Monday,\n        3,StartOfWeek.Tuesday,\n        4,StartOfWeek.Wednesday,\n        5,StartOfWeek.Thursday,\n        6,StartOfWeek.Friday,\n        7,StartOfWeek.Saturday)\n    )-1\n) <= StartDate \nAnd\n(\nDateAdd(\n    StartDate,\n    (7 - Weekday(\n        StartDate,\n        Switch(\n            DayWeekStart,\n            1,StartOfWeek.Sunday,\n            2,StartOfWeek.Monday,\n            3,StartOfWeek.Tuesday,\n            4,StartOfWeek.Wednesday,\n            5,StartOfWeek.Thursday,\n            6,StartOfWeek.Friday,\n            7,StartOfWeek.Saturday)\n        )\n    ),\n    Days\n)\n+Time(23,59,59)) >= StartDate"
+                    "text": "+"
                   }
                 }
               },
@@ -233,51 +121,15 @@
           ],
           "message": {
             "arguments": [
-              "Number"
+              "DateTime",
+              "Time"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrBadType-ExpectedType",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Title Screen.fx_Date.EndOfWeek"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Title Screen.fx_Date.EndOfWeek",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 471,
-                  "snippet": {
-                    "text": "// Power Fx Date Functions > EndOfWeek\n// Contributers: @mattbdevaney (Twitter)\nDateAdd(\n    StartDate,\n    (7 - Weekday(\n        StartDate,\n        Switch(\n            DayWeekStart,\n            1,StartOfWeek.Sunday,\n            2,StartOfWeek.Monday,\n            3,StartOfWeek.Tuesday,\n            4,StartOfWeek.Wednesday,\n            5,StartOfWeek.Thursday,\n            6,StartOfWeek.Friday,\n            7,StartOfWeek.Saturday)\n        )\n    )+(7*AddWeeks),\n    Days\n)\n+Time(23,59,59)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "EndOfWeek",
-                "module": "Title Screen",
-                "type": "Title Screen.fx_Date"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadType",
+          "ruleId": "app-ErrBadOperatorTypes",
           "ruleIndex": 0
         },
         {
@@ -295,9 +147,9 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 470,
+                  "charOffset": 489,
                   "snippet": {
-                    "text": "// Power Fx Date Functions > EndOfWeek\n// Contributers: @mattbdevaney (Twitter)\nDateAdd(\n    StartDate,\n    (7 - Weekday(\n        StartDate,\n        Switch(\n            DayWeekStart,\n            1,StartOfWeek.Sunday,\n            2,StartOfWeek.Monday,\n            3,StartOfWeek.Tuesday,\n            4,StartOfWeek.Wednesday,\n            5,StartOfWeek.Thursday,\n            6,StartOfWeek.Friday,\n            7,StartOfWeek.Saturday)\n        )\n    )+(7*AddWeeks),\n    Days\n)\n+Time(23,59,59)"
+                    "text": "+"
                   }
                 }
               },
@@ -311,15 +163,15 @@
           "message": {
             "arguments": [
               "DateTime",
-              "Error"
+              "Time"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
-          "ruleIndex": 1
+          "ruleId": "app-ErrBadOperatorTypes",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -349,7 +201,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 3
+          "ruleIndex": 1
         }
       ],
       "tool": {
@@ -358,41 +210,10 @@
           "name": "PowerApps app checker",
           "rules": [
             {
-              "id": "app-ErrBadType",
+              "id": "app-ErrBadOperatorTypes",
               "messageStrings": {
                 "issue": {
-                  "text": "Invalid argument type."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrIncompatibleRulePropTypes-PropKind-RuleKind",
-              "messageStrings": {
-                "issue": {
-                  "text": "Expected {0} value."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Change the rule to produce a {0} value."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrBadType-ExpectedType",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid argument type. Expecting a {0} value."
+                  "text": "This operation isn't valid on these types: {0}, {1}."
                 }
               },
               "properties": {
@@ -420,7 +241,7 @@
               }
             }
           ],
-          "version": "1.301"
+          "version": "1.317"
         }
       }
     }

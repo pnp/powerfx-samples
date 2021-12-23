@@ -10,10 +10,14 @@
     "lbl_TItle": 5,
     "Title Screen": 4
   },
-  "HeaderLastSavedDateTimeUTC": "03/08/2021 14:40:22",
+  "FunctionParamsInvariantScripts": {},
+  "HeaderLastSavedDateTimeUTC": "11/01/2021 16:49:03",
   "LocalDatabaseReferencesAsEmpty": false,
+  "LocalResourceFileNames": {
+    "Business-Cat": "0001.jpg"
+  },
   "LocalResourceRootPaths": {
-    "Business-Cat": "https://docserverpaaprodcca.blob.core.windows.net/7c77b36c-044d-4122-8a74-f63a5c9055cb-1/resource/Assets0Images00001.jpg?sv=2017-04-17&sr=b&sig=oH1Osu6QdYNKRsXn11jvWFSaCPyu5eP8jzmraPgA%2BRI%3D&spr=https&se=2021-03-09T14%3A42%3A31Z&sp=r"
+    "Business-Cat": "https://docserverpwaprodwus.blob.core.windows.net/23d33b3f-9e70-40c7-9be5-0b0ff7dd4d36-1/resource/Assets0Images00001.jpg?sv=2017-04-17&sr=b&sig=8JmkszPVjO7hgFxBfTauneq8JUG1gep3Ex8nvl7Xn0o%3D&spr=https&se=2021-11-02T16%3A55%3A59Z&sp=r"
   },
   "OldLogoFileName": "sm10sthw.jpg",
   "OrderComponentMetadata": {
@@ -37,16 +41,21 @@
     "lbl_TItle": 0,
     "Title Screen": 0
   },
+  "ResourcesJsonIndices": {
+    "Image-Business-Cat": 0,
+    "Image-SampleImage": 1
+  },
   "TemplateVersions": {
-    "cf1d2052d1834b2dac2630f084ce61b9": "637508112229480135"
+    "cf1d2052d1834b2dac2630f084ce61b9": "637713821436581973"
   },
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.1471929,
+    "AnalysisLoadTime": 0.073204400000000003,
     "ControlCount": {
       "cf1d2052d1834b2dac2630f084ce61b9": 2,
       "label": 1,
       "screen": 1
     },
-    "DeserializationLoadTime": 2.8937636
+    "DeserializationLoadTime": 0.1523969,
+    "ErrorCount": 4
   }
 }
