@@ -1,0 +1,100 @@
+{
+  "ComponentAllowCustomization": true,
+  "ComponentChangedSinceFileImport": true,
+  "ComponentManifest": {
+    "AllowAccessToGlobals": false,
+    "AllowCustomization": true,
+    "Description": "",
+    "Name": "TableUtils",
+    "TemplateGuid": "66a684b00c824120a28e56a3eb36f713"
+  },
+  "ComponentType": "CanvasComponent",
+  "CustomGroupControlTemplateName": "",
+  "CustomProperties": [
+    {
+      "Category": 0,
+      "DisplayName": "JsonToTable",
+      "Hidden": true,
+      "Name": "JsonToTable",
+      "PropertyDataTypeKey": "Table",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "JsonToTable_json",
+            "Name": "JsonToTable_json",
+            "PropertyDataTypeKey": "String",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "Source table in JSON format",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "json"
+            },
+            "Tooltip": "Source table in JSON format",
+            "Type": "{\"Version\":\"1.315\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Return Table  from a JSON Object representing a record in the format { name:string, value:string }",
+      "Type": "{\"Version\":\"1.315\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"Name\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"Value\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    },
+    {
+      "Category": 0,
+      "DisplayName": "JsonDiffToTable",
+      "Hidden": true,
+      "Name": "JsonDiffToTable",
+      "PropertyDataTypeKey": "Table",
+      "PropertyScopeKey": {
+        "PropertyScopeRuleNamespaceKey": "3",
+        "PropertyScopeRulesKey": [
+          {
+            "DisplayName": "JsonDiffToTable_JsonBefore",
+            "Name": "JsonDiffToTable_JsonBefore",
+            "PropertyDataTypeKey": "String",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "Data before update",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "JsonBefore"
+            },
+            "Tooltip": "Data before update",
+            "Type": "{\"Version\":\"1.315\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          },
+          {
+            "DisplayName": "JsonDiffToTable_JsonAfter",
+            "Name": "JsonDiffToTable_JsonAfter",
+            "PropertyDataTypeKey": "String",
+            "ScopeVariableInfo": {
+              "DependencyType": "New",
+              "Description": "Data after update",
+              "IsRequired": true,
+              "ResolveExpands": false,
+              "ResolveSelects": false,
+              "ScopeVariableName": "JsonAfter"
+            },
+            "Tooltip": "Data after update",
+            "Type": "{\"Version\":\"1.315\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+          }
+        ]
+      },
+      "Tooltip": "Return only the fields that are chnaged",
+      "Type": "{\"Version\":\"1.315\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"Table\",\"EnumString\":\"\",\"Type\":[{\"Name\":\"FieldName\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"NewValue\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]},{\"Name\":\"OldValue\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}]}}"
+    }
+  ],
+  "FirstParty": true,
+  "Id": "http://microsoft.com/appmagic/Component",
+  "IsComponentLocked": false,
+  "IsComponentTemplate": true,
+  "IsCustomGroupControlTemplate": false,
+  "IsPcfControl": false,
+  "IsPremiumPcfControl": false,
+  "IsWidgetTemplate": false,
+  "LastModifiedTimestamp": "637639437526399266",
+  "Name": "66a684b00c824120a28e56a3eb36f713",
+  "OverridableProperties": {},
+  "Version": "637638555605999320"
+}
