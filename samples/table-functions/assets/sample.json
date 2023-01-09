@@ -1,17 +1,17 @@
 [
     {
         "$schema": "https://developer.microsoft.com/en-us/json-schemas/pnp/samples/v1.0/metadata-schema.json",
-        "name": "pnp-powerfx-samples-list-functions-addtopvalue",
+        "name": "pnp-powerfx-samples-table-functions",
         "version": "1.0.0.0",
         "source": "pnp",
         "creationDateTime": "2021-03-06T00:00:00.000Z",
         "updateDateTime": "2021-03-06T00:00:00.000Z",
         "title": "AddTopValue",
-        "shortDescription": "Adds a value to a list of values ready to use in a drop down box. Returns a single column, named Result, table.",
+        "shortDescription": "This is a `TableUtils` PowerApp Component containing Custom Functions that allow to transform a Record in a Table",
         "longDescription": [
-            "Adds a value to a list of values ready to use in a drop down box. Returns a single column, named Result, table."
+            "This is a `TableUtils` PowerApp Component containing Custom Functions that allow to transform a Record in a Table."
         ],
-        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/list-functions#addtopvalue",
+        "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/table-functionse",
         "products": [
             "Power Apps",
             "Power Platform",
@@ -33,15 +33,15 @@
             {
                 "type": "image",
                 "order": 100,
-                "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/list-functions/assets/AddTopValueImg.PNG",
-                "alt": "Add Top Value"
+                "url": "https://github.com/pnp/powerfx-samples/raw/main/samples/table-functions/assets/sonDiffToTableSample.PNG",
+                "alt": "Table sample"
             }
         ],
         "authors": [
             {
-                "gitHubAccount": "Laura-GB",
-                "name": "Laura GB",
-                "pictureUrl": "https://github.com/Laura-GB.png"
+                "gitHubAccount": "bsorrentino",
+                "name": "Bartolomeo Sorrentino",
+                "pictureUrl": "https://github.com/bsorrentino.png"
             }
         ],
         "references": [

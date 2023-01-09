@@ -12,7 +12,8 @@
     "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/regex-functions#iscurrency",
     "products": [
       "Power Apps",
-      "Power Platform"
+      "Power Platform",
+      "Power Fx"
     ],
     "tags": [
       "TEXT",
