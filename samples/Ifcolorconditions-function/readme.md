@@ -8,7 +8,7 @@ Short summary on functionality and used technologies.
 This PowerFX example shows how to leverage an IF statement, against Text or Values on the Fill property of a text label.
 This can of course be used for conditional fonts, font weight, combining with dynamic variables and many more.
 
-![KPI Values in a condition](assets/Screenshot KPI values.png)
+![KPI Values in a condition](assets/screenshotkpivalues.png)
 
 * [If](#If)
 * [Value](#Value)
