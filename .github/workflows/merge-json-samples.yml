@@ -22,8 +22,6 @@ jobs:
       - name: Commit samples.json to main
         uses: EndBug/add-and-commit@v9
         with:
-          cwd: ./main
-          branch: main
-          add: 'main/.metadata/samples.json --force'
+          add: '.metadata/samples.json --force'
           push: true
           token: ${{ secrets.GITHUB_TOKEN }}
