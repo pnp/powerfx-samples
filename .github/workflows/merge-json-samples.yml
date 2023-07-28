@@ -23,7 +23,7 @@ jobs:
         run: |
           jq -s '[.[][]]' ./main/samples/**/assets/sample.json > ./main/.metadata/samples.json
       - name: Commit samples.json to main
-        uses: EndBug/add-and-commit@v6
+        uses: EndBug/add-and-commit@v9
         with:
           cwd: ./main
           branch: main
