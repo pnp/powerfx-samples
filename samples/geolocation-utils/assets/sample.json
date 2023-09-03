@@ -15,7 +15,8 @@
     "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/geolocation-utils#twopoints",
     "products": [
       "Power Apps",
-      "Power Platform"
+      "Power Platform",
+      "Power Fx"
     ],
     "tags": [
       "GEOLOCATION",
