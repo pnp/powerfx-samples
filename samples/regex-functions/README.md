@@ -25,7 +25,6 @@ The following image shows the custom function (component) properties and a sampl
 
 None
 
-
 ## Solution
 
 Solution|Author(s)

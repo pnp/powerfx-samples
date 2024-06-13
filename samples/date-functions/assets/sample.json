@@ -14,7 +14,8 @@
         "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/date-functions#EndOfQuarter",
         "products": [
             "Power Apps",
-            "Power Platform"
+            "Power Platform",
+            "Power Fx"
         ],
         "tags": [
             "DATE",
@@ -315,7 +316,7 @@
             "DATE",
             "YEAR",
             "LEAP"
-        ],        
+        ],
         "categories": [
             "POWERFX"
         ],

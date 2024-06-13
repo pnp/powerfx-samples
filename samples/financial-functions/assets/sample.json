@@ -14,7 +14,8 @@
         "url": "https://github.com/pnp/powerfx-samples/tree/main/samples/financial-functions#fv",
         "products": [
             "Power Apps",
-            "Power Platform"
+            "Power Platform",
+            "Power Fx"
         ],
         "tags": [
             "NUMBER",
