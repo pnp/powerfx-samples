@@ -386,3 +386,5 @@ Parameter | Description|Required | Type
 
 
 <img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/regex-functions" />
+
+<img src="https://m365-visitor-stats.azurewebsites.net/powerfx-samples/samples/regex-functions" />

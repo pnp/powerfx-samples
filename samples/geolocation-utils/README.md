@@ -118,3 +118,5 @@ Parameter | Description|Required | Type
 {cm: 315040975.26, feet: 10335990, inch: 124031880.02, km: 3150.41, m: 3150409.75, mile: 1957.58, yard: 3445330}
 ```
 <img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/geolocation-utils" />
+
+<img src="https://m365-visitor-stats.azurewebsites.net/powerfx-samples/samples/geolocation-utils" />

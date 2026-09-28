@@ -81,3 +81,4 @@ Parameter | Description|Required | Type
 </br></br>
 
 
+<img src="https://m365-visitor-stats.azurewebsites.net/powerfx-samples/samples/list-functions" />

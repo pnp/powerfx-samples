@@ -163,3 +163,5 @@ For questions regarding this sample, [create a new question](https://github.com/
 Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/powerfx-samples/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=suggestion.yml&sample=color-functions&authors=@P3N-101&title=color-functions%20-%20).
 
 <img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/color-functions" />
+
+<img src="https://m365-visitor-stats.azurewebsites.net/powerfx-samples/samples/color-functions" />

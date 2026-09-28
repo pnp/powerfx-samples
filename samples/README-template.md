@@ -13,7 +13,7 @@
 
 Short summary on functionality and used technologies.
 
-> Please provide a high-quality screenshot of your web parts below. It should be stored in a folder called `assets`.
+> Please provide a high-quality screenshot of your sample below. It should be stored in a folder called `assets`.
 > If possible, use a resolution of 1920x1080.
 > You can add as many screen shots as you'd like to help users understand your sample without having to download it and install it.
 > DELETE THIS PARAGRAPH BEFORE SUBMITTING
@@ -29,7 +29,8 @@ Short summary on functionality and used technologies.
 
 ## Compatibility
 
-![Power Apps Source File Pack and Unpack Utility 0.20](https://img.shields.io/badge/PSAopa-0.20-green.svg)
+> List any Power Apps or source format requirements for this sample.
+> DELETE THIS PARAGRAPH BEFORE SUBMITTING
 
 ## Solution
 
@@ -47,24 +48,20 @@ Version|Date|Comments
 
 ## Prerequisites
 
-> Any special pre-requisites? Include anything that needs to be done for this sample to work (anything in addition to importing the `.msapp`).
+> Include any prerequisites that must be completed before using the source-controlled app files.
 > DELETE THIS PARAGRAPH BEFORE SUBMITTING
 
 ## Minimal Path to Awesome
 
-* [Download](solution\YOURAPPNAME.msapp) the `.msapp` from the `solution` folder
-* Use the `.msapp` file using **File** > **Open** > **Browse** within Power Apps Studio.
-
-> Include any additional steps as needed.
+> Provide the exact steps needed to use the files in the `sourcecode` folder. Do not require readers to download an `.msapp` file from this repository.
 > DELETE THIS PARAGRAPH BEFORE SUBMITTING
 
 ## Using the Source Code
 
-  You can also use the [Power Apps Source Code tool](https://github.com/microsoft/PowerApps-Language-Tooling) to the code using these steps:
-* Clone the repository to a local drive
-* Pack the source files back into `.msapp` file:
-  * [Power Apps Tooling Usage](https://github.com/microsoft/PowerApps-Language-Tooling)
-* Use the `.msapp` file using **File** > **Open** > **Browse** in Power Apps Studio.
+The source-controlled app files are provided in the `sourcecode` folder.
+
+> Describe the supported Power Apps tooling or workflow needed to open the source files, including exact commands or setup steps.
+> DELETE THIS PARAGRAPH BEFORE SUBMITTING
 
 ## Features
 
@@ -103,7 +100,7 @@ MyCustomFunction(MyParameterName)
 
 Parameter | Description | Required | Type
 ---|---|---|--
-MyParameterName |Decription of parameter goes here| Yes | Text
+MyParameterName |Description of parameter goes here| Yes | Text
 
 
 #### Output
@@ -137,4 +134,7 @@ For questions regarding this sample, [create a new question](https://github.com/
 
 Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/powerfx-samples/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=suggestion.yml&sample=YOUR-SOLUTION-NAME&authors=@YOURGITHUBUSERNAME&title=YOUR-SOLUTION-NAME%20-%20).
 
-<img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/readme-template" />
+> Replace `{sample-path}` below with this sample directory's repository-relative path, such as `samples/color-functions`. Do not include a leading slash or the repository name. Keep the `img` tag as the final line of the `README.md`.
+> DELETE THIS PARAGRAPH BEFORE SUBMITTING
+
+<img src="https://m365-visitor-stats.azurewebsites.net/powerfx-samples/{sample-path}" />

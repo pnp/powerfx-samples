@@ -34,9 +34,9 @@ When you submit a new sample, please follow these guidelines:
 
 * Each sample must be placed in a folder under the `samples` folder
 * Your sample folder must include the following content:
-    - A `sourcecode` containing the unpacked solution
-    - An `assets` folder, containing screenshots
-    - A `README.md` file
+    - A `sourcecode` folder containing the source-controlled app files
+    - An `assets` folder containing screenshots and the required `sample.json` metadata file
+    - A `README.md` file at the root of the sample folder
 * You must only submit samples for which you have the rights to share. Make sure that you asked for permission from your employer and/or clients before committing the code to an open-source repository, because once you submit a pull request, the information is public and _cannot be removed_.
 
 
@@ -48,17 +48,19 @@ When you submit a new sample, please follow these guidelines:
 
 ### Source Code
 
-* For security reasons, we do not accept pull requests containing `.msapp` files. We only accept source code files for applications. We will review the source code and will pack the `.msapp` only from reviewed code.
-* You can extract source code files using [these instructions](https://powerapps.microsoft.com/en-us/blog/source-code-files-for-canvas-apps/).
-* Make sure to place the root of your solution's source code in the `sourcecode` folder (i.e.: your `sourcecode` folder should include a `CanvasManifest.json`, `Src` folder, `pkgs` folder, etc.)
+* For security reasons, we do not accept pull requests containing `.msapp` files. Submit source-controlled app files so reviewers can inspect the changes.
+* Use [supported Power Apps source control tooling](https://learn.microsoft.com/power-platform/alm/git-integration/canvas-apps-git-integration) to produce the source-controlled files.
+* Place the root of the app's source-controlled files in the `sourcecode` folder.
 
 ### README.md
 
 * You will need to have a `README.md` file for your contribution, which is based on [the provided template](./samples/README-template.md) under the `samples` folder. Please copy this template to your project and update it accordingly. Your `README.md` must be named exactly `README.md` -- with capital letters -- as this is the information we use to make your sample public.
 * You will need to have a screenshot picture of your sample in action in the `README.md` file ("pics or it didn't happen"). The preview image must be located in the `assets` folder in the root of your sample folder.
     * All screen shots must be located in the `assets` folder. Do not point to your own repository or any other external source
-* The `README` template contains a specific tracking image at the bottom of the file with an `img` tag, where the `src` attribute points to `https://telemetry.sharepointpnp.com/powerfx-samples/samples/readme-template`. This is a transparent image which is used to track viewership of individual samples in GitHub.
-  * Update the image `src` attribute according with the repository name and folder information.
+* Every sample `README.md` must end with the following transparent tracking image, which is used to track viewership of individual samples in GitHub:
+  `<img src="https://m365-visitor-stats.azurewebsites.net/powerfx-samples/{sample-path}" />`
+  * Replace `{sample-path}` with the sample directory's repository-relative path. For example, a sample in `samples/color-functions` must use `https://m365-visitor-stats.azurewebsites.net/powerfx-samples/samples/color-functions`.
+  * Do not include a leading slash or the repository name in `{sample-path}`, and keep the `img` tag as the final line of the `README.md`.
 * If you find an existing sample which is similar to yours, please extend the existing one rather than submitting a new similar sample
   * When you update existing samples, please update also `README.md` file accordingly with information on provided changes and with your author details
 * Make sure to document each function in the `README.md`
@@ -84,6 +86,18 @@ When you submit a new sample, please follow these guidelines:
 * You can add as many screen shots as you'd like to help users understand your sample without having to download it and install it.
 * You can include animated images (such as `.gif` files), but you must provide at least one static `.png` file
 
+### Sample metadata
+
+* Every sample must include a valid JSON metadata file at `assets/sample.json`. The sample gallery uses this file to list the sample and its functions.
+* Use a JSON array with one metadata object for each function documented in the root `README.md`, following the `$schema` declared in existing `sample.json` files.
+* Keep each metadata object's title, descriptions, authors, thumbnail, and `url` aligned with the root `README.md`. The `url` must point to the sample's repository path and may include the documented function's heading anchor.
+
+## Community calls and demos
+
+Weekly [Copilot, Microsoft 365, and Power Platform community calls](https://aka.ms/community/calls) are open to everyone. Join to learn from the community and provide input.
+
+To share your learnings with the community, [sign up to present a demo](https://aka.ms/community/request/demo).
+
 ## Submitting Pull Requests
 
 > If you aren't familiar with how to contribute to open-source repositories using GitHub, or if you find the instructions on this page confusing, [sign up](https://forms.office.com/Pages/ResponsePage.aspx?id=KtIy2vgLW0SOgZbwvQuRaXDXyCl9DkBHq4A2OG7uLpdUREZVRDVYUUJLT1VNRDM4SjhGMlpUNzBORy4u) for one of our [Sharing is Caring](https://pnp.github.io/sharing-is-caring/#pnp-sic-events) events. It's completely free, and we'll guide you through the process.
@@ -94,9 +108,9 @@ Here's a high-level process for submitting new samples or updates to existing on
 2. Fork this repository [pnp/powerfx-samples](https://github.com/pnp/powerfx-samples) to your GitHub account
 3. Create a new branch from the `main` branch for your fork for the contribution
 4. Include your changes to your branch
-5. Commit your changes using descriptive commit message * These are used to track changes on the repositories for monthly communications
-6. Create a pull request in your own fork and target the `main` branch
-7. Fill up the provided PR template with the requested details
+5. Commit your changes using a descriptive commit message. These are used to track changes in the repositories for monthly communications.
+6. Push the branch to your fork, then open a pull request from that branch to the `main` branch of `pnp/powerfx-samples`.
+7. Complete the provided PR template with the requested details.
 
 Before you submit your pull request consider the following guidelines:
 
