@@ -181,3 +181,5 @@ PV(0.06, 18, 50000)
 ```
 
 <img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/financial-functions" />
+
+<img src="https://m365-visitor-stats.azurewebsites.net/powerfx-samples/samples/financial-functions" />

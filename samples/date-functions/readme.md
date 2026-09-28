@@ -723,3 +723,5 @@ Parameter | Description | Required | Type
 Number
 
 <img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/date-functions" />
+
+<img src="https://m365-visitor-stats.azurewebsites.net/powerfx-samples/samples/date-functions" />
