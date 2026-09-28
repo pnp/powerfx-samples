@@ -57,8 +57,10 @@ When you submit a new sample, please follow these guidelines:
 * You will need to have a `README.md` file for your contribution, which is based on [the provided template](../samples/README-template.md) under the `samples` folder. Please copy this template to your project and update it accordingly. Your `README.md` must be named exactly `README.md` -- with capital letters -- as this is the information we use to make your sample public.
 * You will need to have a screenshot picture of your sample in action in the `README.md` file ("pics or it didn't happen"). The preview image must be located in the `assets` folder in the root of your sample folder.
     * All screen shots must be located in the `assets` folder. Do not point to your own repository or any other external source
-* The `README` template contains a specific tracking image at the bottom of the file with an `img` tag, where the `src` attribute points to `https://telemetry.sharepointpnp.com/powerfx-samples/samples/readme-template`. This is a transparent image which is used to track viewership of individual samples in GitHub.
-  * Update the image `src` attribute according with the repository name and folder information.
+* Every sample `README.md` must end with the following transparent tracking image, which is used to track viewership of individual samples in GitHub:
+  `<img src="https://m365-visitor-stats.azurewebsites.net/powerfx-samples/{sample-path}" />`
+  * Replace `{sample-path}` with the sample directory's repository-relative path. For example, a sample in `samples/color-functions` must use `https://m365-visitor-stats.azurewebsites.net/powerfx-samples/samples/color-functions`.
+  * Do not include a leading slash or the repository name in `{sample-path}`, and keep the `img` tag as the final line of the `README.md`.
 * If you find an existing sample which is similar to yours, please extend the existing one rather than submitting a new similar sample
   * When you update existing samples, please update also `README.md` file accordingly with information on provided changes and with your author details
 * Make sure to document each function in the `README.md`

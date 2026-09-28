@@ -137,4 +137,7 @@ For questions regarding this sample, [create a new question](https://github.com/
 
 Finally, if you have an idea for improvement, [make a suggestion](https://github.com/pnp/powerfx-samples/issues/new?assignees=&labels=Needs%3A+Triage+%3Amag%3A%2Ctype%3Abug-suspected&template=suggestion.yml&sample=YOUR-SOLUTION-NAME&authors=@YOURGITHUBUSERNAME&title=YOUR-SOLUTION-NAME%20-%20).
 
-<img src="https://telemetry.sharepointpnp.com/powerfx-samples/samples/readme-template" />
+> Replace `{sample-path}` below with this sample directory's repository-relative path, such as `samples/color-functions`. Do not include a leading slash or the repository name. Keep the `img` tag as the final line of the `README.md`.
+> DELETE THIS PARAGRAPH BEFORE SUBMITTING
+
+<img src="https://m365-visitor-stats.azurewebsites.net/powerfx-samples/{sample-path}" />
