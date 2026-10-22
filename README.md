@@ -1,14 +1,33 @@
-# Power Fx Samples
+# Power Fx Samples (archived)
 
-This repository contains community samples that demonstrate different usage patterns for the Power Fx low-code programming language.
+> [!IMPORTANT]
+> **This repository is archived and is no longer maintained.** All activity has moved to the centralized [Power Platform samples repository](https://github.com/pnp/powerplatform-samples).
+>
+> Please target **all issues and pull requests**, including bug reports, fixes, updates, and new samples, to [pnp/powerplatform-samples](https://github.com/pnp/powerplatform-samples). The content here is retained for historical reference.
 
-> We do welcome community contributions to the samples folder in this repository for demonstrating different Power Fx functions. Notice that if you use 3rd party libraries, please make sure that library license allows distributions of it as part of your sample.
+This repository preserves community samples that demonstrate different usage patterns for the Power Fx low-code programming language.
 
-## Have issues or questions?
+## Thank you, community!
 
-Please use following logic on submitting your questions or issues to right location to ensure that they are noticed and addressed as soon as possible.
+Thank you to everyone who contributed samples, reported issues, reviewed pull requests, shared feedback, and helped others. This work is a shared effort by community contributors, the PnP team, and Microsoft product teams as part of the **Copilot, Microsoft 365 & Power Platform Community**.
 
-* You have issue on specific sample - use [issue list in this repository](https://github.com/pnp/powerfx-samples/issues).
+Your contributions have made these samples a valuable learning resource. We hope you will join us in the new repository and keep building, learning, and sharing with the community. Thank you, everyone!
+
+## Continue in the new repository
+
+Visit [pnp/powerplatform-samples](https://github.com/pnp/powerplatform-samples) to find and contribute samples, and follow its [contribution guidance](https://github.com/pnp/powerplatform-samples/blob/main/CONTRIBUTING.md) before submitting a pull request.
+
+If an issue or pull request was closed here during this transition and still needs attention, please open a corresponding issue or pull request in the new repository and link to the original for context.
+
+When contributing to the new repository, ensure that any third-party libraries' licenses allow redistribution as part of your sample.
+
+## Join the community calls
+
+Stay up to date with the latest Copilot, Microsoft 365, and Power Platform topics by joining our weekly community calls. Everyone is welcome. Come to learn, ask questions, and connect with the community.
+
+[View the call schedule and download the recurring invites](https://aka.ms/community/calls) so you don't miss an upcoming call.
+
+Stay active in the [Power Platform Community](https://community.powerplatform.com/) and our other community spaces: ask questions, help others, and share what you build.
 
 ## Additional resources
 
@@ -17,12 +36,6 @@ Please use following logic on submitting your questions or issues to right locat
 * [Microsoft Power Fx](https://github.com/microsoft/Power-Fx)
 * [Enhanced Component Properties](https://powerapps.microsoft.com/en-us/blog/enhanced-component-properties/)
 * [Power Apps Formula Reference](https://docs.microsoft.com/en-us/powerapps/maker/canvas-apps/formula-reference)
-
-## Join the community calls
-
-Stay up to date with the latest Copilot, Microsoft 365, and Power Platform topics by joining our weekly community calls. Everyone is welcome. Come to learn, ask questions, and connect with the community.
-
-[View the call schedule and download the recurring invites](https://aka.ms/community/calls) so you don't miss an upcoming call.
 
 ## Using the samples
 
@@ -37,16 +50,6 @@ Provide a **Name**, and select **Create**
 Select the **File** tab, then **Open**
 
 Use the **Browse** option and navigate to the `.msapp` file you just downloaded
-
-
-## Authors
-This repository's contributors are all community members who volunteered their time to share code samples. Work is done as an open source community project, which each sample contained in their own solution.
-
-## Contributions
-
-These samples are direct from the feature teams, PnP core team (http://aka.ms/m365pnp) or shared by the community. We welcome your input on issues and suggestions for new samples. We do also welcome community contributions around the client-side web parts. If you have any questions, just let us know.
-
-Please have a look on our [Contribution Guidance](./.github/CONTRIBUTING.md) before submitting your pull requests, so that we can get your contribution processed as fast as possible.
 
 ## Code of Conduct
 This repository has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
